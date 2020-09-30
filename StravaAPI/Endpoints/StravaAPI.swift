@@ -23,10 +23,18 @@ enum StravaAPI {
 
 extension HTTPHeader {
     
+    /// Authorization bear `HTTPHeader`
     static var authorization: HTTPHeader? {
-        let authorization = AuthorizationManager.authorization
-        guard let token = authorization?.accessToken else { return nil }
-        return .authorization(bearerToken: token)
+        let token = StravaSession.shared.token
+        guard let accessToken = token?.accessToken else { return nil }
+        return .authorization(bearerToken: accessToken)
+    }
+}
+
+extension StravaAPI: URLRequestConvertible {
+    
+    func asURLRequest() throws -> URLRequest {
+        return try httpRequest().asURLRequest()
     }
 }
 
@@ -34,17 +42,18 @@ extension HTTPHeader {
 
 extension StravaAPI: HTTPRequestable {
     
-    var httpRequest: HTTPRequest {
+    func httpRequest() throws -> HTTPRequest {
         switch self {
         
         case .refreshToken:
+            let tokenRequest = try TokenRequestFile.read()
             return HTTPRequest(
                 method: .post,
-                urlComponents: .stravaAPI(endpoint: "oauth/token"),
-                additionalHeaders: HTTPHeaders(headers: [
-                    .acceptJSON,
-                    .authorization
-                ])
+                urlComponents: .stravaAPI(
+                    endpoint: "oauth/token",
+                    parameters: tokenRequest.queryItems
+                ),
+                additionalHeaders: HTTPHeaders(headers: [.acceptJSON])
             )
         
         case .athlete:
@@ -66,5 +75,19 @@ private extension HTTPHeaders {
     
     init(headers: [HTTPHeader?]) {
         self.init(headers.compactMap { $0 })
+    }
+}
+
+// MARK: - TokenRequest + URLQueryItem
+
+extension TokenRequest {
+    
+    var queryItems: [URLQueryItem] {
+        return [
+            URLQueryItem(name: "client_id", value: "\(clientId)"),
+            URLQueryItem(name: "client_secret", value: clientSecret),
+            URLQueryItem(name: "grant_type", value: grantType),
+            URLQueryItem(name: "refresh_token", value: refreshToken),
+        ]
     }
 }

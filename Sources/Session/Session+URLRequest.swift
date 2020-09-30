@@ -15,6 +15,9 @@ public typealias DataResponse = AFDataResponse<Data>
 /// Completion block for `DataResponse`
 public typealias DataRequestCompletion = (DataResponse) -> Void
 
+/// Completion block with a `Result<Success, Error>`
+public typealias ResultCompletion<Success> = (Result<Success, Error>) -> Void
+
 // MARK: - Session + `URLRequest`
 
 public extension Session {
@@ -50,6 +53,24 @@ public extension Session {
                 completion(response)
             }
     }
+    
+    /// Invoke `request(urlRequest:queue:completion:)`, on success, convert
+    /// the response `Data` to an instance of `T` where `T` is a `Model`
+    ///
+    /// - Parameters:
+    ///   - urlRequest: `URLRequest`
+    ///   - queue: `DispatchQueue`
+    ///   - completion: `ResultCompletion`
+    @discardableResult
+    func requestModel<T>(
+        urlRequest: URLRequest,
+        queue: DispatchQueue = .main,
+        completion: @escaping ResultCompletion<T>
+    ) -> DataRequest where T: Model {
+        return request(urlRequest: urlRequest, queue: queue) { response in
+            completion(response.result.modelResult())
+        }
+    }
         
     /// Request `Data` for a given `urlRequest` synchronously
     /// 
@@ -67,5 +88,15 @@ public extension Session {
         }
         group.wait()
         return result
+    }
+    
+    /// Invoke `requestSync(urlRequest:)`, on success, convert
+    /// the response `Data` to an instance of `T` where `T` is a `Model`
+    ///
+    /// - Parameter urlRequest: `URLRequest`
+    func requestModelSync<T>(
+        urlRequest: URLRequest
+    ) -> Result<T, Error> where T: Model {
+        return requestSync(urlRequest: urlRequest).result.modelResult()
     }
 }

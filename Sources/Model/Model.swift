@@ -15,7 +15,8 @@ import Alamofire
 /// An `Error` with a `Model`
 public enum ModelError: Error {
     
-    /// Model failed to be validated
+    /// `Model` validation failed.
+    /// This comes from the `isValid` flag against the `Model`
     case validation
     
     /// Could not convert `Model` to `[AnyHashable: Any]`
@@ -24,6 +25,9 @@ public enum ModelError: Error {
 
 /// An entity which conforms to `Codable`.
 /// Typically an app "model" which gets decoded from a server response.
+///
+/// - Note:
+/// A JSON implementation is provided as a default.
 public protocol Model: Codable, CustomStringConvertible {
     
     /// Validate the `Model` after being decoded from `Data`.
@@ -168,29 +172,4 @@ public extension Array where Element: Model {
 }
 
 extension Array: Model where Element: Model {
-}
-
-// MARK: - Result
-
-public extension Swift.Result where Success == Data {
-    
-    /// Convert to `Result<T, Error>` for some `Model` type `T`
-    func modelResult<T>() -> Swift.Result<T, Error> where T: Model {
-        switch self {
-        case .success(let data):
-            do {
-                let model = try T(data: data)
-                return .success(model)
-            } catch {
-                return .failure(error)
-            }
-        case .failure(let error):
-            return .failure(error)
-        }
-    }
-    
-    /// Get `modelResult` and return `success` case
-    func modelResultSuccess<T>() -> T? where T: Model {
-        return modelResult().success
-    }
 }

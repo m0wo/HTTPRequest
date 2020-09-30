@@ -3,7 +3,10 @@ import Foundation
 import HTTPRequest
 
 do {
-    let _ = try AF.requestSync(StravaAPI.athlete)
+
+    try StravaSession.shared.configure()
+    debugPrint(StravaSession.shared.token)
+    
     debugPrint("Done!")
     
 } catch {

@@ -27,7 +27,7 @@ extension URLComponents {
         
         // queryItems
         let queryItems = urlComponents.queryItems ?? []
-        urlComponents.queryItems = queryItems + parameters
+        urlComponents.queryItems = (queryItems + parameters).nilIfEmpty
         
         return urlComponents
     }
@@ -40,4 +40,14 @@ extension URLComponents {
         urlComponents.path = "/api/v3"
         return urlComponents
     }()
+}
+
+// MARK: - Array + Extensions
+
+extension Array {
+    
+    /// Return `nil` if `isEmpty`
+    var nilIfEmpty: Self? {
+        return isEmpty ? nil : self
+    }
 }

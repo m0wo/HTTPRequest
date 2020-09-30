@@ -6,10 +6,18 @@
 //
 
 import Foundation
+import Alamofire
 
 /// An entity which defines a `HTTPRequest`
-public protocol HTTPRequestable {
+public protocol HTTPRequestable: URLRequestConvertible {
     
     /// Construct a `HTTPRequest`
-    var httpRequest: HTTPRequest { get }
+    func httpRequest() throws -> HTTPRequest
+}
+
+extension HTTPRequestable {
+    
+    func asURLRequest() throws -> URLRequest {
+        return try httpRequest().asURLRequest()
+    }
 }

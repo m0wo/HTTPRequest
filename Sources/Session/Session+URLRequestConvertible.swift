@@ -61,7 +61,7 @@ public extension Session {
         completion: @escaping DataRequestCompletion
     ) throws -> DataRequest where T: HTTPRequestable {
         return try request(
-            requestable.httpRequest,
+            requestable.httpRequest(),
             queue: queue,
             completion: completion
         )
@@ -75,6 +75,6 @@ public extension Session {
     func requestSync<T>(
         _ requestable: T
     ) throws -> DataResponse where T: HTTPRequestable {
-        return try requestSync(requestable.httpRequest)
+        return try requestSync(requestable.httpRequest())
     }
 }
