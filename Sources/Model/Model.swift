@@ -1,6 +1,6 @@
 //
 //  Model.swift
-//  BloodKit
+//  HTTPRequest
 //
 //  Created by Ben Shutt on 02/03/2019.
 //  Copyright © 2019 Moor. All rights reserved.

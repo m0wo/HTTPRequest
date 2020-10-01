@@ -1,6 +1,6 @@
 //
 //  Alamofire+Extensions.swift
-//  StravaAPI
+//  HTTPRequest
 //
 //  Created by Ben Shutt on 24/09/2020.
 //

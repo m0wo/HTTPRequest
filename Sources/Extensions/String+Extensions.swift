@@ -1,6 +1,6 @@
 //
 //  String+Extensions.swift
-//  StravaAPI
+//  HTTPRequest
 //
 //  Created by Ben Shutt on 27/09/2020.
 //
