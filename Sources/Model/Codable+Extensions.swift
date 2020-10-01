@@ -27,7 +27,7 @@ public extension JSONDecoder {
     static var `default`: JSONDecoder {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .formatted(
-            DateFormatter.hierarchicalISO8601
+            DateFormatter.hierarchical
         )
         return decoder
     }
@@ -41,7 +41,7 @@ public extension JSONEncoder {
     static var `default`: JSONEncoder {
         let encoder = JSONEncoder()
         encoder.dateEncodingStrategy = .formatted(
-            DateFormatter.hierarchicalISO8601
+            DateFormatter.hierarchical
         )
         return encoder
     }
@@ -146,5 +146,5 @@ public extension DateFormatter {
     
     /// `HierarchicalDateFormatter` converting a `String` to a `Date`
     /// by falling back on standard, common date formats
-    static let hierarchicalISO8601 = HierarchicalDateFormatter()
+    static let hierarchical = HierarchicalDateFormatter()
 }
