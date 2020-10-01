@@ -13,7 +13,7 @@ public extension Session {
     // MARK: - URLRequestConvertible
     
     /// Execute `request(urlRequest:queue:completion)` by converting
-    /// `requestable` to a `URLRequest`
+    /// `urlRequestConvertible` to a `URLRequest`
     ///
     /// - Parameters:
     ///   - urlRequestConvertible: `URLRequestConvertible`
@@ -33,7 +33,28 @@ public extension Session {
         )
     }
     
-    /// Execute `requestSync(urlRequest:)` by converting `requestable`
+    /// Execute `requestModel(urlRequest:queue:completion)` by converting
+    /// `urlRequestConvertible` to a `URLRequest`
+    ///
+    /// - Parameters:
+    ///   - urlRequestConvertible: `URLRequestConvertible`
+    ///   - queue: `DispatchQueue`
+    ///   - completion: `DataRequestCompletion`
+    @discardableResult
+    func requestModel<T>(
+        _ urlRequestConvertible: URLRequestConvertible,
+        queue: DispatchQueue = .main,
+        completion: @escaping ResultCompletion<T>
+    ) throws -> DataRequest where T: Model {
+        let urlRequest = try urlRequestConvertible.asURLRequest()
+        return requestModel(
+            urlRequest: urlRequest,
+            queue: queue,
+            completion: completion
+        )
+    }
+    
+    /// Execute `requestSync(urlRequest:)` by converting `urlRequestConvertible`
     /// to a `URLRequest`
     ///
     /// - Parameters:
@@ -45,36 +66,15 @@ public extension Session {
         return requestSync(urlRequest: urlRequest)
     }
     
-    // MARK: - URLRequestConvertible
-    
-    /// Execute `request(urlRequest:queue:completion)` by converting
-    /// `requestable` to a `URLRequest`
+    /// Execute `requestModelSync(urlRequest:)` by converting
+    /// `urlRequestConvertible` to a `URLRequest`
     ///
     /// - Parameters:
-    ///   - requestable: `T`
-    ///   - queue: `DispatchQueue`
-    ///   - completion: `DataRequestCompletion`
-    @discardableResult
-    func request<T>(
-        _ requestable: T,
-        queue: DispatchQueue = .main,
-        completion: @escaping DataRequestCompletion
-    ) throws -> DataRequest where T: HTTPRequestable {
-        return try request(
-            requestable.httpRequest(),
-            queue: queue,
-            completion: completion
-        )
-    }
-    
-    /// Execute `requestSync(urlRequest:)` by converting `requestable`
-    /// to a `URLRequest`
-    ///
-    /// - Parameters:
-    ///   - requestable: `T`
-    func requestSync<T>(
-        _ requestable: T
-    ) throws -> DataResponse where T: HTTPRequestable {
-        return try requestSync(requestable.httpRequest())
+    ///   - urlRequestConvertible: `URLRequestConvertible`
+    func requestModelSync<T>(
+        _ urlRequestConvertible: URLRequestConvertible
+    ) throws -> Result<T, Error> where T: Model {
+        let urlRequest = try urlRequestConvertible.asURLRequest()
+        return requestModelSync(urlRequest: urlRequest)
     }
 }

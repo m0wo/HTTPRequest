@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 extension URLComponents {
     
@@ -27,7 +28,7 @@ extension URLComponents {
         
         // queryItems
         let queryItems = urlComponents.queryItems ?? []
-        urlComponents.queryItems = (queryItems + parameters).nilIfEmpty
+        urlComponents.queryItems = queryItems + parameters
         
         return urlComponents
     }
@@ -42,12 +43,14 @@ extension URLComponents {
     }()
 }
 
-// MARK: - Array + Extensions
+// MARK: - HTTPHeader + Authorization
 
-extension Array {
+extension HTTPHeader {
     
-    /// Return `nil` if `isEmpty`
-    var nilIfEmpty: Self? {
-        return isEmpty ? nil : self
+    /// Authorization bear `HTTPHeader`
+    static var authorization: HTTPHeader? {
+        let token = StravaSession.shared.token
+        guard let accessToken = token?.accessToken else { return nil }
+        return .authorization(bearerToken: accessToken)
     }
 }

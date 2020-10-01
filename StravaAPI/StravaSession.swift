@@ -64,14 +64,16 @@ struct StravaSession {
         guard token == nil else { return }
         
         // Refresh the token with the server
-        let result: Result<Token, Error> = try AF.requestModelSync(
-            urlRequest: StravaAPI.refreshToken.httpRequest().asURLRequest()
-        )
+        let result: Result<Token, Error> =
+            try AF.requestModelSync(StravaAPI.refreshToken)
         
         // Check the token was refreshed
-        token = result.success
-        if token == nil {
-            throw StravaSessionError.tokenRefreshFailed
+        switch result {
+        case .success(let token):
+            self.token = token
+        case .failure(let error):
+            self.token = nil
+            throw error
         }
     }
 }

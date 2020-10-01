@@ -67,7 +67,10 @@ public extension Session {
         queue: DispatchQueue = .main,
         completion: @escaping ResultCompletion<T>
     ) -> DataRequest where T: Model {
-        return request(urlRequest: urlRequest, queue: queue) { response in
+        return request(
+            urlRequest: urlRequest,
+            queue: queue
+        ) { response in
             completion(response.result.modelResult())
         }
     }

@@ -27,5 +27,5 @@ struct Token: StravaModel {
     /// Please expect that this value can change anytime you retrieve a new access token.
     /// Once a new refresh token code has been returned, the older code will no longer work.
     /// (confidential)
-    var refreshToken: Int
+    var refreshToken: String
 }

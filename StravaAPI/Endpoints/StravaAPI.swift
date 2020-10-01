@@ -19,25 +19,6 @@ enum StravaAPI {
     case athlete
 }
 
-// MARK: - HTTPHeader + Authorization
-
-extension HTTPHeader {
-    
-    /// Authorization bear `HTTPHeader`
-    static var authorization: HTTPHeader? {
-        let token = StravaSession.shared.token
-        guard let accessToken = token?.accessToken else { return nil }
-        return .authorization(bearerToken: accessToken)
-    }
-}
-
-extension StravaAPI: URLRequestConvertible {
-    
-    func asURLRequest() throws -> URLRequest {
-        return try httpRequest().asURLRequest()
-    }
-}
-
 // MARK: - StravaAPI + HTTPRequestable
 
 extension StravaAPI: HTTPRequestable {
@@ -69,19 +50,11 @@ extension StravaAPI: HTTPRequestable {
     }
 }
 
-// MARK: - HTTPHeaders + Extensions
-
-private extension HTTPHeaders {
-    
-    init(headers: [HTTPHeader?]) {
-        self.init(headers.compactMap { $0 })
-    }
-}
-
 // MARK: - TokenRequest + URLQueryItem
 
 extension TokenRequest {
     
+    /// - TODO: Compute from codeable?
     var queryItems: [URLQueryItem] {
         return [
             URLQueryItem(name: "client_id", value: "\(clientId)"),
