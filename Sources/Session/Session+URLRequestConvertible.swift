@@ -1,6 +1,6 @@
 //
 //  Session+URLRequestConvertible.swift
-//  StravaAPI
+//  HTTPRequest
 //
 //  Created by Ben Shutt on 27/09/2020.
 //
@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// - TODO: Consider function conflicts with Alamofire (e.g. _: for URLRequest)
 public extension Session {
     
     // MARK: - URLRequestConvertible
@@ -41,13 +42,13 @@ public extension Session {
     ///   - queue: `DispatchQueue`
     ///   - completion: `DataRequestCompletion`
     @discardableResult
-    func requestModel<T>(
+    func request<T>(
         _ urlRequestConvertible: URLRequestConvertible,
         queue: DispatchQueue = .main,
         completion: @escaping ResultCompletion<T>
     ) throws -> DataRequest where T: Model {
         let urlRequest = try urlRequestConvertible.asURLRequest()
-        return requestModel(
+        return request(
             urlRequest: urlRequest,
             queue: queue,
             completion: completion
@@ -71,10 +72,10 @@ public extension Session {
     ///
     /// - Parameters:
     ///   - urlRequestConvertible: `URLRequestConvertible`
-    func requestModelSync<T>(
+    func requestSync<T>(
         _ urlRequestConvertible: URLRequestConvertible
     ) throws -> Result<T, Error> where T: Model {
         let urlRequest = try urlRequestConvertible.asURLRequest()
-        return requestModelSync(urlRequest: urlRequest)
+        return requestSync(urlRequest: urlRequest)
     }
 }

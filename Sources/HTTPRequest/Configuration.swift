@@ -1,6 +1,6 @@
 //
 //  HTTPRequestConfiguration.swift
-//  StravaAPI
+//  HTTPRequest
 //
 //  Created by Ben Shutt on 24/09/2020.
 //
@@ -19,7 +19,7 @@ extension HTTPRequest {
         private let dispatchQueue = DispatchQueue(label: UUID().uuidString)
         
         /// Log the `DataResponse` when the response has been received
-        private var _responseLogging = true
+        private var _responseLogging = false
         public var responseLogging: Bool {
             get {
                 var value: Bool = false

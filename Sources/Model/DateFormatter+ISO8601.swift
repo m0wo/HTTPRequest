@@ -1,6 +1,6 @@
 //
 //  DateFormatter+Extensions.swift
-//  ThunderBasics-iOS
+//  HTTPRequest
 //
 //  Created by Ben Shutt on 23/01/2020.
 //  Copyright © 2020 threesidedcube. All rights reserved.

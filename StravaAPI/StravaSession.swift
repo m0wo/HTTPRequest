@@ -19,6 +19,7 @@ struct StravaSession {
     private(set) var token: Token? = nil {
         didSet {
             try? updateTokenFile()
+            try? updateTokenRequestFile()
         }
     }
     
@@ -30,9 +31,11 @@ struct StravaSession {
         }
     }
     
-    /// `Token` has expired or will expire in the next hour
+    /// `Token` has expired or will expire
+    /// Specically access token for the user is expired or will expire in one hour
+    /// (3,600 seconds) or less
     static func shouldRefreshToken(_ token: Token) -> Bool {
-        return token.expiryDate <= Date().addingTimeInterval(3600)
+        return token.expiryDate < Date().addingTimeInterval(3600)
     }
     
     /// Write or delete `TokenFile` based on the `token` property
@@ -42,6 +45,14 @@ struct StravaSession {
         } else {
             try TokenFile.remove()
         }
+    }
+    
+    /// Write the `TokenRequestFile` based on the `token` property
+    private func updateTokenRequestFile() throws {
+        guard let token = token else { return /* do nothing */ }
+        var tokenRequest = try TokenRequestFile.read()
+        tokenRequest.refreshToken = token.refreshToken
+        try TokenRequestFile.write(tokenRequest: tokenRequest)
     }
     
     // MARK: - Init
@@ -62,7 +73,7 @@ struct StravaSession {
         
         // Refresh the token with the server
         let result: Result<Token, Error> =
-            try AF.requestModelSync(StravaAPI.refreshToken)
+            try AF.requestSync(StravaAPI.refreshToken)
         
         // Check the token was refreshed
         switch result {

@@ -1,6 +1,6 @@
 //
 //  Session+URLRequest.swift
-//  StravaAPI
+//  HTTPRequest
 //
 //  Created by Ben Shutt on 24/09/2020.
 //
@@ -12,7 +12,7 @@ import OSLog
 /// An `AFDataResponse` requesting `Data` from a `URL`
 public typealias DataResponse = AFDataResponse<Data>
 
-/// Completion block for `DataResponse`
+/// Completion block with a `DataResponse`
 public typealias DataRequestCompletion = (DataResponse) -> Void
 
 /// Completion block with a `Result<Success, Error>`
@@ -62,7 +62,7 @@ public extension Session {
     ///   - queue: `DispatchQueue`
     ///   - completion: `ResultCompletion`
     @discardableResult
-    func requestModel<T>(
+    func request<T>(
         urlRequest: URLRequest,
         queue: DispatchQueue = .main,
         completion: @escaping ResultCompletion<T>
@@ -79,7 +79,9 @@ public extension Session {
     /// 
     /// - Parameters:
     ///   - urlRequest: `URLRequest`
-    func requestSync(urlRequest: URLRequest) -> DataResponse {
+    func requestSync(
+        urlRequest: URLRequest
+    ) -> DataResponse {
         let queue = DispatchQueue(label: UUID().uuidString)
         var dataResponse: DataResponse!
         
@@ -97,7 +99,7 @@ public extension Session {
     /// the response `Data` to an instance of `T` where `T` is a `Model`
     ///
     /// - Parameter urlRequest: `URLRequest`
-    func requestModelSync<T>(
+    func requestSync<T>(
         urlRequest: URLRequest
     ) -> Result<T, Error> where T: Model {
         return requestSync(urlRequest: urlRequest).result.modelResult()
