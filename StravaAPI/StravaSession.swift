@@ -9,13 +9,6 @@ import Foundation
 import HTTPRequest
 import Alamofire
 
-/// `Error`s with `StravaSession`
-enum StravaSessionError: Error {
-    
-    /// Failed to refresh the `Token`
-    case tokenRefreshFailed
-}
-
 /// Token session for the Strava API
 struct StravaSession {
     
@@ -32,10 +25,14 @@ struct StravaSession {
     /// Check if the saved `Token` is expired. If so, reset the token
     mutating func checkTokenExpiry() {
         guard let token = token else { return }
-        let hasExpired = token.expiryDate <= Date()
-        if hasExpired {
+        if Self.shouldRefreshToken(token) {
             self.token = nil
         }
+    }
+    
+    /// `Token` has expired or will expire in the next hour
+    static func shouldRefreshToken(_ token: Token) -> Bool {
+        return token.expiryDate <= Date().addingTimeInterval(3600)
     }
     
     /// Write or delete `TokenFile` based on the `token` property

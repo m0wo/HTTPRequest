@@ -5,9 +5,11 @@ import HTTPRequest
 do {
 
     try StravaSession.shared.configure()
-    debugPrint(StravaSession.shared.token)
     
-    debugPrint("Done!")
+    let athlete: DetailedAthlete =
+        try AF.requestModelSync(StravaAPI.athlete).modelOrThrow()
+
+    debugPrint(athlete)
     
 } catch {
     debugPrint(error)

@@ -93,6 +93,16 @@ public extension Decodable {
 /// A proxy `ISO8601` `DateFormatter`.
 public class HierarchicalDateFormatter: DateFormatter {
     
+    /// Override `dateFormat` default
+    public override init() {
+        super.init()
+        dateFormat = DateFormatter.iso8601.dateFormat
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     /// Override coverting `String` to `Date` by falling back on a selection
     /// of standard date formats
     ///
@@ -101,10 +111,10 @@ public class HierarchicalDateFormatter: DateFormatter {
         // Starting at the front, attempt the date formats
         // in order, falling back onto the next
         let dateFormats = [
-            "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ",
+            DateFormatter.iso8601Millis.dateFormat,
             
             // No milliseconds
-            "yyyy-MM-dd'T'HH:mm:ssZZZZZ",
+            DateFormatter.iso8601.dateFormat,
             
             // No timeZone
             "yyyy-MM-dd'T'HH:mm:ss.SSS",
@@ -114,7 +124,7 @@ public class HierarchicalDateFormatter: DateFormatter {
             
             // Date only
             "yyyy-MM-dd"
-        ]
+        ].compactMap({$0})
         
         for dateFormat in dateFormats {
             let formatter = DateFormatter.iso8601Formatter(
