@@ -81,16 +81,16 @@ public extension Session {
     ///   - urlRequest: `URLRequest`
     func requestSync(urlRequest: URLRequest) -> DataResponse {
         let queue = DispatchQueue(label: UUID().uuidString)
-        var result: DataResponse!
+        var dataResponse: DataResponse!
         
         let group = DispatchGroup()
         group.enter()
         request(urlRequest: urlRequest, queue: queue) { response in
-            result = response
+            dataResponse = response
             group.leave()
         }
         group.wait()
-        return result
+        return dataResponse
     }
     
     /// Invoke `requestSync(urlRequest:)`, on success, convert

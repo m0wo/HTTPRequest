@@ -14,18 +14,14 @@ public extension DateFormatter {
     /// Note milliseconds included, for customization over `dateFormat`,
     /// see `iso8601Formatter(dateFormat:timeZone:)`
     static var iso8601Millis: DateFormatter {
-        return iso8601Formatter(
-            dateFormat: "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
-        )
+        return iso8601Formatter(dateFormat: .iso8601Millis)
     }
     
     /// Standard `iso8601` `DateFormatter`
     /// Note milliseconds included, for customization over `dateFormat`,
     /// see `iso8601Formatter(dateFormat:timeZone:)`
     static var iso8601: DateFormatter {
-        return iso8601Formatter(
-            dateFormat: "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-        )
+        return iso8601Formatter(dateFormat: .iso8601)
     }
     
     /// `DateFormatter` has:
@@ -48,4 +44,15 @@ public extension DateFormatter {
         formatter.dateFormat = dateFormat
         return formatter
     }
+}
+
+// MARK: - String + ISO8601
+
+extension String {
+    
+    /// Date format for ISO8601 including milliseconds
+    static let iso8601Millis: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
+    
+    /// Date format for ISO8601
+    static let iso8601 = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
 }

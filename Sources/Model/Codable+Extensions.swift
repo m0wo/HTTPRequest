@@ -111,10 +111,10 @@ public class HierarchicalDateFormatter: DateFormatter {
         // Starting at the front, attempt the date formats
         // in order, falling back onto the next
         let dateFormats = [
-            DateFormatter.iso8601Millis.dateFormat,
+            .iso8601Millis,
             
             // No milliseconds
-            DateFormatter.iso8601.dateFormat,
+            .iso8601,
             
             // No timeZone
             "yyyy-MM-dd'T'HH:mm:ss.SSS",
@@ -124,7 +124,7 @@ public class HierarchicalDateFormatter: DateFormatter {
             
             // Date only
             "yyyy-MM-dd"
-        ].compactMap({$0})
+        ]
         
         for dateFormat in dateFormats {
             let formatter = DateFormatter.iso8601Formatter(
