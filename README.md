@@ -1,7 +1,7 @@
 ## HTTPRequest 
 
-HTTPRequest constructs a declarative, `Model` driven interface to HTTP networking. It is a high level wrapper built on top of the awesome framework Alamofire.
-
+HTTPRequest constructs a declarative, `Model` driven interface to HTTP networking.  
+It is a high level wrapper built on top of the awesome framework [Alamofire](https://github.com/Alamofire/Alamofire).  
 How it works is best demonstrated by an example:
 
 ```swift
@@ -15,10 +15,10 @@ try AF.request(StravaAPI.athlete) { response in
 }
 ```
 
-This interface makes it clearer to the reader what this this network request is doing, specifically:
+This interface makes it clearer to the reader what this this network request is doing, specifically:  
 Making a HTTP request to the `"athlete"` endpoint of the Strava API which returns an `Athlete` on success.
 
-The details of the request can then be encapsulated in the `StravaAPI` `enum`.
+The details of the request can then be encapsulated in the `StravaAPI` `enum`.  
 Here's what that might look like:
 
 ```swift
