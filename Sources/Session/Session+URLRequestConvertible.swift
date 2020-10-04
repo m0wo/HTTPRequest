@@ -10,49 +10,37 @@ import Alamofire
 
 /// - TODO: Consider function conflicts with Alamofire (e.g. _: for URLRequest)
 public extension Session {
-    
-    // MARK: - URLRequestConvertible
-    
+
     /// Execute `request(urlRequest:queue:completion)` by converting
-    /// `urlRequestConvertible` to a `URLRequest`
+    /// `urlRequestConvertible` to a `URLRequest`.
+    /// If that conversion throws, execute the `completion` on the `queue` failing with
+    /// the `Error` that was thrown.
     ///
     /// - Parameters:
     ///   - urlRequestConvertible: `URLRequestConvertible`
     ///   - queue: `DispatchQueue`
-    ///   - completion: `DataRequestCompletion`
+    ///   - completion: `ResultCompletion<Data>`
     @discardableResult
     func request(
         _ urlRequestConvertible: URLRequestConvertible,
         queue: DispatchQueue = .main,
-        completion: @escaping DataRequestCompletion
-    ) throws -> DataRequest {
-        let urlRequest = try urlRequestConvertible.asURLRequest()
-        return request(
-            urlRequest: urlRequest,
-            queue: queue,
-            completion: completion
-        )
-    }
-    
-    /// Execute `requestModel(urlRequest:queue:completion)` by converting
-    /// `urlRequestConvertible` to a `URLRequest`
-    ///
-    /// - Parameters:
-    ///   - urlRequestConvertible: `URLRequestConvertible`
-    ///   - queue: `DispatchQueue`
-    ///   - completion: `DataRequestCompletion`
-    @discardableResult
-    func request<T>(
-        _ urlRequestConvertible: URLRequestConvertible,
-        queue: DispatchQueue = .main,
-        completion: @escaping ResultCompletion<T>
-    ) throws -> DataRequest where T: Model {
-        let urlRequest = try urlRequestConvertible.asURLRequest()
-        return request(
-            urlRequest: urlRequest,
-            queue: queue,
-            completion: completion
-        )
+        completion: @escaping ResultCompletion<Data>
+    ) -> DataRequest? {
+        do {
+            let urlRequest = try urlRequestConvertible.asURLRequest()
+            return request(
+                urlRequest: urlRequest,
+                queue: queue,
+                completion: { response in
+                    completion(response.result.generalErrorResult)
+                }
+            )
+        } catch {
+            queue.async {
+                completion(.failure(error))
+            }
+            return nil
+        }
     }
     
     /// Execute `requestSync(urlRequest:)` by converting `urlRequestConvertible`

@@ -5,7 +5,7 @@ It is a high level wrapper built on top of the awesome framework [Alamofire](htt
 How it works is best demonstrated by an example:
 
 ```swift
-try AF.request(StravaAPI.athlete) { response in
+AF.request(StravaAPI.athlete) { response in
     guard let athlete: Athlete = response.model() else {
         // Handle API error
         return
@@ -74,8 +74,8 @@ extension URLComponents {
 
 ### Notes
 
-The `try` is necessary because converting from a `HTTPRequest` to a `URLRequest` may `throw` an `Error`. E.g. The `URL` path component is invalid etc.
-It's also very possible for a request to fail while building it, for example, failed to create JSON request body (encoding error).
+Converting from a `HTTPRequest` to a `URLRequest` may `throw` an `Error`. One example might be: the `URL` path component is invalid.
+It's also very possible for a request to fail while building it, for example, failed to create JSON request body due to an encoding error.
 
 The Strava API is just an example here, you can define your API endpoints however you want! It's the conformance to the `HTTPRequestable` that's important.
 

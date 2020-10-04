@@ -7,7 +7,9 @@
 
 import Foundation
 
-public extension Swift.Result {
+// MARK: - Result + Extensions
+
+public extension Result {
     
     /// Returns the associated value if the result is a success, `nil` otherwise.
     var success: Success? {
@@ -20,18 +22,28 @@ public extension Swift.Result {
         guard case let .failure(error) = self else { return nil }
         return error
     }
+    
+    /// Returns the associated value if the result is a success, `throws`  associated
+    /// value of failure otherwise.
+    func successOrThrow() throws -> Success {
+        switch self {
+        case .success(let success): return success
+        case .failure(let error): throw error
+        }
+    }
 }
 
-public extension Swift.Result where Failure == Error {
-    
-    /// Cast `self` error type to generic `Swift.Error`
-    /// - Parameter result: Result with specific `Error` type for `Failure`
-    init<E>(result: Swift.Result<Success, E>) where E: Error {
-        switch result {
+// MARK: - Result + Error
+
+public extension Result {
+
+    /// Cast `Failure` to generic `Error`
+    var generalErrorResult: Result<Success, Error> {
+        switch self {
         case .success(let success):
-            self = .success(success)
+            return .success(success)
         case .failure(let error):
-            self = .failure(error)
+            return .failure(error)
         }
     }
 }

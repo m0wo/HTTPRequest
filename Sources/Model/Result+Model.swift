@@ -20,16 +20,11 @@ public extension Result where Success == Data {
             return .failure(error)
         }
     }
-}
-
-public extension Result where Success: Model {
     
-    /// Get the `Success` or throw the `Failure` `Error`
-    func modelOrThrow() throws -> Success {
-        switch self {
-        case .success(let model): return model
-        case .failure(let error): throw error
-        }
+    /// Convert to `Result<T, Error>` where `T` is a `Model` and return
+    /// the associated value if the result is a success, `nil` otherwise
+    func model<T>() -> T? where T: Model {
+        return modelResult().success
     }
 }
 

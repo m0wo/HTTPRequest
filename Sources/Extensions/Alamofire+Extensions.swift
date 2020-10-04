@@ -30,6 +30,6 @@ public extension AFDataResponse where Success == Data {
     
     /// Success of `Result<T, Error>` where `T` is a `Model`
     func model<T>() -> T? where T: Model {
-        return modelResult().success
+        return result.model()
     }
 }
