@@ -15,7 +15,7 @@ try AF.request(StravaAPI.athlete) { response in
 }
 ```
 
-This interface makes it clearer to the reader what this this network request is doing, specifically:  
+This interface makes it clearer to the reader what this network request is doing, specifically:  
 Making a HTTP request to the `"athlete"` endpoint of the Strava API which returns an `Athlete` on success.
 
 The details of the request can then be encapsulated in the `StravaAPI` `enum`.  
@@ -74,8 +74,9 @@ extension URLComponents {
 
 ### Notes
 
-The `try` is necessary because converting from a `HTTPRequest` to a `URLRequest` may `throw` an `Error`. E.g. `URL` path component invalid etc.
-It's also very possible for a request to fail while building it, for example, failed to create JSON body (encoding error).
+The `try` is necessary because converting from a `HTTPRequest` to a `URLRequest` may `throw` an `Error`. E.g. The `URL` path component is invalid etc.
+It's also very possible for a request to fail while building it, for example, failed to create JSON request body (encoding error).
 
 The Strava API is just an example here, you can define your API endpoints however you want! It's the conformance to the `HTTPRequestable` that's important.
 
+This framework is lightweight, it was build to add the `Model` protocol and a simple way of building `HTTPRequest`s in Alamofire.

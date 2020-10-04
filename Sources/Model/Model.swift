@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import OSLog
 import Alamofire
+import os // OSLog
 
 /// Shorthand for a `Result` where `Success = Model`, `Failure = Error`
 public typealias ModelResult<Model> = Result<Model, Error>

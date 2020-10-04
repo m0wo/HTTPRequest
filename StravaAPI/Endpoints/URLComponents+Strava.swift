@@ -19,12 +19,10 @@ extension URLComponents {
         endpoint: String,
         parameters: [URLQueryItem] = []
     ) -> URLComponents {
-        var urlComponents: URLComponents = .stravaAPI
-        
-        // path
-        urlComponents.path = urlComponents.path
-            .suffixingIfRequired("/")
-            .appending(endpoint)
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "www.strava.com"
+        urlComponents.path = "/api/v3/\(endpoint)"
         
         // queryItems
         let queryItems = urlComponents.queryItems ?? []
@@ -32,15 +30,6 @@ extension URLComponents {
         
         return urlComponents
     }
-    
-    /// `URLComponents` base for the Strava API
-    static let stravaAPI: URLComponents = {
-        var urlComponents = URLComponents()
-        urlComponents.scheme = "https"
-        urlComponents.host = "www.strava.com"
-        urlComponents.path = "/api/v3"
-        return urlComponents
-    }()
 }
 
 // MARK: - HTTPHeader + Authorization

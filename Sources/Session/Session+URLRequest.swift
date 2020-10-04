@@ -7,7 +7,7 @@
 
 import Foundation
 import Alamofire
-import OSLog
+import os // OSLog
 
 /// An `AFDataResponse` requesting `Data` from a `URL`
 public typealias DataResponse = AFDataResponse<Data>

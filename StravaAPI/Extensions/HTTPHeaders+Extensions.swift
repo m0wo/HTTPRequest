@@ -12,7 +12,10 @@ import Alamofire
 
 extension HTTPHeaders {
     
-    init(headers: [HTTPHeader?]) {
+    /// Create with non-`nil` elements of `headers`
+    /// 
+    /// - Parameter headers: `[HTTPHeader?]`
+    init (headers: [HTTPHeader?]) {
         self.init(headers.compactMap { $0 })
     }
 }
