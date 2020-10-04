@@ -7,8 +7,8 @@
 
 import Foundation
 
-/// A Strava Athlete
-struct DetailedAthlete: StravaModel {
+/// A (detailed) Strava Athlete
+struct Athlete: StravaModel {
     
     /// The unique identifier of the athlete
     var id: Int

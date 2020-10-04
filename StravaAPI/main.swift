@@ -7,11 +7,11 @@ do {
     
     try StravaSession.shared.configure()
     
-    let athlete: DetailedAthlete =
+    let athlete: Athlete =
         try AF.requestSync(StravaAPI.athlete).modelOrThrow()
-
-    debugPrint(athlete)
     
+    debugPrint(athlete)
+
 } catch {
     debugPrint(error)
 }

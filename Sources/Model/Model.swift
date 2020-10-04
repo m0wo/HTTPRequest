@@ -10,6 +10,9 @@ import Foundation
 import OSLog
 import Alamofire
 
+/// Shorthand for a `Result` where `Success = Model`, `Failure = Error`
+public typealias ModelResult<Model> = Result<Model, Error>
+
 // MARK: - Model
 
 /// An `Error` with a `Model`
@@ -142,7 +145,6 @@ public extension Model {
 
 // MARK: - Array + Model
 
-/// - TODO:  Use Collection for more generality?
 public extension Array where Element: Model {
     
     /// Create an `Array<Element>` where `Element` is a `Model`
