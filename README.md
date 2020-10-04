@@ -79,4 +79,4 @@ It's also very possible for a request to fail while building it, for example, fa
 
 The Strava API is just an example here, you can define your API endpoints however you want! It's the conformance to the `HTTPRequestable` that's important.
 
-This framework is lightweight, it was build to add the `Model` protocol and a simple way of building `HTTPRequest`s in Alamofire.
+This framework is lightweight, it was built to add the `Model` protocol and a simple way of building `HTTPRequest`s in Alamofire.
