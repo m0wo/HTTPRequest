@@ -7,18 +7,6 @@
 
 import Foundation
 
-// MARK: - StringError
-
-/// An `Error` converting from `String` to `Data` or vice versa
-public enum StringDataError: Error {
-    
-    /// Failed to create a `String` from the given `Data` and `String.Encoding`
-    case data(Data, encoding: String.Encoding)
-    
-    /// Failed to create `Data` from the given `String` and `String.Encoding`
-    case string(string: String, encoding: String.Encoding)
-}
-
 // MARK: - JSONDecoder
 
 public extension JSONDecoder {

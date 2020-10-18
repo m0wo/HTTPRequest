@@ -1,6 +1,7 @@
 import XCTest
 @testable import HTTPRequest
 
+/// Test `HTTPRequest`
 final class HTTPRequestTests: XCTestCase {
     
     /// Test invalid `URLComponents` create an invalid `URLRequest`
