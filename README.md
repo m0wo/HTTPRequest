@@ -1,13 +1,13 @@
 ## HTTPRequest 
 
 HTTPRequest constructs a declarative, `Model` driven interface to HTTP networking.  
-It is a high level wrapper built on top of the awesome framework [Alamofire](https://github.com/Alamofire/Alamofire).  
+It is a high level extension built on top of the awesome framework [Alamofire](https://github.com/Alamofire/Alamofire).  
 How it works is best demonstrated by an example:
 
 ```swift
 AF.request(StravaAPI.athlete) { response in
     guard let athlete: Athlete = response.model() else {
-        // Handle API error
+        // Handle API or Model error
         return
     }
         
@@ -51,14 +51,14 @@ extension StravaAPI: HTTPRequestable {
 /// `URLComponents` template for Strava API HTTP requests
 extension URLComponents {
     
-    /// Strava API for `endpoint` and `parameters`
+    /// Strava API for `endpoint` and `queryItems`
     ///
     /// - Parameters:
     ///   - endpoint: `String`
-    ///   - parameters: `[URLQueryItem]`
+    ///   - queryItems: `[URLQueryItem]`
     static func stravaAPI(
         endpoint: String,
-        parameters: [URLQueryItem] = []
+        queryItems: [URLQueryItem] = []
     ) -> URLComponents {
         var urlComponents = URLComponents()
 
