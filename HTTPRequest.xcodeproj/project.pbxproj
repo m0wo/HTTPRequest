@@ -21,7 +21,21 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		B89D9292257E464700D17B85 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89D9268257E45FD00D17B85 /* Alamofire.framework */; };
+		B81B2DC4257E4971008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		B81B2DD9257E4AAF008FA95D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DD8257E4AAF008FA95D /* main.swift */; };
+		B81B2E12257E4B3E008FA95D /* HTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; };
+		B81B2E13257E4B3E008FA95D /* HTTPRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B81B2E23257E4B7E008FA95D /* URLComponents+Strava.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */; };
+		B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */; };
+		B81B2E31257E4B87008FA95D /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEB257E4AB9008FA95D /* URL+Extensions.swift */; };
+		B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */; };
+		B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEF257E4AB9008FA95D /* TokenFile.swift */; };
+		B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */; };
+		B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */; };
+		B81B2E54257E4B93008FA95D /* StravaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE6257E4AB9008FA95D /* StravaModel.swift */; };
+		B81B2E5B257E4B96008FA95D /* DetailedAthlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* DetailedAthlete.swift */; };
+		B81B2E62257E4B98008FA95D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE8257E4AB9008FA95D /* Token.swift */; };
+		B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DED257E4AB9008FA95D /* StravaSession.swift */; };
 		OBJ_100 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ParameterEncoder.swift */; };
 		OBJ_101 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ParameterEncoding.swift */; };
 		OBJ_102 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Protected.swift */; };
@@ -84,6 +98,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B81B2DC1257E496C008FA95D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+		B81B2E14257E4B3E008FA95D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HTTPRequest::HTTPRequest";
+			remoteInfo = HTTPRequest;
+		};
 		B89D922A257E3FCE00D17B85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -107,12 +135,50 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B81B2DD4257E4AAF008FA95D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B81B2E16257E4B3F008FA95D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B81B2E13257E4B3E008FA95D /* HTTPRequest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81B2DD6257E4AAF008FA95D /* StravaAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StravaAPI; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81B2DD8257E4AAF008FA95D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		B81B2DE6257E4AB9008FA95D /* StravaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaModel.swift; sourceTree = "<group>"; };
+		B81B2DE7257E4AB9008FA95D /* DetailedAthlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAthlete.swift; sourceTree = "<group>"; };
+		B81B2DE8257E4AB9008FA95D /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		B81B2DEB257E4AB9008FA95D /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeaders+Extensions.swift"; sourceTree = "<group>"; };
+		B81B2DED257E4AB9008FA95D /* StravaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaSession.swift; sourceTree = "<group>"; };
+		B81B2DEF257E4AB9008FA95D /* TokenFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenFile.swift; sourceTree = "<group>"; };
+		B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequestFile.swift; sourceTree = "<group>"; };
+		B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Strava.swift"; sourceTree = "<group>"; };
+		B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaAPI.swift; sourceTree = "<group>"; };
 		B89D9252257E449E00D17B85 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
 		B89D9253257E44AC00D17B85 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
 		B89D9268257E45FD00D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B89D9277257E462B00D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		B89D92A8257E490300D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		B89D92AC257E491600D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* OSLog+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Logger.swift"; sourceTree = "<group>"; };
@@ -171,7 +237,6 @@
 		OBJ_69 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		OBJ_70 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		OBJ_71 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		OBJ_76 /* StravaAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StravaAPI; sourceTree = SOURCE_ROOT; };
 		OBJ_77 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_78 /* HTTPRequest.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HTTPRequest.podspec; sourceTree = "<group>"; };
 		OBJ_79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -179,6 +244,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B81B2DD3257E4AAF008FA95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81B2E12257E4B3E008FA95D /* HTTPRequest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_120 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -190,7 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				B89D9292257E464700D17B85 /* Alamofire.framework in Frameworks */,
+				B81B2DC4257E4971008FA95D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +279,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B81B2DD7257E4AAF008FA95D /* StravaAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B81B2DF1257E4AB9008FA95D /* Endpoints */,
+				B81B2DEA257E4AB9008FA95D /* Extensions */,
+				B81B2DEE257E4AB9008FA95D /* File */,
+				B81B2DE4257E4AB9008FA95D /* Models */,
+				B81B2DED257E4AB9008FA95D /* StravaSession.swift */,
+				B81B2DD8257E4AAF008FA95D /* main.swift */,
+			);
+			path = StravaAPI;
+			sourceTree = "<group>";
+		};
+		B81B2DE4257E4AB9008FA95D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */,
+				B81B2DE6257E4AB9008FA95D /* StravaModel.swift */,
+				B81B2DE7257E4AB9008FA95D /* DetailedAthlete.swift */,
+				B81B2DE8257E4AB9008FA95D /* Token.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B81B2DEA257E4AB9008FA95D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B81B2DEB257E4AB9008FA95D /* URL+Extensions.swift */,
+				B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B81B2DEE257E4AB9008FA95D /* File */ = {
+			isa = PBXGroup;
+			children = (
+				B81B2DEF257E4AB9008FA95D /* TokenFile.swift */,
+				B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		B81B2DF1257E4AB9008FA95D /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */,
+				B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
 		B89D9251257E448400D17B85 /* Carthage */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +342,8 @@
 		B89D9267257E45FD00D17B85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B89D92AC257E491600D17B85 /* Alamofire.framework */,
+				B89D92A8257E490300D17B85 /* Alamofire.framework */,
 				B89D9277257E462B00D17B85 /* Alamofire.framework */,
 				B89D9268257E45FD00D17B85 /* Alamofire.framework */,
 			);
@@ -327,21 +453,20 @@
 			path = .build/checkouts/Alamofire/Source;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_29 /* Tests */,
 				OBJ_34 /* Dependencies */,
+				B81B2DD7257E4AAF008FA95D /* StravaAPI */,
 				OBJ_72 /* Products */,
-				OBJ_76 /* StravaAPI */,
 				OBJ_77 /* LICENSE */,
 				OBJ_78 /* HTTPRequest.podspec */,
 				OBJ_79 /* README.md */,
 				B89D9267257E45FD00D17B85 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -362,6 +487,7 @@
 				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
 				"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */,
 				"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */,
+				B81B2DD6257E4AAF008FA95D /* StravaAPI */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -412,6 +538,25 @@
 			productName = AlamofirePackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
+		B81B2DD5257E4AAF008FA95D /* StravaAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B81B2DDA257E4AAF008FA95D /* Build configuration list for PBXNativeTarget "StravaAPI" */;
+			buildPhases = (
+				B81B2DD2257E4AAF008FA95D /* Sources */,
+				B81B2DD3257E4AAF008FA95D /* Frameworks */,
+				B81B2DD4257E4AAF008FA95D /* CopyFiles */,
+				B81B2E16257E4B3F008FA95D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B81B2E15257E4B3E008FA95D /* PBXTargetDependency */,
+			);
+			name = StravaAPI;
+			productName = StravaAPI2;
+			productReference = B81B2DD6257E4AAF008FA95D /* StravaAPI */;
+			productType = "com.apple.product-type.tool";
+		};
 		"HTTPRequest::HTTPRequest" /* HTTPRequest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_128 /* Build configuration list for PBXNativeTarget "HTTPRequest" */;
@@ -423,6 +568,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B81B2DC2257E496C008FA95D /* PBXTargetDependency */,
 			);
 			name = HTTPRequest;
 			productName = HTTPRequest;
@@ -468,7 +614,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					B81B2DD5257E4AAF008FA95D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "HTTPRequest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -477,7 +629,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -488,6 +640,7 @@
 				"HTTPRequest::SwiftPMPackageDescription" /* HTTPRequestPackageDescription */,
 				"HTTPRequest::HTTPRequestPackageTests::ProductTarget" /* HTTPRequestPackageTests */,
 				"HTTPRequest::HTTPRequestTests" /* HTTPRequestTests */,
+				B81B2DD5257E4AAF008FA95D /* StravaAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -516,6 +669,25 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B81B2DD2257E4AAF008FA95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B81B2E23257E4B7E008FA95D /* URLComponents+Strava.swift in Sources */,
+				B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */,
+				B81B2E31257E4B87008FA95D /* URL+Extensions.swift in Sources */,
+				B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */,
+				B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */,
+				B81B2DD9257E4AAF008FA95D /* main.swift in Sources */,
+				B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */,
+				B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */,
+				B81B2E62257E4B98008FA95D /* Token.swift in Sources */,
+				B81B2E5B257E4B96008FA95D /* DetailedAthlete.swift in Sources */,
+				B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */,
+				B81B2E54257E4B93008FA95D /* StravaModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -611,6 +783,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B81B2DC2257E496C008FA95D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = B81B2DC1257E496C008FA95D /* PBXContainerItemProxy */;
+		};
+		B81B2E15257E4B3E008FA95D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HTTPRequest::HTTPRequest" /* HTTPRequest */;
+			targetProxy = B81B2E14257E4B3E008FA95D /* PBXContainerItemProxy */;
+		};
 		OBJ_162 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequestTests" /* HTTPRequestTests */;
@@ -629,6 +811,117 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B81B2DDB257E4AAF008FA95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B81B2DDC257E4AAF008FA95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		OBJ_123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -657,6 +950,8 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequest_Info.plist;
@@ -693,6 +988,8 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequest_Info.plist;
@@ -932,6 +1229,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B81B2DDA257E4AAF008FA95D /* Build configuration list for PBXNativeTarget "StravaAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B81B2DDB257E4AAF008FA95D /* Debug */,
+				B81B2DDC257E4AAF008FA95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_122 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
