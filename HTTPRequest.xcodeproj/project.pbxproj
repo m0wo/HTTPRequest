@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		B89D9292257E464700D17B85 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89D9268257E45FD00D17B85 /* Alamofire.framework */; };
 		OBJ_100 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ParameterEncoder.swift */; };
 		OBJ_101 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ParameterEncoding.swift */; };
 		OBJ_102 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Protected.swift */; };
@@ -59,7 +60,6 @@
 		OBJ_146 /* SnakeCaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SnakeCaseModel.swift */; };
 		OBJ_147 /* Session+URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Session+URLRequest.swift */; };
 		OBJ_148 /* Session+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Session+URLRequestConvertible.swift */; };
-		OBJ_150 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		OBJ_157 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_168 /* HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* HTTPRequestTests.swift */; };
 		OBJ_169 /* StringDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* StringDataTests.swift */; };
@@ -84,13 +84,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B89D9229257E3FCD00D17B85 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Alamofire::Alamofire";
-			remoteInfo = Alamofire;
-		};
 		B89D922A257E3FCE00D17B85 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -116,6 +109,10 @@
 
 /* Begin PBXFileReference section */
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B89D9252257E449E00D17B85 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
+		B89D9253257E44AC00D17B85 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
+		B89D9268257E45FD00D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B89D9277257E462B00D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* OSLog+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Logger.swift"; sourceTree = "<group>"; };
@@ -193,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_150 /* Alamofire.framework in Frameworks */,
+				B89D9292257E464700D17B85 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +206,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B89D9251257E448400D17B85 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				B89D9252257E449E00D17B85 /* input.xcfilelist */,
+				B89D9253257E44AC00D17B85 /* output.xcfilelist */,
+			);
+			path = Carthage;
+			sourceTree = "<group>";
+		};
+		B89D9267257E45FD00D17B85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B89D9277257E462B00D17B85 /* Alamofire.framework */,
+				B89D9268257E45FD00D17B85 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_15 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +339,7 @@
 				OBJ_77 /* LICENSE */,
 				OBJ_78 /* HTTPRequest.podspec */,
 				OBJ_79 /* README.md */,
+				B89D9267257E45FD00D17B85 /* Frameworks */,
 			);
 			name = "";
 			sourceTree = "<group>";
@@ -331,6 +347,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B89D9251257E448400D17B85 /* Carthage */,
 				OBJ_8 /* Extensions */,
 				OBJ_15 /* HTTPRequest */,
 				OBJ_19 /* Model */,
@@ -401,11 +418,11 @@
 			buildPhases = (
 				OBJ_131 /* Sources */,
 				OBJ_149 /* Frameworks */,
+				B89D925A257E44F100D17B85 /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_151 /* PBXTargetDependency */,
 			);
 			name = HTTPRequest;
 			productName = HTTPRequest;
@@ -474,6 +491,29 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B89D925A257E44F100D17B85 /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Sources/Carthage/input.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "Carthage Copy Frameworks";
+			outputFileListPaths = (
+				"$(SRCROOT)/Sources/Carthage/output.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_125 /* Sources */ = {
@@ -571,11 +611,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_151 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = B89D9229257E3FCD00D17B85 /* PBXContainerItemProxy */;
-		};
 		OBJ_162 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequestTests" /* HTTPRequestTests */;
@@ -620,11 +655,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequest_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = "$(inherited)";
@@ -651,11 +691,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequest_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = "$(inherited)";
@@ -716,7 +761,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequestTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -741,7 +790,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequestTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -800,7 +853,8 @@
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -816,7 +870,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/Alamofire_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -848,7 +905,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/Alamofire_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = (
