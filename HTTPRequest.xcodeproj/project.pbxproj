@@ -35,8 +35,8 @@
 		B81B2E5B257E4B96008FA95D /* DetailedAthlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* DetailedAthlete.swift */; };
 		B81B2E62257E4B98008FA95D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE8257E4AB9008FA95D /* Token.swift */; };
 		B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DED257E4AB9008FA95D /* StravaSession.swift */; };
-		B81B2EA3257E50F6008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B2E8B257E506E008FA95D /* Alamofire.framework */; platformFilter = ios; };
-		B81B2EA4257E510B008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B2E8E257E507A008FA95D /* Alamofire.framework */; platformFilter = maccatalyst; };
+		B81B2F04257E6773008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B2E8B257E506E008FA95D /* Alamofire.framework */; platformFilter = ios; };
+		B81B2F05257E6782008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B2E8E257E507A008FA95D /* Alamofire.framework */; platformFilter = maccatalyst; };
 		OBJ_100 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ParameterEncoder.swift */; };
 		OBJ_101 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ParameterEncoding.swift */; };
 		OBJ_102 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Protected.swift */; };
@@ -264,8 +264,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				B81B2EA3257E50F6008FA95D /* Alamofire.framework in Frameworks */,
-				B81B2EA4257E510B008FA95D /* Alamofire.framework in Frameworks */,
+				B81B2F05257E6782008FA95D /* Alamofire.framework in Frameworks */,
+				B81B2F04257E6773008FA95D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
