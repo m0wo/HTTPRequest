@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,7 +21,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		B81B2DC4257E4971008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		B81B2DD9257E4AAF008FA95D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DD8257E4AAF008FA95D /* main.swift */; };
 		B81B2E12257E4B3E008FA95D /* HTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; };
 		B81B2E13257E4B3E008FA95D /* HTTPRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -36,6 +35,8 @@
 		B81B2E5B257E4B96008FA95D /* DetailedAthlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* DetailedAthlete.swift */; };
 		B81B2E62257E4B98008FA95D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE8257E4AB9008FA95D /* Token.swift */; };
 		B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DED257E4AB9008FA95D /* StravaSession.swift */; };
+		B81B2EA3257E50F6008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B2E8B257E506E008FA95D /* Alamofire.framework */; platformFilter = ios; };
+		B81B2EA4257E510B008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B2E8E257E507A008FA95D /* Alamofire.framework */; platformFilter = maccatalyst; };
 		OBJ_100 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ParameterEncoder.swift */; };
 		OBJ_101 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ParameterEncoding.swift */; };
 		OBJ_102 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Protected.swift */; };
@@ -173,12 +174,12 @@
 		B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequestFile.swift; sourceTree = "<group>"; };
 		B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Strava.swift"; sourceTree = "<group>"; };
 		B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaAPI.swift; sourceTree = "<group>"; };
+		B81B2E8B257E506E008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B81B2E8E257E507A008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		B81B2E91257E5085008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
+		B81B2E94257E5093008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		B89D9252257E449E00D17B85 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
 		B89D9253257E44AC00D17B85 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
-		B89D9268257E45FD00D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		B89D9277257E462B00D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
-		B89D92A8257E490300D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
-		B89D92AC257E491600D17B85 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* OSLog+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Logger.swift"; sourceTree = "<group>"; };
@@ -263,7 +264,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				B81B2DC4257E4971008FA95D /* Alamofire.framework in Frameworks */,
+				B81B2EA3257E50F6008FA95D /* Alamofire.framework in Frameworks */,
+				B81B2EA4257E510B008FA95D /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +344,10 @@
 		B89D9267257E45FD00D17B85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B89D92AC257E491600D17B85 /* Alamofire.framework */,
-				B89D92A8257E490300D17B85 /* Alamofire.framework */,
-				B89D9277257E462B00D17B85 /* Alamofire.framework */,
-				B89D9268257E45FD00D17B85 /* Alamofire.framework */,
+				B81B2E94257E5093008FA95D /* Alamofire.framework */,
+				B81B2E91257E5085008FA95D /* Alamofire.framework */,
+				B81B2E8E257E507A008FA95D /* Alamofire.framework */,
+				B81B2E8B257E506E008FA95D /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -968,7 +970,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HTTPRequest;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
@@ -1006,7 +1007,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HTTPRequest;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
