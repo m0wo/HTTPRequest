@@ -30,7 +30,7 @@ extension WhiskAPI: HTTPRequestable {
                     endpoint: "recipe/v2",
                     parameters: []
                 ),
-                additionalHeaders: HTTPHeaders(headers: [.acceptJSON])
+                additionalHeaders: HTTPHeaders([.acceptJSON])
             )
         }
     }
