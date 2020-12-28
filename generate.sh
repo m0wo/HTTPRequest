@@ -29,4 +29,5 @@ if [[ $# -eq 0 ]]; then
 fi
 
 # Execute Swagger Codegen
-${SWAGGER_CODEGEN_COMMAND} generate -i $1 -l swift5
+mkdir -p ${SWAGGER_CODEGEN_REPO_NAME}
+${SWAGGER_CODEGEN_COMMAND} generate -i $1 -l swift5 -o ${SWAGGER_CODEGEN_REPO_NAME}
