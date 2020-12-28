@@ -19,7 +19,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(
             url: "https://github.com/Alamofire/Alamofire.git",
-            .upToNextMajor(from: "5.2.0")
+            .upToNextMajor(from: "5.4.0")
         )
     ],
     targets: [
@@ -28,7 +28,11 @@ let package = Package(
         .target(
             name: "HTTPRequest",
             dependencies: ["Alamofire"],
-            path: "Sources"
+            path: "Sources",
+            resources: [
+                .process("Carthage/input.xcfilelist"),
+                .process("Carthage/output.xcfilelist")
+            ]
         ),
         .testTarget(
             name: "HTTPRequestTests",
