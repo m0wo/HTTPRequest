@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 extension URLComponents {
-    
+
     /// Whisk API for `endpoint` and `parameters`
     ///
     /// - Parameters:
@@ -23,11 +23,11 @@ extension URLComponents {
         urlComponents.scheme = "https"
         urlComponents.host = "api.whisk.com"
         urlComponents.path = "\(endpoint)"
-        
+
         // queryItems
         let queryItems = urlComponents.queryItems ?? []
         urlComponents.queryItems = queryItems + parameters
-        
+
         return urlComponents
     }
 }

@@ -9,31 +9,31 @@ import Foundation
 
 /// A (detailed) Strava Athlete
 struct Athlete: StravaModel {
-    
+
     /// The unique identifier of the athlete
     var id: Int
-    
+
     /// The athlete's user name.
     var username: String
-    
+
     /// Resource state, indicates level of detail. Possible values:
     /// - 1 -> "meta"
     /// - 2 -> "summary"
     /// - 3 -> "detail"
     var resourceState: Int
-    
+
     /// The athlete's first name.
     var firstname: String
-    
+
     /// The athlete's last name.
     var lastname: String
-    
+
     /// URL to a 62x62 pixel profile picture.
     var profileMedium: String?
 
     /// URL to a 124x124 pixel profile picture.
     var profile: String?
-    
+
     /// The athlete's city.
     var city: String?
 
@@ -48,7 +48,7 @@ struct Athlete: StravaModel {
 
     /// Whether the athlete has any Summit subscription.
     var summit: Bool
-    
+
     /// The time at which the athlete was created.
     var createdAt: Date
 
@@ -73,11 +73,11 @@ struct Athlete: StravaModel {
     var weight: Float?
 
     /// The athlete's clubs.
-    //var clubs: SummaryClub
-    
+    // var clubs: SummaryClub
+
     /// The athlete's bikes.
-    //var bikes: SummaryGear
-    
+    // var bikes: SummaryGear
+
     /// The athlete's shoes.
-    //var shoes: SummaryGear
+    // var shoes: SummaryGear
 }

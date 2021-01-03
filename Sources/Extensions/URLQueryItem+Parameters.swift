@@ -11,7 +11,7 @@ import Alamofire
 // MARK: - Array<URLQueryItem> + Parameters
 
 extension Array where Element == URLQueryItem {
-    
+
     /// Convert `[URLQueryItem]` to `Parameters`
     ///
     /// - Parameter mapNil:
@@ -22,11 +22,11 @@ extension Array where Element == URLQueryItem {
             if mapNil, value == nil {
                 value = NSNull()
             }
-            
+
             guard let queryValue = value else { return nil }
             return (queryItem.name, queryValue)
         }
-        
+
         return Dictionary(uniqueKeysWithValues: keyValues)
     }
 }

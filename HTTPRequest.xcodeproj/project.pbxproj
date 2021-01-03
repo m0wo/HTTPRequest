@@ -624,6 +624,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_128 /* Build configuration list for PBXNativeTarget "HTTPRequest" */;
 			buildPhases = (
+				B8ED3FE325A2416700685ADA /* Swift Lint */,
 				OBJ_131 /* Sources */,
 				OBJ_149 /* Frameworks */,
 			);
@@ -707,6 +708,27 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8ED3FE325A2416700685ADA /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B81B2DD2257E4AAF008FA95D /* Sources */ = {

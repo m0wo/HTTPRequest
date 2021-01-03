@@ -9,7 +9,7 @@ import Foundation
 import os // OSLog
 
 extension OSLog {
-    
+
     /// Framework `OSLog` shared instance 
     static let logger = OSLog(
         subsystem: Bundle.main.bundleIdentifier ?? "\(HTTPRequest.self)",

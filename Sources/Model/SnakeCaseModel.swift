@@ -13,14 +13,14 @@ public protocol SnakeCaseModel: Model {
 }
 
 public extension SnakeCaseModel {
-    
+
     /// Use snake_case when decoding `Model` from JSON
     static func decode(data: Data) throws -> Self {
         let decoder = JSONDecoder.default
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return try decoder.decode(Self.self, from: data)
     }
-    
+
     /// Use snake_case when encoding `Model` to JSON
     func encode() throws -> Data {
         let encoder = JSONEncoder.default

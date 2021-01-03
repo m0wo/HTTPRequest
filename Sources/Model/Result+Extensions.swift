@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Result + Extensions
 
 public extension Result {
-    
+
     /// Returns the associated value if the result is a success, `nil` otherwise.
     var success: Success? {
         guard case let .success(value) = self else { return nil }
@@ -22,7 +22,7 @@ public extension Result {
         guard case let .failure(error) = self else { return nil }
         return error
     }
-    
+
     /// Returns the associated value if the result is a success, `throws`  associated
     /// value of failure otherwise.
     func successOrThrow() throws -> Success {
@@ -36,7 +36,7 @@ public extension Result {
 // MARK: - Result + Error
 
 public extension Result where Failure == Error {
-    
+
     /// Initialize a `Result` with the `throwable` closure
     ///
     /// - Parameter throwable: Closure which may `throw`

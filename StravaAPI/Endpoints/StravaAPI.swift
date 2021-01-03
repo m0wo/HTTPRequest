@@ -11,10 +11,10 @@ import Alamofire
 
 /// Set of APIs to query for Strava
 enum StravaAPI {
-    
+
     /// Refresh an authorization token
     case refreshToken
-    
+
     /// Fetch athlete based on authorization code (logged in)
     case athlete
 }
@@ -22,10 +22,10 @@ enum StravaAPI {
 // MARK: - StravaAPI + HTTPRequestable
 
 extension StravaAPI: HTTPRequestable {
-    
+
     func httpRequest() throws -> HTTPRequest {
         switch self {
-        
+
         case .refreshToken:
             let tokenRequest = try TokenRequestFile.read()
             return HTTPRequest(
@@ -36,7 +36,7 @@ extension StravaAPI: HTTPRequestable {
                 ),
                 additionalHeaders: HTTPHeaders(headers: [.acceptJSON])
             )
-        
+
         case .athlete:
             return HTTPRequest(
                 method: .get,
@@ -53,14 +53,14 @@ extension StravaAPI: HTTPRequestable {
 // MARK: - TokenRequest + URLQueryItem
 
 extension TokenRequest {
-    
+
     /// - TODO: Compute from codeable?
     var queryItems: [URLQueryItem] {
         return [
             URLQueryItem(name: "client_id", value: "\(clientId)"),
             URLQueryItem(name: "client_secret", value: clientSecret),
             URLQueryItem(name: "grant_type", value: grantType),
-            URLQueryItem(name: "refresh_token", value: refreshToken),
+            URLQueryItem(name: "refresh_token", value: refreshToken)
         ]
     }
 }

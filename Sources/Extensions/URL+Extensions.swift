@@ -8,7 +8,7 @@
 import Foundation
 
 public extension FileManager {
-    
+
     /// Find a `URL` appending any `pathComponents`
     ///
     /// - Parameters:
@@ -31,11 +31,11 @@ public extension FileManager {
             appropriateFor: nil,
             create: true
         )
-        
+
         pathComponents.forEach {
             url.appendPathComponent($0)
         }
-        
+
         return url
     }
 }
