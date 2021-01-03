@@ -29,7 +29,7 @@ final class StringDataTests: XCTestCase {
 
         // Convert to data again
         let data2 = try result.dataOrThrow(encoding: encoding)
-        
+
         // Assert `Data`
         XCTAssertEqual(data, data2)
     }

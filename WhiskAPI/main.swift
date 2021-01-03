@@ -29,20 +29,20 @@ do {
         for: .desktopDirectory,
         appending: ["recipes.txt"]
     )
-    
+
     // Read each component pruning lines which may not be valid URLs
     let recipes: [URL] = try Reader.read(
         from: inputURL,
         separatedBy: .whitespacesAndNewlines,
         transform: prune(urlString:)
     )
-    
+
     // Convert to set to remove duplicates
     let recipesSet = Set(recipes)
     let string = recipesSet
         .map { $0.absoluteString }
         .joined(separator: "\n")
-    
+
     let data = try string.dataOrThrow(encoding: .utf8)
 
     // `URL` in the `.desktopDirectory` to write to
@@ -52,7 +52,7 @@ do {
     )
 
     try data.write(to: outputURL)
-    
+
     debugPrint(recipes)
 } catch {
     debugPrint(error)

@@ -9,7 +9,7 @@ import Foundation
 
 /// Read a `String` component into an instance of `Self`
 protocol Readable {
-    
+
     /// Initialize with the given `String` component
     ///
     /// - Parameter component: `String` component

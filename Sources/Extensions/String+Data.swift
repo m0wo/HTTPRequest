@@ -11,10 +11,10 @@ import Foundation
 
 /// An `Error` converting from `String` to `Data` or vice versa
 public enum StringDataError: Error {
-    
+
     /// Failed to create a `String` from the given `Data` and `String.Encoding`
     case data(Data, encoding: String.Encoding)
-    
+
     /// Failed to create `Data` from the given `String` and `String.Encoding`
     case string(String, encoding: String.Encoding)
 }
@@ -22,7 +22,7 @@ public enum StringDataError: Error {
 // MARK: - String + Data
 
 public extension String {
-    
+
     /// `String` instance to `Data` or `throw`
     /// - Parameter encoding: `String.Encoding`
     func dataOrThrow(encoding: String.Encoding) throws -> Data {
@@ -36,7 +36,7 @@ public extension String {
 // MARK: - Data + String
 
 public extension Data {
-    
+
     /// `Data` instance to `String` or `throw`
     /// - Parameter encoding: `String.Encoding`
     func stringOrThrow(encoding: String.Encoding) throws -> String {

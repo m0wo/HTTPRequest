@@ -10,7 +10,7 @@ import Alamofire
 
 /// - TODO: Consider function conflicts with Alamofire (e.g. _: for URLRequest)
 public extension Session {
-    
+
     /// Execute `request(urlRequest:queue:completion)` by converting
     /// `urlRequestConvertible` to a `URLRequest`.
     /// If that conversion throws, execute the `completion` on the `queue` failing with
@@ -42,7 +42,7 @@ public extension Session {
             return nil
         }
     }
-    
+
     /// Execute `requestSync(urlRequest:)` by converting `urlRequestConvertible`
     /// to a `URLRequest`
     ///
@@ -54,7 +54,7 @@ public extension Session {
         let urlRequest = try urlRequestConvertible.asURLRequest()
         return requestSync(urlRequest: urlRequest)
     }
-    
+
     /// Execute `requestModelSync(urlRequest:)` by converting
     /// `urlRequestConvertible` to a `URLRequest`
     ///

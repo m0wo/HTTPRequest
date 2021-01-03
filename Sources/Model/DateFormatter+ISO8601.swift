@@ -9,21 +9,21 @@
 import Foundation
 
 public extension DateFormatter {
-    
+
     /// Standard `iso8601` `DateFormatter`
     /// Note milliseconds included, for customization over `dateFormat`,
     /// see `iso8601Formatter(dateFormat:timeZone:)`
     static var iso8601Millis: DateFormatter {
         return iso8601Formatter(dateFormat: .iso8601Millis)
     }
-    
+
     /// Standard `iso8601` `DateFormatter`
     /// Note milliseconds included, for customization over `dateFormat`,
     /// see `iso8601Formatter(dateFormat:timeZone:)`
     static var iso8601: DateFormatter {
         return iso8601Formatter(dateFormat: .iso8601)
     }
-    
+
     /// `DateFormatter` has:
     /// - `.iso8601` `Calendar`
     /// - "en_US_POSIX" `Locale`
@@ -49,10 +49,10 @@ public extension DateFormatter {
 // MARK: - String + ISO8601
 
 extension String {
-    
+
     /// Date format for ISO8601 including milliseconds
     static let iso8601Millis: String = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
-    
+
     /// Date format for ISO8601
     static let iso8601 = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
 }

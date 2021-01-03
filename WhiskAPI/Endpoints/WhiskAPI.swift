@@ -11,7 +11,7 @@ import Alamofire
 
 /// Set of Whisk APIs
 enum WhiskAPI {
-    
+
     /// Fetch all recipes for the logged in user
     case recipes
 }
@@ -19,10 +19,10 @@ enum WhiskAPI {
 // MARK: - WhiskAPI + HTTPRequestable
 
 extension WhiskAPI: HTTPRequestable {
-    
+
     func httpRequest() throws -> HTTPRequest {
         switch self {
-        
+
         case .recipes:
             return HTTPRequest(
                 method: .get,

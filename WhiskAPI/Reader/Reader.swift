@@ -17,7 +17,7 @@ private func identity<T>(_ element: T) -> T {
 
 /// Read a file with `URL`s separated by `.whitespacesAndNewlines`
 struct Reader {
-    
+
     /// Read an `[T]` from the given `URL` mapping each `String` component
     /// separated by `characterSet` using the `Readable` protocol
     ///

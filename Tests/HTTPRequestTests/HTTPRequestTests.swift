@@ -29,7 +29,7 @@ final class HTTPRequestTests: XCTestCase {
 
         XCTAssertEqual(urlRequest.url?.absoluteString, String.test)
     }
-    
+
     /// Test valid `URLComponents` with query items create a valid `URLRequest`
     /// with query items
     func test_URLRequest_query() throws {

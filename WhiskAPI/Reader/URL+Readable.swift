@@ -11,7 +11,7 @@ import Foundation
 
 /// `Error` in `URL`
 enum URLError: Error {
-    
+
     /// Failed to create `URL` from the given `String`
     case malformedURL(String)
 }
@@ -19,7 +19,7 @@ enum URLError: Error {
 // MARK: - URL + Readable
 
 extension URL: Readable {
-    
+
     /// Initialize by passing the given `String` `component` throwing a
     /// `URLError` on failure
     ///
@@ -28,7 +28,7 @@ extension URL: Readable {
         guard let url = URL(string: component) else {
             throw URLError.malformedURL(component)
         }
-        
+
         self = url
     }
 }
