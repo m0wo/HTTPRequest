@@ -35,6 +35,20 @@ public extension Result {
 
 // MARK: - Result + Error
 
+public extension Result where Failure == Error {
+    
+    /// Initialize a `Result` with the `throwable` closure
+    ///
+    /// - Parameter throwable: Closure which may `throw`
+    init(_ throwable: () throws -> Success) {
+        do {
+            self = try .success(throwable())
+        } catch {
+            self = .failure(error)
+        }
+    }
+}
+
 public extension Result {
 
     /// Cast `Failure` to generic `Error`

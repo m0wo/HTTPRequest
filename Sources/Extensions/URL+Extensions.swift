@@ -1,13 +1,13 @@
 //
 //  URL+Extensions.swift
-//  StravaAPI
+//  HTTPRequest
 //
 //  Created by Ben Shutt on 30/09/2020.
 //
 
 import Foundation
 
-extension FileManager {
+public extension FileManager {
     
     /// Find a `URL` appending any `pathComponents`
     ///

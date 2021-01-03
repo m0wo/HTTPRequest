@@ -11,6 +11,16 @@ import Foundation
 
 public extension String {
     
+    /// Trim the `.whitespacesAndNewlines` `CharacterSet`
+    var trimmed: String {
+        return trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+    
+    /// Return `nil` if `isEmpty` otherwise return `self`
+    var nilIfEmpty: String? {
+        return isEmpty ? nil : self
+    }
+    
     /// If `self` does not have suffix: `suffix` then add suffix with `suffix`
     ///
     /// - Parameter suffix: `String`
