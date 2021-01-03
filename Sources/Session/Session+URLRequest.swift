@@ -36,15 +36,14 @@ public extension Session {
         completion: @escaping DataRequestCompletion
     ) -> DataRequest {
         return request(urlRequest)
-        
+
             // Validate that the status codes are within the 200..<300 range,
             // and that the Content-Type header of the response matches
             // the Accept header of the request
             .validate()
             
             // Get `Data` response
-            .responseData(queue: queue) { response in
-                
+            .responseData(queue: queue) { response in    
                 // Log the response if the configuration flag is enabled
                 if HTTPRequest.Configuration.shared.responseLogging {
                     os_log(.info, log: .logger, "%@", response.debugDescription)
@@ -74,7 +73,7 @@ public extension Session {
             completion(response.result.modelResult())
         }
     }
-        
+
     /// Request `Data` for a given `urlRequest` synchronously
     /// 
     /// - Parameters:
@@ -84,7 +83,7 @@ public extension Session {
     ) -> DataResponse {
         let queue = DispatchQueue(label: UUID().uuidString)
         var dataResponse: DataResponse!
-        
+
         let group = DispatchGroup()
         group.enter()
         request(urlRequest: urlRequest, queue: queue) { response in

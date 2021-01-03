@@ -44,17 +44,16 @@ do {
         .joined(separator: "\n")
     
     let data = try string.dataOrThrow(encoding: .utf8)
-    
+
     // `URL` in the `.desktopDirectory` to write to
     let outputURL = try FileManager.default.url(
         for: .desktopDirectory,
         appending: ["output-recipes.txt"]
     )
-    
+
     try data.write(to: outputURL)
     
     debugPrint(recipes)
 } catch {
     debugPrint(error)
 }
-

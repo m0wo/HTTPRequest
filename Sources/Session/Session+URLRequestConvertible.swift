@@ -10,7 +10,7 @@ import Alamofire
 
 /// - TODO: Consider function conflicts with Alamofire (e.g. _: for URLRequest)
 public extension Session {
-
+    
     /// Execute `request(urlRequest:queue:completion)` by converting
     /// `urlRequestConvertible` to a `URLRequest`.
     /// If that conversion throws, execute the `completion` on the `queue` failing with

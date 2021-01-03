@@ -10,7 +10,7 @@ import Foundation
 /// The request body when refreshing an access token.
 /// On success, the server will send a `Token` response
 struct TokenRequest: StravaModel {
-
+    
     /// The application’s ID, obtained during registration.
     var clientId: Int
     
@@ -34,7 +34,7 @@ struct TokenRequest: StravaModel {
         clientId: Int,
         clientSecret: String,
         refreshToken: String
-    ){
+    ) {
         self.clientId = clientId
         self.clientSecret = clientSecret
         grantType = "refresh_token"

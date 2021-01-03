@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 extension URLComponents {
-    
+
     /// Strava API for `endpoint` and `parameters`
     ///
     /// - Parameters:
@@ -23,11 +23,11 @@ extension URLComponents {
         urlComponents.scheme = "https"
         urlComponents.host = "www.strava.com"
         urlComponents.path = "/api/v3/\(endpoint)"
-        
+
         // queryItems
         let queryItems = urlComponents.queryItems ?? []
         urlComponents.queryItems = queryItems + parameters
-        
+
         return urlComponents
     }
 }
@@ -35,7 +35,7 @@ extension URLComponents {
 // MARK: - HTTPHeader + Authorization
 
 extension HTTPHeader {
-    
+
     /// Authorization bear `HTTPHeader`
     static var authorization: HTTPHeader? {
         let token = StravaSession.shared.token

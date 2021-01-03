@@ -76,7 +76,7 @@ extension Model {
 // MARK: - Model + CustomStringConvertible
 
 extension Model {
-
+    
     /// Take JSON `String` to describe the `Model`
     public var description: String {
         return (try? jsonString()) ?? String(describing: self)
@@ -112,7 +112,7 @@ public extension Model {
 }
 
 // MARK: - Model + Dictionary
-    
+
 public extension Model {
     
     /// `Model` from `dictionary`.
