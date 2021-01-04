@@ -3,12 +3,12 @@ import XCTest
 
 /// Test `HTTPRequest`
 final class HTTPRequestTests: XCTestCase {
-    
+
     /// Test invalid `URLComponents` create an invalid `URLRequest`
     func test_invalidURLRequest() throws {
         var urlComponents: URLComponents = .test
         urlComponents.path = "test" // Should start with "/"
-        
+
         XCTAssertThrowsError(
             try HTTPRequest(
                 method: .get,
@@ -16,37 +16,37 @@ final class HTTPRequestTests: XCTestCase {
             ).asURLRequest()
         )
     }
-    
+
     /// Test valid `URLComponents` create a valid `URLRequest`
     func test_URLRequest() throws {
         let urlComponents: URLComponents = .test
         XCTAssertEqual(urlComponents.url?.absoluteString, String.test)
-        
+
         let urlRequest = try HTTPRequest(
             method: .get,
             urlComponents: urlComponents
         ).asURLRequest()
-        
+
         XCTAssertEqual(urlRequest.url?.absoluteString, String.test)
     }
-    
+
     /// Test valid `URLComponents` with query items create a valid `URLRequest`
     /// with query items
     func test_URLRequest_query() throws {
         var urlComponents: URLComponents = .test
-        
-        let athleteId: Int = 1735268
+
+        let athleteId: Int = 1_735_268
         let clientId: String = UUID().uuidString
         urlComponents.queryItems = [
             URLQueryItem(name: "athleteId", value: "\(athleteId)"),
             URLQueryItem(name: "clientId", value: clientId)
         ]
-        
+
         let urlRequest = try HTTPRequest(
             method: .get,
             urlComponents: urlComponents
         ).asURLRequest()
-        
+
         let expected = "\(String.test)?athleteId=\(athleteId)&clientId=\(clientId)"
         XCTAssertEqual(urlRequest.url?.absoluteString, expected)
     }
@@ -55,7 +55,7 @@ final class HTTPRequestTests: XCTestCase {
 // MARK: - URLComponents + Test
 
 private extension URLComponents {
-    
+
     /// `URLComponents` for testing purposes
     static var test: URLComponents {
         var urlComponents = URLComponents()
@@ -69,7 +69,7 @@ private extension URLComponents {
 // MARK: - String + Test
 
 private extension String {
-    
+
     /// `String` form of `URLComponents.test`
     static let test = "https://www.strava.com/api/v3"
 }

@@ -80,3 +80,8 @@ It's also very possible for a request to fail while building it, for example, fa
 The Strava API is just an example here, you can define your API endpoints however you want! It's the conformance to the `HTTPRequestable` that's important.
 
 This framework is lightweight, it was built to add the `Model` protocol and a simple way of building `HTTPRequest`s in Alamofire.
+
+## Install
+
+The (dependent) frameworks for `HTTPRequest` are installed via [Carthage](https://github.com/Carthage/Carthage).
+Simply run `./install.sh` to run the project locally.

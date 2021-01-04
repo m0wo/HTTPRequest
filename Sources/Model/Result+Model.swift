@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Result + Model
 
 public extension Result where Success == Data {
-    
+
     /// Convert `Result` with `Data` to a `Result` for a `Model`of  type `T`
     func modelResult<T>() -> Result<T, Error> where T: Model {
         do {
@@ -20,7 +20,7 @@ public extension Result where Success == Data {
             return .failure(error)
         }
     }
-    
+
     /// Convert to `Result<T, Error>` where `T` is a `Model` and return
     /// the associated value if the result is a success, `nil` otherwise
     func model<T>() -> T? where T: Model {
@@ -31,7 +31,7 @@ public extension Result where Success == Data {
 // MARK: - Model + Result
 
 extension Model {
-    
+
     /// Initialize `Model` with the given `result`, throwing an `Error` if the
     /// `Model` can not be initialized
     ///

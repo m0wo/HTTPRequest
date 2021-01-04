@@ -10,7 +10,7 @@ import Foundation
 // MARK: - String + HTTP Scheme
 
 extension String {
-    
+
     /// Comvert `scheme` to a HTTP scheme.
     /// Output will be in: `["http", "https"]`
     ///

@@ -21,32 +21,45 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		B81190B725A1FE940001B148 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81190B625A1FE940001B148 /* Reader.swift */; };
+		B81190BD25A202230001B148 /* URL+Readable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81190BC25A202230001B148 /* URL+Readable.swift */; };
+		B81190C325A2022D0001B148 /* Readable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81190C225A2022D0001B148 /* Readable.swift */; };
 		B81B2DD9257E4AAF008FA95D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DD8257E4AAF008FA95D /* main.swift */; };
 		B81B2E12257E4B3E008FA95D /* HTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; };
 		B81B2E13257E4B3E008FA95D /* HTTPRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B81B2E23257E4B7E008FA95D /* URLComponents+Strava.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */; };
 		B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */; };
-		B81B2E31257E4B87008FA95D /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEB257E4AB9008FA95D /* URL+Extensions.swift */; };
 		B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */; };
 		B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEF257E4AB9008FA95D /* TokenFile.swift */; };
 		B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */; };
 		B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */; };
 		B81B2E54257E4B93008FA95D /* StravaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE6257E4AB9008FA95D /* StravaModel.swift */; };
-		B81B2E5B257E4B96008FA95D /* DetailedAthlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* DetailedAthlete.swift */; };
+		B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* Athlete.swift */; };
 		B81B2E62257E4B98008FA95D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE8257E4AB9008FA95D /* Token.swift */; };
 		B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DED257E4AB9008FA95D /* StravaSession.swift */; };
-		B81B2F04257E6773008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B2E8B257E506E008FA95D /* Alamofire.framework */; platformFilter = ios; };
-		B81B2F05257E6782008FA95D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B81B2E8E257E507A008FA95D /* Alamofire.framework */; platformFilter = maccatalyst; };
-		OBJ_132 /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Alamofire+Extensions.swift */; };
+		B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */; };
+		B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */; };
+		B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */; };
+		B872BEC925A38C3D0031D619 /* JSONDecoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEC825A38C3D0031D619 /* JSONDecoder+Default.swift */; };
+		B872BECF25A38C4D0031D619 /* JSONEncoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BECE25A38C4D0031D619 /* JSONEncoder+Default.swift */; };
+		B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BED425A38C640031D619 /* Decodable+JSON.swift */; };
+		B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEDA25A38C800031D619 /* Encodable+JSON.swift */; };
+		B8800E022597A24C00630AC6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8800E012597A24C00630AC6 /* main.swift */; };
+		B8800E132597EFFF00630AC6 /* WhiskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8800E122597EFFF00630AC6 /* WhiskAPI.swift */; };
+		B8800E192597F04C00630AC6 /* HTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; };
+		B8800E1A2597F04C00630AC6 /* HTTPRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8800E242597F0E800630AC6 /* URLComponents+Whisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8800E232597F0E800630AC6 /* URLComponents+Whisk.swift */; };
+		B896082525995AC9006ABA55 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B896081F259959A1006ABA55 /* Alamofire.framework */; platformFilter = ios; };
+		B896082B25995AD7006ABA55 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B896081A259959A1006ABA55 /* Alamofire.framework */; platformFilter = maccatalyst; };
+		B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */; };
 		OBJ_133 /* OSLog+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* OSLog+Logger.swift */; };
 		OBJ_134 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+Data.swift */; };
 		OBJ_135 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* String+Extensions.swift */; };
 		OBJ_136 /* String+HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* String+HTTP.swift */; };
-		OBJ_137 /* URLQueryItem+Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* URLQueryItem+Parameters.swift */; };
+		OBJ_137 /* Array+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Array+URLQueryItem.swift */; };
 		OBJ_138 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Configuration.swift */; };
 		OBJ_139 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* HTTPRequest.swift */; };
 		OBJ_140 /* HTTPRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* HTTPRequestable.swift */; };
-		OBJ_141 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Codable+Extensions.swift */; };
 		OBJ_142 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DateFormatter+ISO8601.swift */; };
 		OBJ_143 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Model.swift */; };
 		OBJ_144 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Result+Extensions.swift */; };
@@ -63,6 +76,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		B81B2E14257E4B3E008FA95D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "HTTPRequest::HTTPRequest";
+			remoteInfo = HTTPRequest;
+		};
+		B8800E1B2597F04C00630AC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -106,16 +126,59 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B82C18C825992A5500212949 /* Carthage Debug Symbols */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Carthage Debug Symbols";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B82C18CF25992A9F00212949 /* Carthage Debug Symbols */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Carthage Debug Symbols";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8800DFD2597A24C00630AC6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		B8800E1D2597F04C00630AC6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B8800E1A2597F04C00630AC6 /* HTTPRequest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B81190B625A1FE940001B148 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		B81190BC25A202230001B148 /* URL+Readable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Readable.swift"; sourceTree = "<group>"; };
+		B81190C225A2022D0001B148 /* Readable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readable.swift; sourceTree = "<group>"; };
 		B81B2DD6257E4AAF008FA95D /* StravaAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StravaAPI; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81B2DD8257E4AAF008FA95D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
 		B81B2DE6257E4AB9008FA95D /* StravaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaModel.swift; sourceTree = "<group>"; };
-		B81B2DE7257E4AB9008FA95D /* DetailedAthlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedAthlete.swift; sourceTree = "<group>"; };
+		B81B2DE7257E4AB9008FA95D /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
 		B81B2DE8257E4AB9008FA95D /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
-		B81B2DEB257E4AB9008FA95D /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
 		B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeaders+Extensions.swift"; sourceTree = "<group>"; };
 		B81B2DED257E4AB9008FA95D /* StravaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaSession.swift; sourceTree = "<group>"; };
 		B81B2DEF257E4AB9008FA95D /* TokenFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenFile.swift; sourceTree = "<group>"; };
@@ -126,19 +189,35 @@
 		B81B2E8E257E507A008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		B81B2E91257E5085008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
 		B81B2E94257E5093008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeader+Headers.swift"; sourceTree = "<group>"; };
+		B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFDataResponse+Model.swift"; sourceTree = "<group>"; };
+		B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalDateFormatter.swift; sourceTree = "<group>"; };
+		B872BEC825A38C3D0031D619 /* JSONDecoder+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Default.swift"; sourceTree = "<group>"; };
+		B872BECE25A38C4D0031D619 /* JSONEncoder+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+Default.swift"; sourceTree = "<group>"; };
+		B872BED425A38C640031D619 /* Decodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+JSON.swift"; sourceTree = "<group>"; };
+		B872BEDA25A38C800031D619 /* Encodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
+		B8800DFF2597A24C00630AC6 /* WhiskAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhiskAPI; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8800E012597A24C00630AC6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B8800E122597EFFF00630AC6 /* WhiskAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskAPI.swift; sourceTree = "<group>"; };
+		B8800E232597F0E800630AC6 /* URLComponents+Whisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Whisk.swift"; sourceTree = "<group>"; };
+		B896081A259959A1006ABA55 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		B896081B259959A1006ABA55 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		B896081D259959A1006ABA55 /* 75D46E1B-7C05-3712-B97A-3787B9390F10.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "75D46E1B-7C05-3712-B97A-3787B9390F10.bcsymbolmap"; sourceTree = "<group>"; };
+		B896081E259959A1006ABA55 /* 27221A83-0659-30E2-94A6-C66810C4A682.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "27221A83-0659-30E2-94A6-C66810C4A682.bcsymbolmap"; sourceTree = "<group>"; };
+		B896081F259959A1006ABA55 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		B8960820259959A1006ABA55 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		B89D9252257E449E00D17B85 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
 		B89D9253257E44AC00D17B85 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
 		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* OSLog+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Logger.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* String+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Data.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* String+HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTTP.swift"; sourceTree = "<group>"; };
-		OBJ_14 /* URLQueryItem+Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLQueryItem+Parameters.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* Array+URLQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+URLQueryItem.swift"; sourceTree = "<group>"; };
 		OBJ_16 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		OBJ_17 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		OBJ_18 /* HTTPRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestable.swift; sourceTree = "<group>"; };
-		OBJ_20 /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_21 /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
 		OBJ_22 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		OBJ_23 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
@@ -189,7 +268,6 @@
 		OBJ_77 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		OBJ_78 /* HTTPRequest.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HTTPRequest.podspec; sourceTree = "<group>"; };
 		OBJ_79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_9 /* Alamofire+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,12 +279,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8800DFC2597A24C00630AC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8800E192597F04C00630AC6 /* HTTPRequest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_149 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				B81B2F05257E6782008FA95D /* Alamofire.framework in Frameworks */,
-				B81B2F04257E6773008FA95D /* Alamofire.framework in Frameworks */,
+				B896082525995AC9006ABA55 /* Alamofire.framework in Frameworks */,
+				B896082B25995AD7006ABA55 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +307,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B81190C825A202310001B148 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				B81190B625A1FE940001B148 /* Reader.swift */,
+				B81190C225A2022D0001B148 /* Readable.swift */,
+				B81190BC25A202230001B148 /* URL+Readable.swift */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
 		B81B2DD7257E4AAF008FA95D /* StravaAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +335,7 @@
 			children = (
 				B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */,
 				B81B2DE6257E4AB9008FA95D /* StravaModel.swift */,
-				B81B2DE7257E4AB9008FA95D /* DetailedAthlete.swift */,
+				B81B2DE7257E4AB9008FA95D /* Athlete.swift */,
 				B81B2DE8257E4AB9008FA95D /* Token.swift */,
 			);
 			path = Models;
@@ -248,7 +344,6 @@
 		B81B2DEA257E4AB9008FA95D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B81B2DEB257E4AB9008FA95D /* URL+Extensions.swift */,
 				B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */,
 			);
 			path = Extensions;
@@ -272,6 +367,47 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		B8800E002597A24C00630AC6 /* WhiskAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B81190C825A202310001B148 /* Reader */,
+				B8800E222597F0CA00630AC6 /* Endpoints */,
+				B8800E012597A24C00630AC6 /* main.swift */,
+			);
+			path = WhiskAPI;
+			sourceTree = "<group>";
+		};
+		B8800E222597F0CA00630AC6 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				B8800E232597F0E800630AC6 /* URLComponents+Whisk.swift */,
+				B8800E122597EFFF00630AC6 /* WhiskAPI.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		B8960819259959A1006ABA55 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				B896081A259959A1006ABA55 /* Alamofire.framework */,
+				B896081B259959A1006ABA55 /* Alamofire.framework.dSYM */,
+			);
+			name = Mac;
+			path = Carthage/Build/Mac;
+			sourceTree = "<group>";
+		};
+		B896081C259959A1006ABA55 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B896081D259959A1006ABA55 /* 75D46E1B-7C05-3712-B97A-3787B9390F10.bcsymbolmap */,
+				B896081E259959A1006ABA55 /* 27221A83-0659-30E2-94A6-C66810C4A682.bcsymbolmap */,
+				B896081F259959A1006ABA55 /* Alamofire.framework */,
+				B8960820259959A1006ABA55 /* Alamofire.framework.dSYM */,
+			);
+			name = iOS;
+			path = Carthage/Build/iOS;
+			sourceTree = "<group>";
+		};
 		B89D9251257E448400D17B85 /* Carthage */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +420,8 @@
 		B89D9267257E45FD00D17B85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B896081C259959A1006ABA55 /* iOS */,
+				B8960819259959A1006ABA55 /* Mac */,
 				B81B2E94257E5093008FA95D /* Alamofire.framework */,
 				B81B2E91257E5085008FA95D /* Alamofire.framework */,
 				B81B2E8E257E507A008FA95D /* Alamofire.framework */,
@@ -298,6 +436,7 @@
 				OBJ_16 /* Configuration.swift */,
 				OBJ_17 /* HTTPRequest.swift */,
 				OBJ_18 /* HTTPRequestable.swift */,
+				B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */,
 			);
 			path = HTTPRequest;
 			sourceTree = "<group>";
@@ -305,12 +444,15 @@
 		OBJ_19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_20 /* Codable+Extensions.swift */,
-				OBJ_21 /* DateFormatter+ISO8601.swift */,
 				OBJ_22 /* Model.swift */,
+				OBJ_21 /* DateFormatter+ISO8601.swift */,
 				OBJ_23 /* Result+Extensions.swift */,
 				OBJ_24 /* Result+Model.swift */,
 				OBJ_25 /* SnakeCaseModel.swift */,
+				B872BEC825A38C3D0031D619 /* JSONDecoder+Default.swift */,
+				B872BECE25A38C4D0031D619 /* JSONEncoder+Default.swift */,
+				B872BED425A38C640031D619 /* Decodable+JSON.swift */,
+				B872BEDA25A38C800031D619 /* Encodable+JSON.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -403,6 +545,7 @@
 				OBJ_29 /* Tests */,
 				OBJ_34 /* Dependencies */,
 				B81B2DD7257E4AAF008FA95D /* StravaAPI */,
+				B8800E002597A24C00630AC6 /* WhiskAPI */,
 				OBJ_72 /* Products */,
 				OBJ_77 /* LICENSE */,
 				OBJ_78 /* HTTPRequest.podspec */,
@@ -429,6 +572,7 @@
 				"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */,
 				"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */,
 				B81B2DD6257E4AAF008FA95D /* StravaAPI */,
+				B8800DFF2597A24C00630AC6 /* WhiskAPI */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -436,12 +580,14 @@
 		OBJ_8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Alamofire+Extensions.swift */,
 				OBJ_10 /* OSLog+Logger.swift */,
 				OBJ_11 /* String+Data.swift */,
 				OBJ_12 /* String+Extensions.swift */,
 				OBJ_13 /* String+HTTP.swift */,
-				OBJ_14 /* URLQueryItem+Parameters.swift */,
+				OBJ_14 /* Array+URLQueryItem.swift */,
+				B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */,
+				B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */,
+				B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -457,6 +603,7 @@
 				B81B2DD3257E4AAF008FA95D /* Frameworks */,
 				B81B2DD4257E4AAF008FA95D /* CopyFiles */,
 				B81B2E16257E4B3F008FA95D /* Embed Frameworks */,
+				B82C18CF25992A9F00212949 /* Carthage Debug Symbols */,
 			);
 			buildRules = (
 			);
@@ -468,10 +615,31 @@
 			productReference = B81B2DD6257E4AAF008FA95D /* StravaAPI */;
 			productType = "com.apple.product-type.tool";
 		};
+		B8800DFE2597A24C00630AC6 /* WhiskAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8800E052597A24C00630AC6 /* Build configuration list for PBXNativeTarget "WhiskAPI" */;
+			buildPhases = (
+				B8800DFB2597A24C00630AC6 /* Sources */,
+				B8800DFC2597A24C00630AC6 /* Frameworks */,
+				B8800DFD2597A24C00630AC6 /* CopyFiles */,
+				B8800E1D2597F04C00630AC6 /* Embed Frameworks */,
+				B82C18C825992A5500212949 /* Carthage Debug Symbols */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8800E1C2597F04C00630AC6 /* PBXTargetDependency */,
+			);
+			name = WhiskAPI;
+			productName = WhiskAPI;
+			productReference = B8800DFF2597A24C00630AC6 /* WhiskAPI */;
+			productType = "com.apple.product-type.tool";
+		};
 		"HTTPRequest::HTTPRequest" /* HTTPRequest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_128 /* Build configuration list for PBXNativeTarget "HTTPRequest" */;
 			buildPhases = (
+				B8ED3FE325A2416700685ADA /* Swift Lint */,
 				OBJ_131 /* Sources */,
 				OBJ_149 /* Frameworks */,
 			);
@@ -522,11 +690,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
-				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 9999;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					B81B2DD5257E4AAF008FA95D = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					B8800DFE2597A24C00630AC6 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -536,6 +707,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = OBJ_5;
 			productRefGroup = OBJ_72 /* Products */;
@@ -547,9 +719,31 @@
 				"HTTPRequest::HTTPRequestPackageTests::ProductTarget" /* HTTPRequestPackageTests */,
 				"HTTPRequest::HTTPRequestTests" /* HTTPRequestTests */,
 				B81B2DD5257E4AAF008FA95D /* StravaAPI */,
+				B8800DFE2597A24C00630AC6 /* WhiskAPI */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8ED3FE325A2416700685ADA /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B81B2DD2257E4AAF008FA95D /* Sources */ = {
@@ -558,16 +752,28 @@
 			files = (
 				B81B2E23257E4B7E008FA95D /* URLComponents+Strava.swift in Sources */,
 				B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */,
-				B81B2E31257E4B87008FA95D /* URL+Extensions.swift in Sources */,
 				B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */,
 				B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */,
 				B81B2DD9257E4AAF008FA95D /* main.swift in Sources */,
 				B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */,
 				B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */,
 				B81B2E62257E4B98008FA95D /* Token.swift in Sources */,
-				B81B2E5B257E4B96008FA95D /* DetailedAthlete.swift in Sources */,
+				B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */,
 				B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */,
 				B81B2E54257E4B93008FA95D /* StravaModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8800DFB2597A24C00630AC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8800E022597A24C00630AC6 /* main.swift in Sources */,
+				B81190BD25A202230001B148 /* URL+Readable.swift in Sources */,
+				B8800E242597F0E800630AC6 /* URLComponents+Whisk.swift in Sources */,
+				B81190C325A2022D0001B148 /* Readable.swift in Sources */,
+				B81190B725A1FE940001B148 /* Reader.swift in Sources */,
+				B8800E132597EFFF00630AC6 /* WhiskAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,21 +781,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_132 /* Alamofire+Extensions.swift in Sources */,
+				B872BECF25A38C4D0031D619 /* JSONEncoder+Default.swift in Sources */,
 				OBJ_133 /* OSLog+Logger.swift in Sources */,
 				OBJ_134 /* String+Data.swift in Sources */,
 				OBJ_135 /* String+Extensions.swift in Sources */,
+				B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */,
+				B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */,
 				OBJ_136 /* String+HTTP.swift in Sources */,
-				OBJ_137 /* URLQueryItem+Parameters.swift in Sources */,
+				OBJ_137 /* Array+URLQueryItem.swift in Sources */,
+				B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */,
+				B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */,
 				OBJ_138 /* Configuration.swift in Sources */,
 				OBJ_139 /* HTTPRequest.swift in Sources */,
 				OBJ_140 /* HTTPRequestable.swift in Sources */,
-				OBJ_141 /* Codable+Extensions.swift in Sources */,
 				OBJ_142 /* DateFormatter+ISO8601.swift in Sources */,
 				OBJ_143 /* Model.swift in Sources */,
 				OBJ_144 /* Result+Extensions.swift in Sources */,
+				B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */,
+				B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */,
 				OBJ_145 /* Result+Model.swift in Sources */,
 				OBJ_146 /* SnakeCaseModel.swift in Sources */,
+				B872BEC925A38C3D0031D619 /* JSONDecoder+Default.swift in Sources */,
 				OBJ_147 /* Session+URLRequest.swift in Sources */,
 				OBJ_148 /* Session+URLRequestConvertible.swift in Sources */,
 			);
@@ -620,6 +832,11 @@
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequest" /* HTTPRequest */;
 			targetProxy = B81B2E14257E4B3E008FA95D /* PBXContainerItemProxy */;
+		};
+		B8800E1C2597F04C00630AC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "HTTPRequest::HTTPRequest" /* HTTPRequest */;
+			targetProxy = B8800E1B2597F04C00630AC6 /* PBXContainerItemProxy */;
 		};
 		OBJ_162 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -666,6 +883,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -724,6 +942,120 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B8800E032597A24C00630AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B8800E042597A24C00630AC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -750,6 +1082,8 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -777,7 +1111,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = HTTPRequest;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -787,6 +1121,8 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -814,7 +1150,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = HTTPRequest;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -852,8 +1188,8 @@
 		OBJ_165 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -873,7 +1209,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = HTTPRequestTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -881,8 +1217,8 @@
 		OBJ_166 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -902,7 +1238,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = HTTPRequestTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -911,17 +1247,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -938,15 +1301,41 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -967,6 +1356,15 @@
 			buildConfigurations = (
 				B81B2DDB257E4AAF008FA95D /* Debug */,
 				B81B2DDC257E4AAF008FA95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8800E052597A24C00630AC6 /* Build configuration list for PBXNativeTarget "WhiskAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8800E032597A24C00630AC6 /* Debug */,
+				B8800E042597A24C00630AC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

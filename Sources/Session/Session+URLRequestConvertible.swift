@@ -42,7 +42,7 @@ public extension Session {
             return nil
         }
     }
-    
+
     /// Execute `requestSync(urlRequest:)` by converting `urlRequestConvertible`
     /// to a `URLRequest`
     ///
@@ -54,7 +54,7 @@ public extension Session {
         let urlRequest = try urlRequestConvertible.asURLRequest()
         return requestSync(urlRequest: urlRequest)
     }
-    
+
     /// Execute `requestModelSync(urlRequest:)` by converting
     /// `urlRequestConvertible` to a `URLRequest`
     ///
