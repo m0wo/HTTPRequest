@@ -7,10 +7,10 @@
 
 import Foundation
 
-extension HTTPRequest {
+public extension HTTPRequest {
 
     /// Configuration flags when making a `HTTPRequest`
-    public final class Configuration {
+    final class Configuration {
 
         /// Shared `HTTPRequestConfiguration` instance
         public static let shared = Configuration()

@@ -35,7 +35,7 @@ final class HTTPRequestTests: XCTestCase {
     func test_URLRequest_query() throws {
         var urlComponents: URLComponents = .test
 
-        let athleteId: Int = 1735268
+        let athleteId: Int = 1_735_268
         let clientId: String = UUID().uuidString
         urlComponents.queryItems = [
             URLQueryItem(name: "athleteId", value: "\(athleteId)"),

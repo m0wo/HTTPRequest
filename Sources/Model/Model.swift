@@ -53,32 +53,32 @@ public protocol Model: Codable, CustomStringConvertible {
 
 // MARK: - Model + Defaults
 
-extension Model {
+public extension Model {
 
     /// By default take `Model` to be valid
-    public var isValid: Bool {
+    var isValid: Bool {
         return true
     }
 
     /// By default use the `.default` `JSONDecoder`
     ///
     /// - Parameter data: `Data`
-    public static func decode(data: Data) throws -> Self {
+    static func decode(data: Data) throws -> Self {
         return try JSONDecoder.default.decode(Self.self, from: data)
     }
 
     /// By default use the `.default` `JSONEncoder`
-    public func encode() throws -> Data {
+    func encode() throws -> Data {
         return try JSONEncoder.default.encode(self)
     }
 }
 
 // MARK: - Model + CustomStringConvertible
 
-extension Model {
+public extension Model {
 
     /// Take JSON `String` to describe the `Model`
-    public var description: String {
+    var description: String {
         return (try? jsonString()) ?? String(describing: self)
     }
 }
@@ -101,7 +101,6 @@ public extension Model {
             }
 
             self = model
-
         } catch {
             // Log the error before rethrowing
             os_log(.error, log: .logger, "%@", "\(error)")

@@ -1,5 +1,5 @@
 //
-//  DetailedAthlete.swift
+//  Athlete.swift
 //  StravaAPI
 //
 //  Created by Ben Shutt on 01/10/2020.

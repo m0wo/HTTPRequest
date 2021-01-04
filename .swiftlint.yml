@@ -43,16 +43,15 @@ opt_in_rules:
   - nimble_operator
   - nslocalizedstring_key
   - number_separator
-  - object_literal
+#  - object_literal
   - operator_usage_whitespace
   - overridden_super_call
   - override_in_extension
   - pattern_matching_keywords
   - prefer_self_type_over_type_of_self
   - private_action
-  - private_outlet:
-    - allows_public_getter: true
-#  - prohibited_interface_builder
+  - private_outlet
+  - prohibited_interface_builder
   - prohibited_super_call
   - quick_discouraged_call
   - quick_discouraged_focused_test

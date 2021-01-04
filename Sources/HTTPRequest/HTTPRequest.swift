@@ -87,7 +87,7 @@ extension HTTPRequest: URLRequestConvertible {
         urlRequest.httpBody = body
 
         // Encode parameters (queryItems)
-        if queryItems.count > 0 {
+        if !queryItems.isEmpty {
             urlRequest = try URLEncoding.queryString.encode(
                 urlRequest,
                 with: queryItems.parameters()

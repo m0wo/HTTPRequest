@@ -1,5 +1,5 @@
 //
-//  URL+Extensions.swift
+//  FileManager+Extensions.swift
 //  HTTPRequest
 //
 //  Created by Ben Shutt on 30/09/2020.

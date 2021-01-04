@@ -8,8 +8,6 @@
 import Foundation
 import Alamofire
 
-// MARK: - Array<URLQueryItem> + Parameters
-
 extension Array where Element == URLQueryItem {
 
     /// Convert `[URLQueryItem]` to `Parameters`

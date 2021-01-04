@@ -18,7 +18,6 @@ do {
         try AF.requestSync(StravaAPI.athlete).successOrThrow()
 
     debugPrint(athlete)
-
 } catch {
     debugPrint(error)
 }

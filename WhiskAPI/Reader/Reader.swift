@@ -29,7 +29,7 @@ struct Reader {
     ///
     /// - Throws: `Error`
     /// - Returns: `[T]` where `T` is `Readable`
-    public static func read<T>(
+    static func read<T>(
         from url: URL,
         separatedBy characterSet: CharacterSet,
         encoding: String.Encoding = .utf8,

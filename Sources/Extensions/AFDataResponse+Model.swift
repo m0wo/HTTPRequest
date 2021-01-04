@@ -1,25 +1,12 @@
 //
-//  Alamofire+Extensions.swift
+//  AFDataResponse+Model.swift
 //  HTTPRequest
 //
-//  Created by Ben Shutt on 24/09/2020.
+//  Created by Ben Shutt on 04/01/2021.
 //
 
 import Foundation
 import Alamofire
-
-// MARK: - HTTPHeader
-
-public extension HTTPHeader {
-
-    /// `"Accept: application/json"`
-    static var acceptJSON: HTTPHeader = .accept("application/json")
-
-    /// `"Content-Type: application/json"`
-    static var contentTypeJSON: HTTPHeader = .contentType("application/json")
-}
-
-// MARK: - AFDataResponse<Data>
 
 public extension AFDataResponse where Success == Data {
 

@@ -17,9 +17,9 @@ public protocol HTTPRequestable: URLRequestConvertible {
 
 // MARK: - URLRequestConvertible
 
-extension HTTPRequestable {
+public extension HTTPRequestable {
 
-    public func asURLRequest() throws -> URLRequest {
+    func asURLRequest() throws -> URLRequest {
         return try httpRequest().asURLRequest()
     }
 }
