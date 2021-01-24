@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-extension HTTPRequest {
+public extension HTTPRequest {
 
     /// Set `method` and return `self`
     ///
