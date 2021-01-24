@@ -37,6 +37,7 @@
 		B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* Athlete.swift */; };
 		B81B2E62257E4B98008FA95D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE8257E4AB9008FA95D /* Token.swift */; };
 		B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DED257E4AB9008FA95D /* StravaSession.swift */; };
+		B866911B25BDA287003A10DB /* HTTPRequest+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */; };
 		B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */; };
 		B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */; };
 		B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */; };
@@ -189,6 +190,7 @@
 		B81B2E8E257E507A008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		B81B2E91257E5085008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
 		B81B2E94257E5093008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
+		B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPRequest+Build.swift"; sourceTree = "<group>"; };
 		B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeader+Headers.swift"; sourceTree = "<group>"; };
 		B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFDataResponse+Model.swift"; sourceTree = "<group>"; };
 		B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalDateFormatter.swift; sourceTree = "<group>"; };
@@ -436,7 +438,7 @@
 				OBJ_16 /* Configuration.swift */,
 				OBJ_17 /* HTTPRequest.swift */,
 				OBJ_18 /* HTTPRequestable.swift */,
-				B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */,
+				B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */,
 			);
 			path = HTTPRequest;
 			sourceTree = "<group>";
@@ -587,6 +589,7 @@
 				OBJ_14 /* Array+URLQueryItem.swift */,
 				B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */,
 				B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */,
+				B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */,
 				B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */,
 			);
 			path = Extensions;
@@ -792,6 +795,7 @@
 				B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */,
 				B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */,
 				OBJ_138 /* Configuration.swift in Sources */,
+				B866911B25BDA287003A10DB /* HTTPRequest+Build.swift in Sources */,
 				OBJ_139 /* HTTPRequest.swift in Sources */,
 				OBJ_140 /* HTTPRequestable.swift in Sources */,
 				OBJ_142 /* DateFormatter+ISO8601.swift in Sources */,

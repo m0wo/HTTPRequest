@@ -14,22 +14,22 @@ public extension FileManager {
     /// - Parameters:
     ///   - searchPathDirectory: `SearchPathDirectory`
     ///   - domainMask: `SearchPathDomainMask`
-    ///   - url: `URL`
+    ///   - appropriateForURL: `URL`
     ///   - create: `Bool`
     ///   - pathComponents: `[String]`
     func url(
         for searchPathDirectory: SearchPathDirectory,
         in domainMask: SearchPathDomainMask = .userDomainMask,
-        appropriateFor url: URL? = nil,
+        appropriateFor appropriateForURL: URL? = nil,
         create: Bool = true,
         appending pathComponents: [String] = []
     ) throws -> URL {
         // Get `searchPathDirectory`
         var url = try self.url(
-            for: .desktopDirectory,
-            in: .userDomainMask,
-            appropriateFor: nil,
-            create: true
+            for: searchPathDirectory,
+            in: domainMask,
+            appropriateFor: appropriateForURL,
+            create: create
         )
 
         pathComponents.forEach {

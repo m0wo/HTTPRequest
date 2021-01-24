@@ -11,7 +11,7 @@ import Foundation
 
 extension String {
 
-    /// Comvert `scheme` to a HTTP scheme.
+    /// Convert `scheme` to a HTTP scheme.
     /// Output will be in: `["http", "https"]`
     ///
     /// - Parameter scheme: `String`

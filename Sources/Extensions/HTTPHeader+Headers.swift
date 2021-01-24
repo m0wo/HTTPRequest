@@ -10,6 +10,8 @@ import Alamofire
 
 public extension HTTPHeader {
 
+    // MARK: - JSON
+
     /// `"Accept: application/json"`
     static var acceptJSON: HTTPHeader = .accept("application/json")
 
