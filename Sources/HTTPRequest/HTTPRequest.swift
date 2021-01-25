@@ -15,19 +15,19 @@ import Alamofire
 public struct HTTPRequest {
 
     /// `HTTPMethod` of the request
-    var method: HTTPMethod
+    public var method: HTTPMethod
 
     /// `URLComponents`
-    var urlComponents: URLComponents
+    public var urlComponents: URLComponents
 
     /// `HTTPHeaders`
-    var headers: HTTPHeaders
+    public var headers: HTTPHeaders
 
     /// `Data` in the request body
-    var body: Data?
+    public var body: Data?
 
     /// `TimeInterval` to wait for a response before the requst times out
-    var timeoutInterval: TimeInterval = 45
+    public var timeoutInterval: TimeInterval = 45
 
     // MARK: - Init
 
