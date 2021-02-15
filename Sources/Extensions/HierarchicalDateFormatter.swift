@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// `DateFormatter` that fallsback on date formats in a hierarchical manner.
+/// `DateFormatter` that falls back on date formats in a hierarchical manner.
 /// A proxy `ISO8601` `DateFormatter`.
 public class HierarchicalDateFormatter: DateFormatter {
 
@@ -22,7 +22,7 @@ public class HierarchicalDateFormatter: DateFormatter {
         fatalError("init(coder:) has not been implemented")
     }
 
-    /// Override coverting `String` to `Date` by falling back on a selection
+    /// Override converting `String` to `Date` by falling back on a selection
     /// of standard date formats
     ///
     /// - Parameter string: `String`
@@ -48,7 +48,7 @@ public class HierarchicalDateFormatter: DateFormatter {
         for dateFormat in dateFormats {
             let formatter = DateFormatter.iso8601Formatter(
                 dateFormat: dateFormat,
-                timeZone: TimeZone.current
+                timeZone: .current
             )
             if let date = formatter.date(from: string) {
                 return date

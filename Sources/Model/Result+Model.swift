@@ -22,6 +22,12 @@ public extension Result where Success == Data {
     }
 
     /// Convert to `Result<T, Error>` where `T` is a `Model` and return
+    /// the associated value if the result is a success otherwise throw
+    func modelOrThrow<T>() throws -> T where T: Model {
+        return try modelResult().successOrThrow()
+    }
+
+    /// Convert to `Result<T, Error>` where `T` is a `Model` and return
     /// the associated value if the result is a success, `nil` otherwise
     func model<T>() -> T? where T: Model {
         return modelResult().success

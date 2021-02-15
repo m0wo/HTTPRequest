@@ -26,7 +26,7 @@ public struct HTTPRequest {
     /// `Data` in the request body
     public var body: Data?
 
-    /// `TimeInterval` to wait for a response before the requst times out
+    /// `TimeInterval` to wait for a response before the request times out
     public var timeoutInterval: TimeInterval = 45
 
     // MARK: - Init
