@@ -16,8 +16,8 @@ extension URL {
         while url.pathComponents.count > 1 {
             url.deleteLastPathComponent()
             let files = try FileManager.default.contentsOfDirectory(atPath: url.path)
-            let hit = files.contains { $0.pathExtension == .xcodeProjectExtension }
-            if hit {
+            let isHit = files.contains { $0.pathExtension == .xcodeProjectExtension }
+            if isHit {
                 return url
             }
         }

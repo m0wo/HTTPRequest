@@ -10,15 +10,25 @@ import Foundation
 /// File for reading and writing `Token` model
 struct TokenFile {
 
+    /// Directory to save the token to
+    private static let directoryName = "StravaToken"
+
     /// Name of the `Token` file
-    private static let filename = "StravaToken.json"
+    private static let fileName = "StravaToken.json"
+
+    /// Setup token directory
+    @discardableResult
+    static func setupDirectory() throws -> URL {
+        let projectDirectory: URL = try .projectDirectory()
+        let dir = projectDirectory.appendingPathComponent(directoryName)
+        try FileManager.default.createDirectoryIfNotExists(dir)
+        return dir
+    }
 
     /// `URL` of the `Token` file
     static func url() throws -> URL {
-        return try FileManager.default.url(
-            for: .desktopDirectory,
-            appending: [filename]
-        )
+        let dir = try setupDirectory()
+        return dir.appendingPathExtension(fileName)
     }
 
     /// Read `Token` from file

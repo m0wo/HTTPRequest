@@ -11,14 +11,12 @@ import Foundation
 struct TokenRequestFile {
 
     /// Name of the `TokenRequest` file
-    private static let filename = "StravaTokenRequest.json"
+    private static let fileName = "StravaTokenRequest.json"
 
     /// `URL` of the `TokenRequest` file
     static func url() throws -> URL {
-        return try FileManager.default.url(
-            for: .desktopDirectory,
-            appending: [filename]
-        )
+        return try TokenFile.setupDirectory()
+            .appendingPathComponent(fileName)
     }
 
     /// Read `TokenRequest` from file
