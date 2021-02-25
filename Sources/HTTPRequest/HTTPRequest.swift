@@ -66,8 +66,8 @@ extension HTTPRequest: URLRequestConvertible {
         var urlComponents = self.urlComponents
         urlComponents.scheme = .toHTTPScheme(urlComponents.scheme)
 
-        // urlComponents queryItems, removed from local `urlComponents`
-        // and added to the `urlRequest` with encoding
+        // Remove `queryItems` from the `urlComponents` and add to the
+        // `urlRequest` with encoding
         let queryItems = urlComponents.queryItems ?? []
         urlComponents.queryItems = nil
 
@@ -86,7 +86,7 @@ extension HTTPRequest: URLRequestConvertible {
         // Set httpBody
         urlRequest.httpBody = body
 
-        // Encode parameters (queryItems)
+        // Encode parameters i.e. the `queryItems`
         if !queryItems.isEmpty {
             urlRequest = try URLEncoding.queryString.encode(
                 urlRequest,

@@ -7,8 +7,6 @@
 
 import Foundation
 
-// MARK: - String + Prefix + Suffix
-
 public extension String {
 
     /// Trim the `.whitespacesAndNewlines` `CharacterSet`

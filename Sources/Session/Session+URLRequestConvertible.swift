@@ -8,7 +8,6 @@
 import Foundation
 import Alamofire
 
-/// - TODO: Consider function conflicts with Alamofire (e.g. _: for URLRequest)
 public extension Session {
 
     /// Execute `request(urlRequest:queue:completion)` by converting

@@ -17,4 +17,18 @@ public extension Decodable {
     init (jsonData: Data, decoder: JSONDecoder = .default) throws {
         self = try decoder.decode(Self.self, from: jsonData)
     }
+
+    /// Create `Decodable` from `dictionary`.
+    ///
+    /// - Note:
+    /// This is generally not required as JSON `Data` is used instead
+    ///
+    /// - Parameter dictionary: `[AnyHashable: Any]`
+    init (dictionary: [AnyHashable: Any]) throws {
+        let jsonData = try JSONSerialization.data(
+            withJSONObject: dictionary,
+            options: []
+        )
+        try self.init(jsonData: jsonData)
+    }
 }

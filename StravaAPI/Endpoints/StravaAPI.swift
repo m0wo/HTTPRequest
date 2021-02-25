@@ -27,14 +27,15 @@ extension StravaAPI: HTTPRequestable {
         switch self {
 
         case .refreshToken:
-            let tokenRequest = try TokenRequestFile.read()
-            return HTTPRequest(
+            return try HTTPRequest(
                 method: .post,
                 urlComponents: .stravaAPI(
                     endpoint: "oauth/token",
-                    parameters: tokenRequest.queryItems
+                    parameters: TokenRequestFile.read().queryItems
                 ),
-                additionalHeaders: HTTPHeaders(headers: [.acceptJSON])
+                additionalHeaders: HTTPHeaders(headers: [
+                    .acceptJSON
+                ])
             )
 
         case .athlete:
@@ -47,20 +48,5 @@ extension StravaAPI: HTTPRequestable {
                 ])
             )
         }
-    }
-}
-
-// MARK: - TokenRequest + URLQueryItem
-
-extension TokenRequest {
-
-    /// - TODO: Compute from codeable?
-    var queryItems: [URLQueryItem] {
-        return [
-            URLQueryItem(name: "client_id", value: "\(clientId)"),
-            URLQueryItem(name: "client_secret", value: clientSecret),
-            URLQueryItem(name: "grant_type", value: grantType),
-            URLQueryItem(name: "refresh_token", value: refreshToken)
-        ]
     }
 }

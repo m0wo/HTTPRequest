@@ -12,9 +12,7 @@ public extension JSONEncoder {
     /// Default `JSONEncoder`
     static var `default`: JSONEncoder {
         let encoder = JSONEncoder()
-        encoder.dateEncodingStrategy = .formatted(
-            DateFormatter.hierarchical
-        )
+        encoder.dateEncodingStrategy = .formatted(DateFormatter.hierarchical)
         return encoder
     }
 }
