@@ -28,7 +28,7 @@ struct TokenFile {
     /// `URL` of the `Token` file
     static func url() throws -> URL {
         let dir = try setupDirectory()
-        return dir.appendingPathExtension(fileName)
+        return dir.appendingPathComponent(fileName)
     }
 
     /// Read `Token` from file
