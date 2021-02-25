@@ -50,8 +50,7 @@
 		B8800E192597F04C00630AC6 /* HTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; };
 		B8800E1A2597F04C00630AC6 /* HTTPRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8800E242597F0E800630AC6 /* URLComponents+Whisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8800E232597F0E800630AC6 /* URLComponents+Whisk.swift */; };
-		B896082525995AC9006ABA55 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B896081F259959A1006ABA55 /* Alamofire.framework */; platformFilter = ios; };
-		B896082B25995AD7006ABA55 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B896081A259959A1006ABA55 /* Alamofire.framework */; platformFilter = maccatalyst; };
+		B89245B425E7C77F0026C4D9 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */; };
 		B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */; };
 		OBJ_133 /* OSLog+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* OSLog+Logger.swift */; };
 		OBJ_134 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+Data.swift */; };
@@ -186,10 +185,6 @@
 		B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequestFile.swift; sourceTree = "<group>"; };
 		B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Strava.swift"; sourceTree = "<group>"; };
 		B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaAPI.swift; sourceTree = "<group>"; };
-		B81B2E8B257E506E008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		B81B2E8E257E507A008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
-		B81B2E91257E5085008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/tvOS/Alamofire.framework; sourceTree = "<group>"; };
-		B81B2E94257E5093008FA95D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/watchOS/Alamofire.framework; sourceTree = "<group>"; };
 		B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPRequest+Build.swift"; sourceTree = "<group>"; };
 		B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeader+Headers.swift"; sourceTree = "<group>"; };
 		B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFDataResponse+Model.swift"; sourceTree = "<group>"; };
@@ -202,14 +197,7 @@
 		B8800E012597A24C00630AC6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B8800E122597EFFF00630AC6 /* WhiskAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiskAPI.swift; sourceTree = "<group>"; };
 		B8800E232597F0E800630AC6 /* URLComponents+Whisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Whisk.swift"; sourceTree = "<group>"; };
-		B896081A259959A1006ABA55 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		B896081B259959A1006ABA55 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		B896081D259959A1006ABA55 /* 75D46E1B-7C05-3712-B97A-3787B9390F10.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "75D46E1B-7C05-3712-B97A-3787B9390F10.bcsymbolmap"; sourceTree = "<group>"; };
-		B896081E259959A1006ABA55 /* 27221A83-0659-30E2-94A6-C66810C4A682.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; path = "27221A83-0659-30E2-94A6-C66810C4A682.bcsymbolmap"; sourceTree = "<group>"; };
-		B896081F259959A1006ABA55 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		B8960820259959A1006ABA55 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		B89D9252257E449E00D17B85 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
-		B89D9253257E44AC00D17B85 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
+		B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* OSLog+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Logger.swift"; sourceTree = "<group>"; };
@@ -293,8 +281,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				B896082525995AC9006ABA55 /* Alamofire.framework in Frameworks */,
-				B896082B25995AD7006ABA55 /* Alamofire.framework in Frameworks */,
+				B89245B425E7C77F0026C4D9 /* Alamofire.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,46 +375,10 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
-		B8960819259959A1006ABA55 /* Mac */ = {
+		B89245B225E7C77F0026C4D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B896081A259959A1006ABA55 /* Alamofire.framework */,
-				B896081B259959A1006ABA55 /* Alamofire.framework.dSYM */,
-			);
-			name = Mac;
-			path = Carthage/Build/Mac;
-			sourceTree = "<group>";
-		};
-		B896081C259959A1006ABA55 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				B896081D259959A1006ABA55 /* 75D46E1B-7C05-3712-B97A-3787B9390F10.bcsymbolmap */,
-				B896081E259959A1006ABA55 /* 27221A83-0659-30E2-94A6-C66810C4A682.bcsymbolmap */,
-				B896081F259959A1006ABA55 /* Alamofire.framework */,
-				B8960820259959A1006ABA55 /* Alamofire.framework.dSYM */,
-			);
-			name = iOS;
-			path = Carthage/Build/iOS;
-			sourceTree = "<group>";
-		};
-		B89D9251257E448400D17B85 /* Carthage */ = {
-			isa = PBXGroup;
-			children = (
-				B89D9252257E449E00D17B85 /* input.xcfilelist */,
-				B89D9253257E44AC00D17B85 /* output.xcfilelist */,
-			);
-			path = Carthage;
-			sourceTree = "<group>";
-		};
-		B89D9267257E45FD00D17B85 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B896081C259959A1006ABA55 /* iOS */,
-				B8960819259959A1006ABA55 /* Mac */,
-				B81B2E94257E5093008FA95D /* Alamofire.framework */,
-				B81B2E91257E5085008FA95D /* Alamofire.framework */,
-				B81B2E8E257E507A008FA95D /* Alamofire.framework */,
-				B81B2E8B257E506E008FA95D /* Alamofire.framework */,
+				B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -552,14 +503,13 @@
 				OBJ_77 /* LICENSE */,
 				OBJ_78 /* HTTPRequest.podspec */,
 				OBJ_79 /* README.md */,
-				B89D9267257E45FD00D17B85 /* Frameworks */,
+				B89245B225E7C77F0026C4D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B89D9251257E448400D17B85 /* Carthage */,
 				OBJ_8 /* Extensions */,
 				OBJ_15 /* HTTPRequest */,
 				OBJ_19 /* Model */,

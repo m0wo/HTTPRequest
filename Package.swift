@@ -28,11 +28,7 @@ let package = Package(
         .target(
             name: "HTTPRequest",
             dependencies: ["Alamofire"],
-            path: "Sources",
-            resources: [
-                .process("Carthage/input.xcfilelist"),
-                .process("Carthage/output.xcfilelist")
-            ]
+            path: "Sources"
         ),
         .testTarget(
             name: "HTTPRequestTests",
