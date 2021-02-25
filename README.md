@@ -95,12 +95,13 @@ Simply run `./install.sh` to run the project locally.
 As this API is authenticated, the only setup required is to provide a `StravaTokenRequest.json` JSON file with the properties needed to fetch an authentication token. The JSON should look like so:
 ```json
 {
-  "client_id": 123456789, /* Your clientId */
+  "client_id": 123456789,
   "refresh_token": "{yourRefreshToken}",
   "client_secret": "{yourClientSecret}",
-  "grant_type": "refresh_token" /* Fixed value */
+  "grant_type": "refresh_token"
 }
 ```
+Note the `grant_type` is a fixed value here, the other properties will need entering.
 Add this JSON  into a directory named `StravaToken` in the `PROJECT_DIR` (where the `.xcodeproj` file is located). 
 This directory is ignored by `git`.
 So the JSON file path would look like: `${PROJECT_DIR}/StravaToken/StravaTokenRequest.json`.
