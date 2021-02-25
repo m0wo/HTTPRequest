@@ -435,8 +435,8 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* Extensions */,
 				OBJ_15 /* HTTPRequest */,
+				OBJ_8 /* Extensions */,
 				OBJ_19 /* Model */,
 				OBJ_26 /* Session */,
 			);

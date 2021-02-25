@@ -21,12 +21,7 @@ public extension Encodable {
     /// - Parameter encoder: `JSONEncoder`
     func jsonString(encoder: JSONEncoder = .default) throws -> String {
         encoder.outputFormatting = .prettyPrinted
-        let data = try encoder.encode(self)
-        let encoding: String.Encoding = .utf8
-        guard let json = String(data: data, encoding: encoding) else {
-            throw StringDataError.data(data, encoding: encoding)
-        }
-
-        return json
+        let data = try jsonData(encoder: encoder)
+        return try data.stringOrThrow(encoding: .utf8)
     }
 }

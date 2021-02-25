@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// Elegantly build up a `HTTPRequest`
 public extension HTTPRequest {
 
     /// Set `method` and return `self`
@@ -54,7 +55,7 @@ public extension HTTPRequest {
         return self
     }
 
-    // MARK: - Body
+    // MARK: - JSON Body
 
     /// Set `self.body` to `body` and add the `.contentTypeJSON` `HTTPHeader`
     ///
