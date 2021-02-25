@@ -86,7 +86,7 @@ This framework is lightweight, it was built to add the `Model` protocol and a si
 
 ## Install
 
-The (dependent) frameworks for `HTTPRequest` are installed via [Carthage](https://github.com/Carthage/Carthage) as an `xcframework`.
+The (dependent) frameworks for `HTTPRequest` are installed via [Carthage](https://github.com/Carthage/Carthage) as `xcframework`s.
 Simply run `./install.sh` to run the project locally.
 
 ## Example
