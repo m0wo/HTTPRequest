@@ -21,9 +21,6 @@ public enum ModelError: Error {
     /// `Model` validation failed.
     /// This comes from the `isValid` flag against the `Model`
     case validation
-
-    /// Could not convert `Model` to `[AnyHashable: Any]`
-    case dictionary
 }
 
 /// An entity which conforms to `Codable`.
@@ -102,43 +99,11 @@ public extension Model {
 
             self = model
         } catch {
-            // Log the error before rethrowing
+            // Log the error before re-throwing
             os_log(.error, log: .logger, "%@", "\(error)")
 
             throw error
         }
-    }
-}
-
-// MARK: - Model + Dictionary
-
-public extension Model {
-
-    /// `Model` from `dictionary`.
-    ///
-    /// - Note:
-    /// This is generally not required as JSON `Data` is used instead
-    ///
-    /// - Parameter dictionary: `[AnyHashable: Any]`
-    init (dictionary: [AnyHashable: Any]) throws {
-        let jsonData = try JSONSerialization.data(
-            withJSONObject: dictionary,
-            options: []
-        )
-        try self.init(data: jsonData)
-    }
-
-    /// Convert `self` to `[AnyHashable: Any]`
-    func dictionary() throws -> [AnyHashable: Any] {
-        let jsonData = try self.jsonData()
-        let json = try JSONSerialization.jsonObject(
-            with: jsonData,
-            options: []
-        )
-        guard let dictionary = json as? [AnyHashable: Any] else {
-            throw ModelError.dictionary
-        }
-        return dictionary
     }
 }
 

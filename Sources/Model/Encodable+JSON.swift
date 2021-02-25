@@ -7,6 +7,17 @@
 
 import Foundation
 
+// MARK: - EncodableError
+
+/// An `Error` with a `Encodable`
+public enum EncodableError: Error {
+
+    /// Could not convert `Encodable` to `[AnyHashable: Any]`
+    case dictionary
+}
+
+// MARK: - Extensions
+
 public extension Encodable {
 
     /// Create JSON `Data` from `Encodable`
@@ -23,5 +34,15 @@ public extension Encodable {
         encoder.outputFormatting = .prettyPrinted
         let data = try jsonData(encoder: encoder)
         return try data.stringOrThrow(encoding: .utf8)
+    }
+
+    /// Convert `self` to a `[AnyHashable: Any]`
+    func dictionary() throws -> [AnyHashable: Any] {
+        let jsonData = try self.jsonData()
+        let json = try JSONSerialization.jsonObject(with: jsonData, options: [])
+        guard let dictionary = json as? [AnyHashable: Any] else {
+            throw EncodableError.dictionary
+        }
+        return dictionary
     }
 }
