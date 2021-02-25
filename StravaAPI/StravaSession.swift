@@ -32,7 +32,7 @@ struct StravaSession {
     }
 
     /// `Token` has expired or will expire
-    /// Specically access token for the user is expired or will expire in one hour
+    /// Specially access token for the user is expired or will expire in one hour
     /// (3,600 seconds) or less
     static func shouldRefreshToken(_ token: Token) -> Bool {
         return token.expiryDate < Date().addingTimeInterval(3600)

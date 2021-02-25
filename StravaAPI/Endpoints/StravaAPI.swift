@@ -27,14 +27,15 @@ extension StravaAPI: HTTPRequestable {
         switch self {
 
         case .refreshToken:
-            let tokenRequest = try TokenRequestFile.read()
-            return HTTPRequest(
+            return try HTTPRequest(
                 method: .post,
                 urlComponents: .stravaAPI(
                     endpoint: "oauth/token",
-                    parameters: tokenRequest.queryItems
+                    parameters: TokenRequestFile.read().queryItems
                 ),
-                additionalHeaders: HTTPHeaders(headers: [.acceptJSON])
+                additionalHeaders: HTTPHeaders(headers: [
+                    .acceptJSON
+                ])
             )
 
         case .athlete:
@@ -46,22 +47,6 @@ extension StravaAPI: HTTPRequestable {
                     .authorization
                 ])
             )
-        }
-    }
-}
-
-// MARK: - TokenRequest + URLQueryItem
-
-extension TokenRequest {
-
-    /// Convert properties to `URLQueryItem` using reflection
-    var queryItems: [URLQueryItem] {
-        let mirror = Mirror(reflecting: self)
-        return mirror.children.compactMap {
-            guard let propertyName = $0.label else { return nil }
-            let name = propertyName.camelCaseToSnakeCase()
-            let value = "\($0.value)"
-            return URLQueryItem(name: name, value: value)
         }
     }
 }
