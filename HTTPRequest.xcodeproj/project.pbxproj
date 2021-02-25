@@ -43,6 +43,7 @@
 		B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BED425A38C640031D619 /* Decodable+JSON.swift */; };
 		B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEDA25A38C800031D619 /* Encodable+JSON.swift */; };
 		B89245B425E7C77F0026C4D9 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */; };
+		B89245CB25E7CB2B0026C4D9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245CA25E7CB2B0026C4D9 /* String+Extensions.swift */; };
 		B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */; };
 		OBJ_133 /* OSLog+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* OSLog+Logger.swift */; };
 		OBJ_134 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+Data.swift */; };
@@ -146,6 +147,7 @@
 		B872BED425A38C640031D619 /* Decodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+JSON.swift"; sourceTree = "<group>"; };
 		B872BEDA25A38C800031D619 /* Encodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
 		B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
+		B89245CA25E7CB2B0026C4D9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* OSLog+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Logger.swift"; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */,
+				B89245CA25E7CB2B0026C4D9 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */,
 				B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */,
 				B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */,
+				B89245CB25E7CB2B0026C4D9 /* String+Extensions.swift in Sources */,
 				B81B2DD9257E4AAF008FA95D /* main.swift in Sources */,
 				B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */,
 				B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */,
@@ -795,10 +799,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequest_Info.plist;
@@ -834,10 +835,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Build",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequest_Info.plist;

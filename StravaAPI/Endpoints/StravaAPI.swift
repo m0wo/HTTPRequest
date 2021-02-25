@@ -54,13 +54,14 @@ extension StravaAPI: HTTPRequestable {
 
 extension TokenRequest {
 
-    /// - TODO: Compute from codeable?
+    /// Convert properties to `URLQueryItem` using reflection
     var queryItems: [URLQueryItem] {
-        return [
-            URLQueryItem(name: "client_id", value: "\(clientId)"),
-            URLQueryItem(name: "client_secret", value: clientSecret),
-            URLQueryItem(name: "grant_type", value: grantType),
-            URLQueryItem(name: "refresh_token", value: refreshToken)
-        ]
+        let mirror = Mirror(reflecting: self)
+        return mirror.children.compactMap {
+            guard let propertyName = $0.label else { return nil }
+            let name = propertyName.camelCaseToSnakeCase()
+            let value = "\($0.value)"
+            return URLQueryItem(name: name, value: value)
+        }
     }
 }
