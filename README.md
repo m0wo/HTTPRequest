@@ -34,8 +34,7 @@ enum StravaAPI {
 /// Define a `HTTPRequest` based on the `StravaAPI` endpoint
 extension StravaAPI: HTTPRequestable {
     
-    /// Map `StravaAPI` to a `HTTPRequest` containg all the information needed to 
-    /// construct a HTTP request
+    /// Map `StravaAPI` to a `HTTPRequest`
     func httpRequest() throws -> HTTPRequest {
         switch self {
         case .athlete:
