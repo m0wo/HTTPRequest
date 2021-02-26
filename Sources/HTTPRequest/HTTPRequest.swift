@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-/// Structure of the components of a HTTP request
+/// Structure of components required to build a HTTP request
 ///
 /// - Note:
 /// This `struct` is effectively a wrapper of a `URLRequest` using `Alamofire` models.
@@ -34,10 +34,10 @@ public struct HTTPRequest {
     /// `HTTPRequest` initializer
     ///
     /// - Parameters:
-    ///   - method: `HTTPMethod`
-    ///   - urlComponents: `URLComponents`
-    ///   - additionalHeaders: `HTTPHeaders`
-    ///   - body: `Data`
+    ///   - method: `HTTPMethod` to set as the HTTP method
+    ///   - urlComponents: `URLComponents` to build a `URL` and `URLQueryItem`s
+    ///   - additionalHeaders: `HTTPHeaders` to add to the `.default` headers
+    ///   - body: `Data` HTTP body
     public init(
         method: HTTPMethod,
         urlComponents: URLComponents,
@@ -60,7 +60,7 @@ public struct HTTPRequest {
 
 extension HTTPRequest: URLRequestConvertible {
 
-    /// `URLRequest` from `StravaAPI`
+    /// Map `HTTPRequest` to `URLRequest`
     public func asURLRequest() throws -> URLRequest {
         // urlComponents
         var urlComponents = self.urlComponents
@@ -80,7 +80,7 @@ extension HTTPRequest: URLRequestConvertible {
         // Set headers
         urlRequest.headers = headers
 
-        // timeout
+        // Set timeoutInterval
         urlRequest.timeoutInterval = timeoutInterval
 
         // Set httpBody
