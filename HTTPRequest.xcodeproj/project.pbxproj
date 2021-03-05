@@ -34,6 +34,9 @@
 		B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* Athlete.swift */; };
 		B81B2E62257E4B98008FA95D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE8257E4AB9008FA95D /* Token.swift */; };
 		B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DED257E4AB9008FA95D /* StravaSession.swift */; };
+		B859FB7025F230E90058EDAC /* NotificationCenter+KeychainToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B859FB6D25F230E80058EDAC /* NotificationCenter+KeychainToken.swift */; };
+		B859FB7125F230E90058EDAC /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B859FB6E25F230E80058EDAC /* KeychainError.swift */; };
+		B859FB7225F230E90058EDAC /* KeychainToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B859FB6F25F230E90058EDAC /* KeychainToken.swift */; };
 		B866911B25BDA287003A10DB /* HTTPRequest+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */; };
 		B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */; };
 		B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */; };
@@ -142,6 +145,9 @@
 		B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequestFile.swift; sourceTree = "<group>"; };
 		B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Strava.swift"; sourceTree = "<group>"; };
 		B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaAPI.swift; sourceTree = "<group>"; };
+		B859FB6D25F230E80058EDAC /* NotificationCenter+KeychainToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+KeychainToken.swift"; sourceTree = "<group>"; };
+		B859FB6E25F230E80058EDAC /* KeychainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
+		B859FB6F25F230E90058EDAC /* KeychainToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainToken.swift; sourceTree = "<group>"; };
 		B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPRequest+Build.swift"; sourceTree = "<group>"; };
 		B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeader+Headers.swift"; sourceTree = "<group>"; };
 		B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFDataResponse+Model.swift"; sourceTree = "<group>"; };
@@ -301,6 +307,16 @@
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+		B859FB6C25F230D80058EDAC /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				B859FB6E25F230E80058EDAC /* KeychainError.swift */,
+				B859FB6F25F230E90058EDAC /* KeychainToken.swift */,
+				B859FB6D25F230E80058EDAC /* NotificationCenter+KeychainToken.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		B89245B225E7C77F0026C4D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +451,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B859FB6C25F230D80058EDAC /* Keychain */,
 				OBJ_15 /* HTTPRequest */,
 				OBJ_8 /* Extensions */,
 				OBJ_19 /* Model */,
@@ -634,6 +651,8 @@
 				B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */,
 				OBJ_136 /* String+HTTP.swift in Sources */,
 				OBJ_137 /* Array+URLQueryItem.swift in Sources */,
+				B859FB7125F230E90058EDAC /* KeychainError.swift in Sources */,
+				B859FB7025F230E90058EDAC /* NotificationCenter+KeychainToken.swift in Sources */,
 				B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */,
 				B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */,
 				OBJ_138 /* Configuration.swift in Sources */,
@@ -650,6 +669,7 @@
 				B872BEC925A38C3D0031D619 /* JSONDecoder+Default.swift in Sources */,
 				OBJ_147 /* Session+URLRequest.swift in Sources */,
 				OBJ_148 /* Session+URLRequestConvertible.swift in Sources */,
+				B859FB7225F230E90058EDAC /* KeychainToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
