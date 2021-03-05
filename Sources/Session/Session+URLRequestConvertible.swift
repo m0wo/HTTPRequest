@@ -53,16 +53,4 @@ public extension Session {
         let urlRequest = try urlRequestConvertible.asURLRequest()
         return requestSync(urlRequest: urlRequest)
     }
-
-    /// Execute `requestModelSync(urlRequest:)` by converting
-    /// `urlRequestConvertible` to a `URLRequest`
-    ///
-    /// - Parameters:
-    ///   - urlRequestConvertible: `URLRequestConvertible`
-    func requestSync<T>(
-        _ urlRequestConvertible: URLRequestConvertible
-    ) throws -> Result<T, Error> where T: Model {
-        let urlRequest = try urlRequestConvertible.asURLRequest()
-        return requestSync(urlRequest: urlRequest)
-    }
 }

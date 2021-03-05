@@ -40,6 +40,16 @@ public extension Result {
         case .failure(let failure): return .failure(failure)
         }
     }
+
+    // MARK: - Internal
+
+    /// Cast `Failure` to generic `Error`
+    internal var generalErrorResult: Result<Success, Error> {
+        switch self {
+        case .success(let success): return .success(success)
+        case .failure(let error): return .failure(error)
+        }
+    }
 }
 
 // MARK: - Result + Error
@@ -54,17 +64,6 @@ public extension Result where Failure == Error {
             self = try .success(throwable())
         } catch {
             self = .failure(error)
-        }
-    }
-}
-
-public extension Result {
-
-    /// Cast `Failure` to generic `Error`
-    var generalErrorResult: Result<Success, Error> {
-        switch self {
-        case .success(let success): return .success(success)
-        case .failure(let error): return .failure(error)
         }
     }
 }

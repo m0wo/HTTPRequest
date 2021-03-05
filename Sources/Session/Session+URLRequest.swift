@@ -53,27 +53,6 @@ public extension Session {
             }
     }
 
-    /// Invoke `request(urlRequest:queue:completion:)`, on success, convert
-    /// the response `Data` to an instance of `T` where `T` is a `Model`
-    ///
-    /// - Parameters:
-    ///   - urlRequest: `URLRequest`
-    ///   - queue: `DispatchQueue`
-    ///   - completion: `ResultCompletion`
-    @discardableResult
-    func request<T>(
-        urlRequest: URLRequest,
-        queue: DispatchQueue = .main,
-        completion: @escaping ResultCompletion<T>
-    ) -> DataRequest where T: Model {
-        return request(
-            urlRequest: urlRequest,
-            queue: queue
-        ) { response in
-            completion(response.result.modelResult())
-        }
-    }
-
     /// Request `Data` for a given `urlRequest` synchronously
     /// 
     /// - Parameters:
@@ -92,15 +71,5 @@ public extension Session {
         }
         group.wait()
         return dataResponse
-    }
-
-    /// Invoke `requestSync(urlRequest:)`, on success, convert
-    /// the response `Data` to an instance of `T` where `T` is a `Model`
-    ///
-    /// - Parameter urlRequest: `URLRequest`
-    func requestSync<T>(
-        urlRequest: URLRequest
-    ) -> Result<T, Error> where T: Model {
-        return requestSync(urlRequest: urlRequest).result.modelResult()
     }
 }

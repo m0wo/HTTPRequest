@@ -343,6 +343,7 @@
 				OBJ_21 /* DateFormatter+ISO8601.swift */,
 				OBJ_23 /* Result+Extensions.swift */,
 				OBJ_24 /* Result+Model.swift */,
+				B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */,
 				OBJ_25 /* SnakeCaseModel.swift */,
 				B872BEC825A38C3D0031D619 /* JSONDecoder+Default.swift */,
 				B872BECE25A38C4D0031D619 /* JSONEncoder+Default.swift */,
@@ -481,7 +482,6 @@
 				B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */,
 				B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */,
 				B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */,
-				B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

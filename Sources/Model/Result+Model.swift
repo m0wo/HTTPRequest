@@ -14,18 +14,17 @@ public extension Result where Success == Data {
     /// 1. Try and get the associated value if the result is a success otherwise throw
     /// 2. Convert that success into a `T` by decoding
     func modelOrThrow<T>() throws -> T where T: Model {
-        let data = try successOrThrow()
-        return try T.decode(data: data)
+        return try T.decode(data: successOrThrow())
     }
 
     /// Convert `Result` with `Data` to a `Result` for a `Model`of  type `T`
-    func modelResult<T>() -> Result<T, Error> where T: Model {
+    func modelResult<T>() -> ModelResult<T> where T: Model {
         return .init({ try modelOrThrow() })
     }
 
     /// Convert to `Result<T, Error>` where `T` is a `Model` and return
     /// the associated value if the result is a success, `nil` otherwise
     func model<T>() -> T? where T: Model {
-        return try? modelOrThrow()
+        return modelResult().success
     }
 }

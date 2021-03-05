@@ -22,7 +22,7 @@ public extension HTTPRequest {
         private var _responseLogging = false
         public var responseLogging: Bool {
             get {
-                var value: Bool = false
+                var value = false
                 dispatchQueue.sync {
                     value = _responseLogging
                 }

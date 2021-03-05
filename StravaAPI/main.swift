@@ -15,7 +15,7 @@ do {
     try StravaSession.shared.configure()
 
     let athlete: Athlete =
-        try AF.requestSync(StravaAPI.athlete).successOrThrow()
+        try AF.requestSync(StravaAPI.athlete).modelOrThrow()
 
     debugPrint(athlete)
 } catch {
