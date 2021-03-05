@@ -32,3 +32,15 @@ public extension Decodable {
         try self.init(jsonData: jsonData)
     }
 }
+
+// MARK: - Array + Decodable
+
+extension Array where Element: Decodable {
+
+    /// `Array` of `Element`s from the given `array` of `[AnyHashable: Any]`
+    ///
+    /// - Parameter dictionaryArray: `[[AnyHashable : Any]]`
+    init (dictionaryArray: [[AnyHashable: Any]]) throws {
+        self = try dictionaryArray.map { try Element(dictionary: $0) }
+    }
+}

@@ -46,3 +46,13 @@ public extension Encodable {
         return dictionary
     }
 }
+
+// MARK: - Array + Encodable
+
+extension Array where Element: Encodable {
+
+    /// Map to `[[AnyHashable : Any]]`
+    func dictionaryArray() throws -> [[AnyHashable : Any]] {
+        return try map { try $0.dictionary() }
+    }
+}

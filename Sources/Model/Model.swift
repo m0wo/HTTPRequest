@@ -123,16 +123,9 @@ public extension Array where Element: Model {
     ) throws {
         let array = try Self.decode(data: data)
         self = try array.filter { model in
-            guard !model.isValid else { return true /* All good! */ }
-            return (try invalidHandler?(model)) ?? false
-        }
-    }
-
-    /// `Array` of `Model`s from the given `array`
-    /// - Parameter array: `[[AnyHashable : Any]]`
-    init (array: [[AnyHashable: Any]]) throws {
-        self = try array.map {
-            try Element(dictionary: $0)
+            guard !model.isValid else { return true }
+            guard let handler = invalidHandler else { return false }
+            return try handler(model)
         }
     }
 }
