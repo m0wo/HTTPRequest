@@ -2,8 +2,7 @@
 //  Environment.swift
 //  HTTPRequest
 //
-//  Created by Ben Shutt on 28/10/2020.
-//  Copyright © 2020 3 SIDED CUBE APP PRODUCTIONS LTD. All rights reserved.
+//  Created by Ben Shutt on 12/03/2021.
 //
 
 import Foundation
@@ -43,9 +42,10 @@ public extension Environment {
     }
 
     /// Initialize `Self` from the given `bundle` falling back on `.default`
-    /// 
+    ///
     /// - Parameter bundle: `Bundle`
     static func value(bundle: Bundle = .main) -> Self {
         return Self(bundle: bundle) ?? .default
     }
 }
+
