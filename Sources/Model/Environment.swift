@@ -48,4 +48,3 @@ public extension Environment {
         return Self(bundle: bundle) ?? .default
     }
 }
-

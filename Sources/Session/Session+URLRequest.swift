@@ -45,10 +45,9 @@ public extension Session {
             // Get `Data` response
             .responseData(queue: queue) { response in
                 // Log the response if the configuration flag is enabled
-                if HTTPRequest.Configuration.shared.responseLogging {
-                    os_log(.info, log: .logger, "%@", response.debugDescription)
-                }
+                HTTPRequest.log(type: .info, message: response.debugDescription)
 
+                // Complete passing the response
                 completion(response)
             }
     }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import os
 
 public extension HTTPRequest {
 
@@ -34,5 +35,21 @@ public extension HTTPRequest {
                 }
             }
         }
+    }
+
+    /// Log `message` on `logger`
+    ///
+    /// - Parameters:
+    ///   - logger: `OSLog`
+    ///   - type: `OSLogType`
+    ///   - message: `String`
+    internal static func log(
+        _ logger: OSLog = .logger,
+        type: OSLogType,
+        message: String
+    ) {
+        guard HTTPRequest.Configuration.shared.responseLogging else { return }
+        guard #available(iOS 12, OSX 10.14, *) else { return }
+        os_log(type, log: logger, "%@", message)
     }
 }

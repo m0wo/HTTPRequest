@@ -100,7 +100,7 @@ public extension Model {
             self = model
         } catch {
             // Log the error before re-throwing
-            os_log(.error, log: .logger, "%@", "\(error)")
+            HTTPRequest.log(type: .error, message: "\(error)")
 
             throw error
         }
