@@ -56,7 +56,6 @@
 		OBJ_133 /* OSLog+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* OSLog+Logger.swift */; };
 		OBJ_134 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+Data.swift */; };
 		OBJ_135 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* String+Extensions.swift */; };
-		OBJ_136 /* String+HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* String+HTTP.swift */; };
 		OBJ_137 /* Array+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Array+URLQueryItem.swift */; };
 		OBJ_138 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Configuration.swift */; };
 		OBJ_139 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* HTTPRequest.swift */; };
@@ -169,7 +168,6 @@
 		OBJ_10 /* OSLog+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Logger.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* String+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Data.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_13 /* String+HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HTTP.swift"; sourceTree = "<group>"; };
 		OBJ_14 /* Array+URLQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+URLQueryItem.swift"; sourceTree = "<group>"; };
 		OBJ_16 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		OBJ_17 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
@@ -500,7 +498,6 @@
 				OBJ_23 /* Result+Extensions.swift */,
 				OBJ_11 /* String+Data.swift */,
 				OBJ_12 /* String+Extensions.swift */,
-				OBJ_13 /* String+HTTP.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -668,7 +665,6 @@
 				OBJ_135 /* String+Extensions.swift in Sources */,
 				B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */,
 				B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */,
-				OBJ_136 /* String+HTTP.swift in Sources */,
 				OBJ_137 /* Array+URLQueryItem.swift in Sources */,
 				B859FB7125F230E90058EDAC /* KeychainError.swift in Sources */,
 				B859FB7025F230E90058EDAC /* NotificationCenter+KeychainToken.swift in Sources */,

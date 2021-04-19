@@ -64,7 +64,9 @@ extension HTTPRequest: URLRequestConvertible {
     public func asURLRequest() throws -> URLRequest {
         // urlComponents
         var urlComponents = self.urlComponents
-        urlComponents.scheme = .toHTTPScheme(urlComponents.scheme)
+        if urlComponents.scheme?.nilIfEmpty == nil {
+            urlComponents.scheme = "https" // As this project is HTTPRequest
+        }
 
         // Remove `queryItems` from the `urlComponents` and add to the
         // `urlRequest` with encoding
