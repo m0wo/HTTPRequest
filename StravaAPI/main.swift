@@ -5,15 +5,18 @@
 //  Created by Ben Shutt on 07/12/2020.
 //
 
-import Alamofire
 import Foundation
+import Alamofire
 import HTTPRequest
 
-do {
-    HTTPRequest.Configuration.shared.logging = true
+// Turn on logging
+HTTPRequest.Configuration.shared.logging = true
 
+do {
+    // Setup Strava session
     try StravaSession.shared.configure()
 
+    // Fetch `Athlete` model based on authorization token
     let athlete: Athlete =
         try AF.requestSync(StravaAPI.athlete).modelOrThrow()
 
