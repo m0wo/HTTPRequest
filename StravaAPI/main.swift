@@ -10,7 +10,7 @@ import Foundation
 import HTTPRequest
 
 do {
-    HTTPRequest.Configuration.shared.responseLogging = true
+    HTTPRequest.Configuration.shared.logging = true
 
     try StravaSession.shared.configure()
 

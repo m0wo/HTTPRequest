@@ -20,18 +20,18 @@ public extension HTTPRequest {
         private let dispatchQueue = DispatchQueue(label: UUID().uuidString)
 
         /// Log the `DataResponse` when the response has been received
-        private var _responseLogging = false
-        public var responseLogging: Bool {
+        private var _logging = false
+        public var logging: Bool {
             get {
                 var value = false
                 dispatchQueue.sync {
-                    value = _responseLogging
+                    value = _logging
                 }
                 return value
             }
             set {
                 dispatchQueue.async {
-                    self._responseLogging = newValue
+                    self._logging = newValue
                 }
             }
         }
@@ -48,7 +48,7 @@ public extension HTTPRequest {
         type: OSLogType,
         message: String
     ) {
-        guard HTTPRequest.Configuration.shared.responseLogging else { return }
+        guard HTTPRequest.Configuration.shared.logging else { return }
         guard #available(iOS 12, OSX 10.14, *) else { return }
         os_log(type, log: logger, "%@", message)
     }
