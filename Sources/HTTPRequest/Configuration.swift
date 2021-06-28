@@ -43,8 +43,8 @@ public extension HTTPRequest {
     ///   - logger: `OSLog`
     ///   - type: `OSLogType`
     ///   - message: `String`
-    internal static func log(
-        _ logger: OSLog = .logger,
+    static func log(
+        _ logger: OSLog = .httpRequestLogger,
         type: OSLogType,
         message: String
     ) {
