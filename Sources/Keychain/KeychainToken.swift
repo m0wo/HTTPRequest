@@ -50,10 +50,11 @@ public struct KeychainToken {
         ]
 
         // Read from Keychain
-        var dataTypeRef: AnyObject?
-        let status = withUnsafeMutablePointer(to: &dataTypeRef) {
-            SecItemCopyMatching(fetchQuery as CFDictionary, UnsafeMutablePointer($0))
-        }
+        var item: AnyObject?
+        let status = SecItemCopyMatching(
+            fetchQuery as CFDictionary,
+            &item
+        )
 
         // Assert successful status
         guard status == errSecSuccess else {
@@ -61,8 +62,8 @@ public struct KeychainToken {
         }
 
         // Assert data is valid
-        guard let data = dataTypeRef as? Data else {
-            throw KeychainError.invalidRef(dataTypeRef)
+        guard let data = item as? Data else {
+            throw KeychainError.invalidRef(item)
         }
 
         // Parse as `String`
