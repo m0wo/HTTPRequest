@@ -15,6 +15,9 @@ import XCTest
 /// These tests require Keychain access
 final class KeychainTests: XCTestCase {
 
+    /// Disable this test
+    private var isTestEnabled = false
+
     /// Test `String` token
     private let token: String = UUID().uuidString
 
@@ -27,11 +30,15 @@ final class KeychainTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
+        guard isTestEnabled else { return }
+
         try? deleteToken() // Mask error
     }
 
     override func tearDown() {
         super.tearDown()
+        guard isTestEnabled else { return }
+        
         try? deleteToken() // Mask error
     }
 
@@ -46,11 +53,15 @@ final class KeychainTests: XCTestCase {
 
     /// Test reading a keychain token when it doesn't exist
     func test_noToken() throws {
+        try XCTSkipIf(!isTestEnabled)
+
         XCTAssertThrowsError(try keychainToken.readToken())
     }
 
     /// Test writing a keychain token and reading it
     func test_readWrite() throws {
+        try XCTSkipIf(!isTestEnabled)
+
         // Make sure there is no token
         try test_noToken()
 
@@ -64,6 +75,8 @@ final class KeychainTests: XCTestCase {
 
     /// Test writing a keychain token and reading it
     func test_update() throws {
+        try XCTSkipIf(!isTestEnabled)
+
         // Read and write
         try test_readWrite()
 
@@ -81,6 +94,8 @@ final class KeychainTests: XCTestCase {
 
     /// Test writing a keychain token and reading it
     func test_delete() throws {
+        try XCTSkipIf(!isTestEnabled)
+
         // Read and write
         try test_readWrite()
 
