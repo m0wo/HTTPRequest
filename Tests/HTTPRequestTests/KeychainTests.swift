@@ -10,6 +10,9 @@ import XCTest
 @testable import HTTPRequest
 
 /// Test `KeychainToken`
+///
+/// - Note:
+/// These tests require Keychain access
 final class KeychainTests: XCTestCase {
 
     /// Test `String` token

@@ -260,8 +260,8 @@
 				B81B2DF1257E4AB9008FA95D /* Endpoints */,
 				B81B2DEA257E4AB9008FA95D /* Extensions */,
 				B81B2DEE257E4AB9008FA95D /* File */,
-				B81B2DD8257E4AAF008FA95D /* main.swift */,
 				B81B2DE4257E4AB9008FA95D /* Models */,
+				B81B2DD8257E4AAF008FA95D /* main.swift */,
 				B81B2DED257E4AB9008FA95D /* StravaSession.swift */,
 			);
 			path = StravaAPI;
@@ -322,8 +322,8 @@
 		B8743A76262D731C0018C3A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */,
 				OBJ_24 /* Result+Model.swift */,
+				B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -350,8 +350,8 @@
 			children = (
 				OBJ_16 /* Configuration.swift */,
 				OBJ_17 /* HTTPRequest.swift */,
-				B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */,
 				OBJ_18 /* HTTPRequestable.swift */,
+				B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */,
 			);
 			path = HTTPRequest;
 			sourceTree = "<group>";
@@ -359,9 +359,9 @@
 		OBJ_19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B887DD5A25FC24DF0053FDB4 /* Environment.swift */,
 				OBJ_22 /* Model.swift */,
 				OBJ_25 /* SnakeCaseModel.swift */,
+				B887DD5A25FC24DF0053FDB4 /* Environment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -454,12 +454,12 @@
 				OBJ_7 /* Sources */,
 				OBJ_29 /* Tests */,
 				OBJ_34 /* Dependencies */,
-				B81B2DD7257E4AAF008FA95D /* StravaAPI */,
 				OBJ_72 /* Products */,
 				OBJ_77 /* LICENSE */,
 				OBJ_78 /* HTTPRequest.podspec */,
 				OBJ_79 /* README.md */,
 				B89245B225E7C77F0026C4D9 /* Frameworks */,
+				B81B2DD7257E4AAF008FA95D /* StravaAPI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -468,9 +468,9 @@
 			children = (
 				OBJ_8 /* Extensions */,
 				OBJ_15 /* HTTPRequest */,
-				B859FB6C25F230D80058EDAC /* Keychain */,
 				OBJ_19 /* Model */,
 				OBJ_26 /* Session */,
+				B859FB6C25F230D80058EDAC /* Keychain */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -490,17 +490,17 @@
 			children = (
 				OBJ_14 /* Array+URLQueryItem.swift */,
 				OBJ_21 /* DateFormatter+ISO8601.swift */,
-				B872BED425A38C640031D619 /* Decodable+JSON.swift */,
-				B8743A77262D73380018C3A9 /* Default */,
-				B872BEDA25A38C800031D619 /* Encodable+JSON.swift */,
-				B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */,
-				B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */,
-				B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */,
-				B8743A76262D731C0018C3A9 /* Model */,
 				OBJ_10 /* OSLog+Logger.swift */,
 				OBJ_23 /* Result+Extensions.swift */,
 				OBJ_11 /* String+Data.swift */,
 				OBJ_12 /* String+Extensions.swift */,
+				B8743A77262D73380018C3A9 /* Default */,
+				B8743A76262D731C0018C3A9 /* Model */,
+				B872BED425A38C640031D619 /* Decodable+JSON.swift */,
+				B872BEDA25A38C800031D619 /* Encodable+JSON.swift */,
+				B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */,
+				B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */,
+				B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -639,22 +639,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B81B2E23257E4B7E008FA95D /* URLComponents+Strava.swift in Sources */,
-				B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */,
-				B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */,
-				B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */,
-				B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */,
-				B89245CB25E7CB2B0026C4D9 /* String+Extensions.swift in Sources */,
-				B81B2DD9257E4AAF008FA95D /* main.swift in Sources */,
-				B89245D125E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift in Sources */,
-				B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */,
-				B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */,
-				B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */,
-				B892460525E7F36C0026C4D9 /* ModelFile.swift in Sources */,
-				B81B2E62257E4B98008FA95D /* Token.swift in Sources */,
 				B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */,
-				B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */,
+				B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */,
+				B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */,
+				B81B2DD9257E4AAF008FA95D /* main.swift in Sources */,
+				B892460525E7F36C0026C4D9 /* ModelFile.swift in Sources */,
+				B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */,
 				B81B2E54257E4B93008FA95D /* StravaModel.swift in Sources */,
+				B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */,
+				B89245CB25E7CB2B0026C4D9 /* String+Extensions.swift in Sources */,
+				B81B2E62257E4B98008FA95D /* Token.swift in Sources */,
+				B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */,
+				B89245D125E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift in Sources */,
+				B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */,
+				B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */,
+				B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */,
+				B81B2E23257E4B7E008FA95D /* URLComponents+Strava.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,33 +662,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				B872BECF25A38C4D0031D619 /* JSONEncoder+Default.swift in Sources */,
 				OBJ_133 /* OSLog+Logger.swift in Sources */,
 				OBJ_134 /* String+Data.swift in Sources */,
 				OBJ_135 /* String+Extensions.swift in Sources */,
-				B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */,
-				B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */,
 				OBJ_137 /* Array+URLQueryItem.swift in Sources */,
-				B859FB7125F230E90058EDAC /* KeychainError.swift in Sources */,
-				B859FB7025F230E90058EDAC /* NotificationCenter+KeychainToken.swift in Sources */,
-				B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */,
-				B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */,
 				OBJ_138 /* Configuration.swift in Sources */,
-				B866911B25BDA287003A10DB /* HTTPRequest+Build.swift in Sources */,
 				OBJ_139 /* HTTPRequest.swift in Sources */,
 				OBJ_140 /* HTTPRequestable.swift in Sources */,
 				OBJ_142 /* DateFormatter+ISO8601.swift in Sources */,
-				B887DD5B25FC24DF0053FDB4 /* Environment.swift in Sources */,
 				OBJ_143 /* Model.swift in Sources */,
 				OBJ_144 /* Result+Extensions.swift in Sources */,
-				B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */,
-				B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */,
 				OBJ_145 /* Result+Model.swift in Sources */,
 				OBJ_146 /* SnakeCaseModel.swift in Sources */,
-				B872BEC925A38C3D0031D619 /* JSONDecoder+Default.swift in Sources */,
 				OBJ_147 /* Session+URLRequest.swift in Sources */,
 				OBJ_148 /* Session+URLRequestConvertible.swift in Sources */,
+				B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */,
+				B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */,
+				B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */,
+				B887DD5B25FC24DF0053FDB4 /* Environment.swift in Sources */,
+				B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */,
+				B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */,
+				B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */,
+				B866911B25BDA287003A10DB /* HTTPRequest+Build.swift in Sources */,
+				B872BEC925A38C3D0031D619 /* JSONDecoder+Default.swift in Sources */,
+				B872BECF25A38C4D0031D619 /* JSONEncoder+Default.swift in Sources */,
+				B859FB7125F230E90058EDAC /* KeychainError.swift in Sources */,
 				B859FB7225F230E90058EDAC /* KeychainToken.swift in Sources */,
+				B859FB7025F230E90058EDAC /* NotificationCenter+KeychainToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,9 +705,9 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_168 /* HTTPRequestTests.swift in Sources */,
-				B8EC0FB426B30104002D4E44 /* KeychainTests.swift in Sources */,
 				OBJ_169 /* StringDataTests.swift in Sources */,
 				OBJ_170 /* XCTestManifests.swift in Sources */,
+				B8EC0FB426B30104002D4E44 /* KeychainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
