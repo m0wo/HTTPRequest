@@ -52,6 +52,7 @@
 		B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */; };
 		B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245FA25E7E24A0026C4D9 /* FileURLError.swift */; };
 		B892460525E7F36C0026C4D9 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892460425E7F36C0026C4D9 /* ModelFile.swift */; };
+		B8EC0FB426B30104002D4E44 /* KeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EC0FB326B30104002D4E44 /* KeychainTests.swift */; };
 		B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */; };
 		OBJ_133 /* OSLog+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* OSLog+Logger.swift */; };
 		OBJ_134 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+Data.swift */; };
@@ -163,6 +164,7 @@
 		B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ProjectDirectory.swift"; sourceTree = "<group>"; };
 		B89245FA25E7E24A0026C4D9 /* FileURLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileURLError.swift; sourceTree = "<group>"; };
 		B892460425E7F36C0026C4D9 /* ModelFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFile.swift; sourceTree = "<group>"; };
+		B8EC0FB326B30104002D4E44 /* KeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTests.swift; sourceTree = "<group>"; };
 		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* OSLog+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Logger.swift"; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				OBJ_31 /* HTTPRequestTests.swift */,
 				OBJ_32 /* StringDataTests.swift */,
 				OBJ_33 /* XCTestManifests.swift */,
+				B8EC0FB326B30104002D4E44 /* KeychainTests.swift */,
 			);
 			name = HTTPRequestTests;
 			path = Tests/HTTPRequestTests;
@@ -702,6 +705,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_168 /* HTTPRequestTests.swift in Sources */,
+				B8EC0FB426B30104002D4E44 /* KeychainTests.swift in Sources */,
 				OBJ_169 /* StringDataTests.swift in Sources */,
 				OBJ_170 /* XCTestManifests.swift in Sources */,
 			);
