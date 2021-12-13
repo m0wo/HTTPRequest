@@ -26,5 +26,5 @@ do {
     Logger.log(jsonString, type: .info)
 } catch {
     // Log failure
-    Logger.log("\(error)", type: .error)
+    Logger.log(error)
 }

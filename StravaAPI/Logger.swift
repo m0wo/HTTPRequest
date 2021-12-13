@@ -35,4 +35,16 @@ struct Logger {
     ) {
         os_log(type, log: logger, "%@", message)
     }
+
+    /// Log `error` on `logger`
+    ///
+    /// - Parameters:
+    ///   - error: `Error`
+    ///   - logger: `OSLog`
+    static func log(
+        _ error: Error,
+        logger: OSLog = .logger
+    ) {
+        log("\(error)", type: .error, logger: logger)
+    }
 }
