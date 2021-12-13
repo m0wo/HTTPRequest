@@ -15,4 +15,11 @@ public extension JSONEncoder {
         encoder.dateEncodingStrategy = .formatted(DateFormatter.hierarchical)
         return encoder
     }
+
+    /// Default `JSONEncoder` with pretty printed output
+    static var defaultPrettyPrinted: JSONEncoder {
+        let encoder: JSONEncoder = .default
+        encoder.outputFormatting = .prettyPrinted
+        return encoder
+    }
 }

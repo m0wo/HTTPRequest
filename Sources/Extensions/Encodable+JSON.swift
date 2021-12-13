@@ -20,26 +20,27 @@ public enum EncodableError: Error {
 
 public extension Encodable {
 
-    /// Create JSON `Data` from `Encodable`
+    /// Use `JSONEncoder` to get JSON `Data` from `self` and map to `String`
     ///
-    /// - Parameter encoder: `JSONEncoder`
-    func jsonData(encoder: JSONEncoder = .default) throws -> Data {
-        return try encoder.encode(self)
-    }
-
-    /// Use `JSONEncoder` with `.prettyPrinted` on `self`
+    /// - Parameters:
+    ///   - encoder: `JSONEncoder`
+    ///   - encoding: `String.Encoding`
     ///
-    /// - Parameter encoder: `JSONEncoder`
-    func jsonString(encoder: JSONEncoder = .default) throws -> String {
-        encoder.outputFormatting = .prettyPrinted
-        let data = try jsonData(encoder: encoder)
-        return try data.stringOrThrow(encoding: .utf8)
+    /// - Returns: `String`
+    func jsonString(
+        encoder: JSONEncoder = .defaultPrettyPrinted,
+        encoding: String.Encoding = .utf8
+    ) throws -> String {
+        return try encoder.encode(self).stringOrThrow(encoding: encoding)
     }
 
     /// Convert `self` to a `[AnyHashable: Any]`
-    func dictionary() throws -> [AnyHashable: Any] {
-        let jsonData = try self.jsonData()
-        let json = try JSONSerialization.jsonObject(with: jsonData, options: [])
+    ///
+    /// - Parameters:
+    ///   - encoder: `JSONEncoder`
+    func dictionary(encoder: JSONEncoder = .default) throws -> [AnyHashable: Any] {
+        let data = try encoder.encode(self)
+        let json = try JSONSerialization.jsonObject(with: data, options: [])
         guard let dictionary = json as? [AnyHashable: Any] else {
             throw EncodableError.dictionary
         }
