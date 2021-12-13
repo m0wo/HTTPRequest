@@ -19,7 +19,12 @@ do {
     // Fetch `Athlete` model based on authorization token
     let athlete: Athlete = try StravaAPI.athlete.requestSync().model()
 
-    Logger.log("\(athlete)", type: .info)
+    // Map to JSON String
+    let jsonString = try athlete.jsonString()
+
+    // Log success
+    Logger.log(jsonString, type: .info)
 } catch {
+    // Log failure
     Logger.log("\(error)", type: .error)
 }
