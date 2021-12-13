@@ -35,8 +35,15 @@ extension Array where Element: Decodable {
 
     /// `Array` of `Element`s from the given `array` of `[AnyHashable: Any]`
     ///
-    /// - Parameter dictionaryArray: `[[AnyHashable : Any]]`
-    init(dictionaryArray: [[AnyHashable: Any]]) throws {
-        self = try dictionaryArray.map { try Element(dictionary: $0) }
+    /// - Parameters:
+    ///   - decoder: `JSONDecoder
+    ///   - dictionaryArray: `[[AnyHashable : Any]]`
+    init(
+        decoder: JSONDecoder = .default,
+        dictionaryArray: [[AnyHashable: Any]]
+    ) throws {
+        self = try dictionaryArray.map {
+            try Element(decoder: decoder, dictionary: $0)
+        }
     }
 }

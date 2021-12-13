@@ -30,6 +30,12 @@ struct TokenRequest: Codable {
 
     // MARK: - Init
 
+    /// Initializer
+    ///
+    /// - Parameters:
+    ///   - clientId: `Int`
+    ///   - clientSecret: `String`
+    ///   - refreshToken: `String`
     init(
         clientId: Int,
         clientSecret: String,

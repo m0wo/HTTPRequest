@@ -15,4 +15,11 @@ public extension JSONDecoder {
         decoder.dateDecodingStrategy = .formatted(DateFormatter.hierarchical)
         return decoder
     }
+
+    /// Use snake_case when decoding from JSON data
+    static var snakeCase: JSONDecoder {
+        let decoder = JSONDecoder.default
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }
 }
