@@ -5,22 +5,21 @@ It is a high level extension built on top of the awesome framework [Alamofire](h
 How it works is best demonstrated by an example:
 
 ```swift
-// Using Alamofire, make a request to the "athlete" endpoint 
-AF.request(StravaAPI.athlete) { response in
-    // Check the response can be decoded into an `Athlete` model
-    guard let athlete: Athlete = response.model() else {
-        // Handle API or `Model` error
-        return
+// Using Alamofire, make a request to the "athlete" endpoint
+StravaAPI.athlete.request { result in
+    // Map API result to result where the success is the model
+    let modelResult: Result<Athlete, Error> = result.modelResult()
+    switch modelResult {
+    case let .success(athlete):
+        // Use athlete
+    case let .failure(error):
+        // Handle error
     }
-        
-    // Use athlete fetched from API
 }
 ```
 
-This interface makes it clearer to the reader what this network request is doing, specifically:  
-Making a HTTP request to the `"athlete"` endpoint of the Strava API which returns an `Athlete` on success.
-
-The details of the request can then be encapsulated in the `StravaAPI` `enum`.  
+Here, we are making a HTTP request to the `"athlete"` endpoint of the Strava API and mapping to an `Athlete` model on success.
+The details of the request can then be encapsulated in the `StravaAPI` `enum` (or anything that conforms to `HTTPRequestable`).
 Here's what that might look like:
 
 ```swift
@@ -63,12 +62,10 @@ extension URLComponents {
         queryItems: [URLQueryItem] = []
     ) -> URLComponents {
         var urlComponents = URLComponents()
-
         urlComponents.scheme = "https"
         urlComponents.host = "www.strava.com"
         urlComponents.path = "/api/v3/\(endpoint)"
-        urlComponents.queryItems = queryItems 
-
+        urlComponents.queryItems = queryItems
         return urlComponents
     }
 }
