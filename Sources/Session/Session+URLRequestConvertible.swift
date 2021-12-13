@@ -31,7 +31,7 @@ public extension Session {
                 urlRequest: urlRequest,
                 queue: queue,
                 completion: { response in
-                    completion(response.result.generalErrorResult)
+                    completion(response.result.mapError { $0 })
                 }
             )
         } catch {

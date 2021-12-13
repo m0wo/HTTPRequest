@@ -16,7 +16,7 @@ struct StravaSession {
     static var shared = StravaSession()
 
     /// Saved `Token`
-    private(set) var token: Token? = nil {
+    private(set) var token: Token? {
         didSet {
             try? updateTokenFile()
             try? updateTokenRequestFile()

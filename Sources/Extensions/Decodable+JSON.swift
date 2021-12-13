@@ -14,7 +14,7 @@ public extension Decodable {
     /// - Parameters:
     ///   - jsonData: JSON `Data`
     ///   - decoder: `JSONDecoder`
-    init (jsonData: Data, decoder: JSONDecoder = .default) throws {
+    init(jsonData: Data, decoder: JSONDecoder = .default) throws {
         self = try decoder.decode(Self.self, from: jsonData)
     }
 
@@ -24,7 +24,7 @@ public extension Decodable {
     /// This is generally not required as JSON `Data` is used instead
     ///
     /// - Parameter dictionary: `[AnyHashable: Any]`
-    init (dictionary: [AnyHashable: Any]) throws {
+    init(dictionary: [AnyHashable: Any]) throws {
         let jsonData = try JSONSerialization.data(
             withJSONObject: dictionary,
             options: []
@@ -40,7 +40,7 @@ extension Array where Element: Decodable {
     /// `Array` of `Element`s from the given `array` of `[AnyHashable: Any]`
     ///
     /// - Parameter dictionaryArray: `[[AnyHashable : Any]]`
-    init (dictionaryArray: [[AnyHashable: Any]]) throws {
+    init(dictionaryArray: [[AnyHashable: Any]]) throws {
         self = try dictionaryArray.map { try Element(dictionary: $0) }
     }
 }

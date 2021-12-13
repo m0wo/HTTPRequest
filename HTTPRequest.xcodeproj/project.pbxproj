@@ -39,7 +39,6 @@
 		B859FB7225F230E90058EDAC /* KeychainToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = B859FB6F25F230E90058EDAC /* KeychainToken.swift */; };
 		B866911B25BDA287003A10DB /* HTTPRequest+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */; };
 		B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */; };
-		B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */; };
 		B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */; };
 		B872BEC925A38C3D0031D619 /* JSONDecoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEC825A38C3D0031D619 /* JSONDecoder+Default.swift */; };
 		B872BECF25A38C4D0031D619 /* JSONEncoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BECE25A38C4D0031D619 /* JSONEncoder+Default.swift */; };
@@ -64,7 +63,6 @@
 		OBJ_142 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DateFormatter+ISO8601.swift */; };
 		OBJ_143 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Model.swift */; };
 		OBJ_144 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Result+Extensions.swift */; };
-		OBJ_145 /* Result+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Result+Model.swift */; };
 		OBJ_146 /* SnakeCaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SnakeCaseModel.swift */; };
 		OBJ_147 /* Session+URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Session+URLRequest.swift */; };
 		OBJ_148 /* Session+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Session+URLRequestConvertible.swift */; };
@@ -151,7 +149,6 @@
 		B859FB6F25F230E90058EDAC /* KeychainToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainToken.swift; sourceTree = "<group>"; };
 		B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPRequest+Build.swift"; sourceTree = "<group>"; };
 		B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeader+Headers.swift"; sourceTree = "<group>"; };
-		B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AFDataResponse+Model.swift"; sourceTree = "<group>"; };
 		B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HierarchicalDateFormatter.swift; sourceTree = "<group>"; };
 		B872BEC825A38C3D0031D619 /* JSONDecoder+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Default.swift"; sourceTree = "<group>"; };
 		B872BECE25A38C4D0031D619 /* JSONEncoder+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+Default.swift"; sourceTree = "<group>"; };
@@ -177,7 +174,6 @@
 		OBJ_21 /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
 		OBJ_22 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		OBJ_23 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_24 /* Result+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Model.swift"; sourceTree = "<group>"; };
 		OBJ_25 /* SnakeCaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeCaseModel.swift; sourceTree = "<group>"; };
 		OBJ_27 /* Session+URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+URLRequest.swift"; sourceTree = "<group>"; };
 		OBJ_28 /* Session+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+URLRequestConvertible.swift"; sourceTree = "<group>"; };
@@ -317,15 +313,6 @@
 				B859FB6D25F230E80058EDAC /* NotificationCenter+KeychainToken.swift */,
 			);
 			path = Keychain;
-			sourceTree = "<group>";
-		};
-		B8743A76262D731C0018C3A9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_24 /* Result+Model.swift */,
-				B872BEB425A38BBF0031D619 /* AFDataResponse+Model.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		B8743A77262D73380018C3A9 /* Default */ = {
@@ -495,7 +482,6 @@
 				OBJ_11 /* String+Data.swift */,
 				OBJ_12 /* String+Extensions.swift */,
 				B8743A77262D73380018C3A9 /* Default */,
-				B8743A76262D731C0018C3A9 /* Model */,
 				B872BED425A38C640031D619 /* Decodable+JSON.swift */,
 				B872BEDA25A38C800031D619 /* Encodable+JSON.swift */,
 				B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */,
@@ -672,11 +658,9 @@
 				OBJ_142 /* DateFormatter+ISO8601.swift in Sources */,
 				OBJ_143 /* Model.swift in Sources */,
 				OBJ_144 /* Result+Extensions.swift in Sources */,
-				OBJ_145 /* Result+Model.swift in Sources */,
 				OBJ_146 /* SnakeCaseModel.swift in Sources */,
 				OBJ_147 /* Session+URLRequest.swift in Sources */,
 				OBJ_148 /* Session+URLRequestConvertible.swift in Sources */,
-				B872BEB525A38BBF0031D619 /* AFDataResponse+Model.swift in Sources */,
 				B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */,
 				B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */,
 				B887DD5B25FC24DF0053FDB4 /* Environment.swift in Sources */,

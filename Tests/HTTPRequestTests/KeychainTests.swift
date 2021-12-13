@@ -38,7 +38,7 @@ final class KeychainTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
         guard isTestEnabled else { return }
-        
+
         try? deleteToken() // Mask error
     }
 

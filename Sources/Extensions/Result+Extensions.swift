@@ -31,39 +31,4 @@ public extension Result {
         case .failure(let error): throw error
         }
     }
-
-    /// Map the `.success` component to a `T`
-    /// - Parameter map: Closure to map success
-    func mapSuccess<T>(_ map: (Success) -> T) -> Result<T, Failure> {
-        switch self {
-        case .success(let success): return .success(map(success))
-        case .failure(let failure): return .failure(failure)
-        }
-    }
-
-    // MARK: - Internal
-
-    /// Cast `Failure` to generic `Error`
-    internal var generalErrorResult: Result<Success, Error> {
-        switch self {
-        case .success(let success): return .success(success)
-        case .failure(let error): return .failure(error)
-        }
-    }
-}
-
-// MARK: - Result + Error
-
-public extension Result where Failure == Error {
-
-    /// Initialize a `Result` with the `throwable` closure
-    ///
-    /// - Parameter throwable: Closure which may `throw`
-    init(_ throwable: () throws -> Success) {
-        do {
-            self = try .success(throwable())
-        } catch {
-            self = .failure(error)
-        }
-    }
 }
