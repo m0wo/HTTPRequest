@@ -53,7 +53,12 @@ public extension Encodable {
 extension Array where Element: Encodable {
 
     /// Map to `[[AnyHashable : Any]]`
-    func dictionaryArray() throws -> [[AnyHashable: Any]] {
-        return try map { try $0.dictionary() }
+    ///
+    /// - Parameters:
+    ///   - encoder: `JSONEncoder`
+    func dictionaryArray(
+        encoder: JSONEncoder = .default
+    ) throws -> [[AnyHashable: Any]] {
+        return try map { try $0.dictionary(encoder: encoder) }
     }
 }

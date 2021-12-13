@@ -489,13 +489,13 @@
 		OBJ_8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B8743A77262D73380018C3A9 /* Default */,
 				OBJ_14 /* Array+URLQueryItem.swift */,
 				OBJ_21 /* DateFormatter+ISO8601.swift */,
 				OBJ_10 /* OSLog+Logger.swift */,
 				OBJ_23 /* Result+Extensions.swift */,
 				OBJ_11 /* String+Data.swift */,
 				OBJ_12 /* String+Extensions.swift */,
-				B8743A77262D73380018C3A9 /* Default */,
 				B872BED425A38C640031D619 /* Decodable+JSON.swift */,
 				B872BEDA25A38C800031D619 /* Encodable+JSON.swift */,
 				B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */,
