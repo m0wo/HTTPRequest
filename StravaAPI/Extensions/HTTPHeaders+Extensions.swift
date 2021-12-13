@@ -15,7 +15,7 @@ extension HTTPHeaders {
     /// Create with non-`nil` elements of `headers`
     /// 
     /// - Parameter headers: `[HTTPHeader?]`
-    init (headers: [HTTPHeader?]) {
+    init(headers: [HTTPHeader?]) {
         self.init(headers.compactMap { $0 })
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 /// A (detailed) Strava Athlete
-struct Athlete: StravaModel {
+struct Athlete: Codable {
 
     /// The unique identifier of the athlete
     var id: Int

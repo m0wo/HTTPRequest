@@ -18,11 +18,11 @@ protocol ModelFile {
 
 // MARK: - Extensions
 
-extension ModelFile where Entity: Model {
+extension ModelFile where Entity: Codable {
 
     /// Read `Entity` from file
     static func read() throws -> Entity {
-        return try Entity(data: Data(contentsOf: url()))
+        return try Data(contentsOf: url()).decode()
     }
 
     /// Write `Entity` to file

@@ -31,7 +31,7 @@ extension StravaAPI: HTTPRequestable {
                 method: .post,
                 urlComponents: .stravaAPI(
                     endpoint: "oauth/token",
-                    parameters: TokenRequestFile.read().queryItems
+                    queryItems: TokenRequestFile.read().queryItems
                 ),
                 additionalHeaders: HTTPHeaders(headers: [
                     .acceptJSON

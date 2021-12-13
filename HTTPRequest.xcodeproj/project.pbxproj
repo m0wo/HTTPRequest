@@ -30,7 +30,6 @@
 		B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEF257E4AB9008FA95D /* TokenFile.swift */; };
 		B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */; };
 		B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */; };
-		B81B2E54257E4B93008FA95D /* StravaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE6257E4AB9008FA95D /* StravaModel.swift */; };
 		B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* Athlete.swift */; };
 		B81B2E62257E4B98008FA95D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE8257E4AB9008FA95D /* Token.swift */; };
 		B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DED257E4AB9008FA95D /* StravaSession.swift */; };
@@ -51,6 +50,14 @@
 		B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */; };
 		B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245FA25E7E24A0026C4D9 /* FileURLError.swift */; };
 		B892460525E7F36C0026C4D9 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892460425E7F36C0026C4D9 /* ModelFile.swift */; };
+		B8E023622767535B003FBC9D /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E023612767535B003FBC9D /* Data+Codable.swift */; };
+		B8E023642767540E003FBC9D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E023632767540E003FBC9D /* Logger.swift */; };
+		B8E0236E27675812003FBC9D /* APISuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E02366276757B0003FBC9D /* APISuccess.swift */; };
+		B8E0236F27675817003FBC9D /* HTTPRequestable+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E02368276757BE003FBC9D /* HTTPRequestable+Request.swift */; };
+		B8E0237027675819003FBC9D /* APIFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E0236A276757D7003FBC9D /* APIFailure.swift */; };
+		B8E023712767581D003FBC9D /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E0236C276757F8003FBC9D /* APIResult.swift */; };
+		B8E02373276761F8003FBC9D /* DataRequest+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E02372276761F8003FBC9D /* DataRequest+Request.swift */; };
+		B8E023782767663C003FBC9D /* DispatchQueue+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E023772767663C003FBC9D /* DispatchQueue+Extensions.swift */; };
 		B8EC0FB426B30104002D4E44 /* KeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8EC0FB326B30104002D4E44 /* KeychainTests.swift */; };
 		B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */; };
 		OBJ_133 /* OSLog+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* OSLog+Logger.swift */; };
@@ -62,8 +69,6 @@
 		OBJ_140 /* HTTPRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* HTTPRequestable.swift */; };
 		OBJ_142 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DateFormatter+ISO8601.swift */; };
 		OBJ_144 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Result+Extensions.swift */; };
-		OBJ_147 /* Session+URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Session+URLRequest.swift */; };
-		OBJ_148 /* Session+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Session+URLRequestConvertible.swift */; };
 		OBJ_157 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_168 /* HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* HTTPRequestTests.swift */; };
 		OBJ_169 /* StringDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* StringDataTests.swift */; };
@@ -132,7 +137,6 @@
 		B81B2DD6257E4AAF008FA95D /* StravaAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StravaAPI; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81B2DD8257E4AAF008FA95D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
-		B81B2DE6257E4AB9008FA95D /* StravaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaModel.swift; sourceTree = "<group>"; };
 		B81B2DE7257E4AB9008FA95D /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
 		B81B2DE8257E4AB9008FA95D /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
@@ -159,6 +163,14 @@
 		B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ProjectDirectory.swift"; sourceTree = "<group>"; };
 		B89245FA25E7E24A0026C4D9 /* FileURLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileURLError.swift; sourceTree = "<group>"; };
 		B892460425E7F36C0026C4D9 /* ModelFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFile.swift; sourceTree = "<group>"; };
+		B8E023612767535B003FBC9D /* Data+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Codable.swift"; sourceTree = "<group>"; };
+		B8E023632767540E003FBC9D /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B8E02366276757B0003FBC9D /* APISuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISuccess.swift; sourceTree = "<group>"; };
+		B8E02368276757BE003FBC9D /* HTTPRequestable+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPRequestable+Request.swift"; sourceTree = "<group>"; };
+		B8E0236A276757D7003FBC9D /* APIFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFailure.swift; sourceTree = "<group>"; };
+		B8E0236C276757F8003FBC9D /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		B8E02372276761F8003FBC9D /* DataRequest+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Request.swift"; sourceTree = "<group>"; };
+		B8E023772767663C003FBC9D /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		B8EC0FB326B30104002D4E44 /* KeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTests.swift; sourceTree = "<group>"; };
 		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,8 +183,6 @@
 		OBJ_18 /* HTTPRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestable.swift; sourceTree = "<group>"; };
 		OBJ_21 /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
 		OBJ_23 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_27 /* Session+URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+URLRequest.swift"; sourceTree = "<group>"; };
-		OBJ_28 /* Session+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		OBJ_31 /* HTTPRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTests.swift; sourceTree = "<group>"; };
 		OBJ_32 /* StringDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDataTests.swift; sourceTree = "<group>"; };
 		OBJ_33 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
@@ -249,12 +259,13 @@
 		B81B2DD7257E4AAF008FA95D /* StravaAPI */ = {
 			isa = PBXGroup;
 			children = (
-				B81B2DF1257E4AB9008FA95D /* Endpoints */,
+				B81B2DF1257E4AB9008FA95D /* API */,
 				B81B2DEA257E4AB9008FA95D /* Extensions */,
 				B81B2DEE257E4AB9008FA95D /* File */,
 				B81B2DE4257E4AB9008FA95D /* Models */,
 				B81B2DD8257E4AAF008FA95D /* main.swift */,
 				B81B2DED257E4AB9008FA95D /* StravaSession.swift */,
+				B8E023632767540E003FBC9D /* Logger.swift */,
 			);
 			path = StravaAPI;
 			sourceTree = "<group>";
@@ -263,7 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				B81B2DE7257E4AB9008FA95D /* Athlete.swift */,
-				B81B2DE6257E4AB9008FA95D /* StravaModel.swift */,
 				B81B2DE8257E4AB9008FA95D /* Token.swift */,
 				B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */,
 			);
@@ -273,6 +283,7 @@
 		B81B2DEA257E4AB9008FA95D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B8E023612767535B003FBC9D /* Data+Codable.swift */,
 				B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */,
 				B89245CA25E7CB2B0026C4D9 /* String+Extensions.swift */,
 				B89245D025E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift */,
@@ -292,13 +303,13 @@
 			path = File;
 			sourceTree = "<group>";
 		};
-		B81B2DF1257E4AB9008FA95D /* Endpoints */ = {
+		B81B2DF1257E4AB9008FA95D /* API */ = {
 			isa = PBXGroup;
 			children = (
 				B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */,
 				B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */,
 			);
-			path = Endpoints;
+			path = API;
 			sourceTree = "<group>";
 		};
 		B859FB6C25F230D80058EDAC /* Keychain */ = {
@@ -328,6 +339,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B8E0237427676297003FBC9D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				B8E02368276757BE003FBC9D /* HTTPRequestable+Request.swift */,
+				B8E02372276761F8003FBC9D /* DataRequest+Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		OBJ_15 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,17 +363,11 @@
 			isa = PBXGroup;
 			children = (
 				B887DD5A25FC24DF0053FDB4 /* Environment.swift */,
+				B8E02366276757B0003FBC9D /* APISuccess.swift */,
+				B8E0236A276757D7003FBC9D /* APIFailure.swift */,
+				B8E0236C276757F8003FBC9D /* APIResult.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		OBJ_26 /* Session */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_27 /* Session+URLRequest.swift */,
-				OBJ_28 /* Session+URLRequestConvertible.swift */,
-			);
-			path = Session;
 			sourceTree = "<group>";
 		};
 		OBJ_29 /* Tests */ = {
@@ -447,10 +461,10 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B8E0237427676297003FBC9D /* Request */,
 				OBJ_8 /* Extensions */,
 				OBJ_15 /* HTTPRequest */,
 				OBJ_19 /* Model */,
-				OBJ_26 /* Session */,
 				B859FB6C25F230D80058EDAC /* Keychain */,
 			);
 			path = Sources;
@@ -481,6 +495,7 @@
 				B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */,
 				B872BEC225A38C0D0031D619 /* HierarchicalDateFormatter.swift */,
 				B872BEAE25A38BA70031D619 /* HTTPHeader+Headers.swift */,
+				B8E023772767663C003FBC9D /* DispatchQueue+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -625,13 +640,14 @@
 				B81B2DD9257E4AAF008FA95D /* main.swift in Sources */,
 				B892460525E7F36C0026C4D9 /* ModelFile.swift in Sources */,
 				B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */,
-				B81B2E54257E4B93008FA95D /* StravaModel.swift in Sources */,
 				B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */,
 				B89245CB25E7CB2B0026C4D9 /* String+Extensions.swift in Sources */,
+				B8E023642767540E003FBC9D /* Logger.swift in Sources */,
 				B81B2E62257E4B98008FA95D /* Token.swift in Sources */,
 				B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */,
 				B89245D125E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift in Sources */,
 				B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */,
+				B8E023622767535B003FBC9D /* Data+Codable.swift in Sources */,
 				B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */,
 				B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */,
 				B81B2E23257E4B7E008FA95D /* URLComponents+Strava.swift in Sources */,
@@ -651,19 +667,23 @@
 				OBJ_140 /* HTTPRequestable.swift in Sources */,
 				OBJ_142 /* DateFormatter+ISO8601.swift in Sources */,
 				OBJ_144 /* Result+Extensions.swift in Sources */,
-				OBJ_147 /* Session+URLRequest.swift in Sources */,
-				OBJ_148 /* Session+URLRequestConvertible.swift in Sources */,
+				B8E023782767663C003FBC9D /* DispatchQueue+Extensions.swift in Sources */,
+				B8E0236F27675817003FBC9D /* HTTPRequestable+Request.swift in Sources */,
+				B8E02373276761F8003FBC9D /* DataRequest+Request.swift in Sources */,
 				B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */,
 				B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */,
 				B887DD5B25FC24DF0053FDB4 /* Environment.swift in Sources */,
 				B8ED3FD925A209EC00685ADA /* FileManager+Extensions.swift in Sources */,
 				B872BEC325A38C0D0031D619 /* HierarchicalDateFormatter.swift in Sources */,
 				B872BEAF25A38BA70031D619 /* HTTPHeader+Headers.swift in Sources */,
+				B8E023712767581D003FBC9D /* APIResult.swift in Sources */,
 				B866911B25BDA287003A10DB /* HTTPRequest+Build.swift in Sources */,
+				B8E0237027675819003FBC9D /* APIFailure.swift in Sources */,
 				B872BEC925A38C3D0031D619 /* JSONDecoder+Default.swift in Sources */,
 				B872BECF25A38C4D0031D619 /* JSONEncoder+Default.swift in Sources */,
 				B859FB7125F230E90058EDAC /* KeychainError.swift in Sources */,
 				B859FB7225F230E90058EDAC /* KeychainToken.swift in Sources */,
+				B8E0236E27675812003FBC9D /* APISuccess.swift in Sources */,
 				B859FB7025F230E90058EDAC /* NotificationCenter+KeychainToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -72,8 +72,7 @@ struct StravaSession {
         guard token == nil else { return }
 
         // Refresh the token with the server
-        let result: Result<Token, Error> =
-            try AF.requestSync(StravaAPI.refreshToken).modelResult()
+        let result: Result<Token, Error> = try StravaAPI.refreshToken.requestSync().modelResult()
 
         // Check the token was refreshed
         switch result {
