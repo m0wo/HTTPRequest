@@ -61,9 +61,7 @@
 		OBJ_139 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* HTTPRequest.swift */; };
 		OBJ_140 /* HTTPRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* HTTPRequestable.swift */; };
 		OBJ_142 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DateFormatter+ISO8601.swift */; };
-		OBJ_143 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Model.swift */; };
 		OBJ_144 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Result+Extensions.swift */; };
-		OBJ_146 /* SnakeCaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* SnakeCaseModel.swift */; };
 		OBJ_147 /* Session+URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Session+URLRequest.swift */; };
 		OBJ_148 /* Session+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Session+URLRequestConvertible.swift */; };
 		OBJ_157 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -172,9 +170,7 @@
 		OBJ_17 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		OBJ_18 /* HTTPRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestable.swift; sourceTree = "<group>"; };
 		OBJ_21 /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
-		OBJ_22 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		OBJ_23 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_25 /* SnakeCaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeCaseModel.swift; sourceTree = "<group>"; };
 		OBJ_27 /* Session+URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+URLRequest.swift"; sourceTree = "<group>"; };
 		OBJ_28 /* Session+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		OBJ_31 /* HTTPRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTests.swift; sourceTree = "<group>"; };
@@ -346,8 +342,6 @@
 		OBJ_19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* Model.swift */,
-				OBJ_25 /* SnakeCaseModel.swift */,
 				B887DD5A25FC24DF0053FDB4 /* Environment.swift */,
 			);
 			path = Model;
@@ -656,9 +650,7 @@
 				OBJ_139 /* HTTPRequest.swift in Sources */,
 				OBJ_140 /* HTTPRequestable.swift in Sources */,
 				OBJ_142 /* DateFormatter+ISO8601.swift in Sources */,
-				OBJ_143 /* Model.swift in Sources */,
 				OBJ_144 /* Result+Extensions.swift in Sources */,
-				OBJ_146 /* SnakeCaseModel.swift in Sources */,
 				OBJ_147 /* Session+URLRequest.swift in Sources */,
 				OBJ_148 /* Session+URLRequestConvertible.swift in Sources */,
 				B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */,
