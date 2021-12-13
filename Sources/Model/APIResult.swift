@@ -17,7 +17,7 @@ public typealias APICompletion = (APIResult) -> Void
 
 // MARK: - APIResult + DataResponse
 
-extension APIResult {
+public extension APIResult {
 
     /// Initialize with `response`
     ///
