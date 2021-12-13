@@ -1,7 +1,6 @@
 ## HTTPRequest 
 
-HTTPRequest constructs a `Model` driven interface to HTTP networking.  
-It is a high level extension built on top of the awesome framework [Alamofire](https://github.com/Alamofire/Alamofire).  
+A high level extension built on top of the awesome framework [Alamofire](https://github.com/Alamofire/Alamofire).  
 How it works is best demonstrated by an example:
 
 ```swift
