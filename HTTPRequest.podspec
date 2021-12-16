@@ -10,14 +10,14 @@ Pod::Spec.new do |s|
   s.name                  = 'HTTPRequest'
   s.version               = '1.0.0'
   s.summary               = 'Model driven interface to HTTP networking.'
-  s.description           = 'A declarative, Model driven wrapper of Alamofire.'
-  s.homepage              = 'https://github.com/BenCShutt/HTTPRequest'
+  s.description           = 'High level wrapper of Alamofire.'
+  s.homepage              = 'https://github.com/3sidedcube/HTTPRequest'
   s.documentation_url     = s.homepage
   s.license               = { :type => 'Apache License 2.0', :file => 'LICENSE' }
-  s.author                = { 'BenShutt' => 'ben@3sidedcube.com' }
-  s.source                = { :git => 'https://github.com/BenShutt/HTTPRequest.git', :tag => s.version.to_s }
+  s.author                = { '3 Sided Cube' => 'holla@3sidedcube.com' }
+  s.source                = { :git => 'https://github.com/3sidedcube/HTTPRequest.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
-  s.swift_versions        = ['5.3']
+  s.swift_versions        = ['5.5']
   s.source_files          = 'Sources/**/*.{swift,h,m}'
-  s.dependency 'Alamofire', '~> 5.4.0'
+  s.dependency 'Alamofire', '~> 5.5.0'
 end
