@@ -52,4 +52,16 @@ public extension HTTPRequest {
         guard #available(iOS 12, OSX 10.14, *) else { return }
         os_log(type, log: logger, "%@", message)
     }
+
+    /// Log `error` on `logger`
+    ///
+    /// - Parameters:
+    ///   - logger: `OSLog`
+    ///   - error: `Error`
+    static func log(
+        _ logger: OSLog = .httpRequestLogger,
+        error: Error
+    ) {
+        log(logger, type: .error, message: error.localizedDescription)
+    }
 }

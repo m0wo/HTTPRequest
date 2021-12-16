@@ -10,24 +10,20 @@ import Alamofire
 
 extension URLComponents {
 
-    /// Strava API for `endpoint` and `parameters`
+    /// Strava API for `endpoint` and `queryItems`
     ///
     /// - Parameters:
     ///   - endpoint: `String`
-    ///   - parameters: `[URLQueryItem]`
+    ///   - queryItems: `[URLQueryItem]`
     static func stravaAPI(
         endpoint: String,
-        parameters: [URLQueryItem] = []
+        queryItems: [URLQueryItem] = []
     ) -> URLComponents {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
         urlComponents.host = "www.strava.com"
         urlComponents.path = "/api/v3/\(endpoint)"
-
-        // queryItems
-        let queryItems = urlComponents.queryItems ?? []
-        urlComponents.queryItems = queryItems + parameters
-
+        urlComponents.queryItems = queryItems
         return urlComponents
     }
 }

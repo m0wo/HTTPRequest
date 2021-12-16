@@ -9,7 +9,7 @@ import Foundation
 
 /// The request body when refreshing an access token.
 /// On success, the server will send a `Token` response
-struct TokenRequest: StravaModel {
+struct TokenRequest: Codable {
 
     /// The application’s ID, obtained during registration.
     var clientId: Int
@@ -30,6 +30,12 @@ struct TokenRequest: StravaModel {
 
     // MARK: - Init
 
+    /// Initializer
+    ///
+    /// - Parameters:
+    ///   - clientId: `Int`
+    ///   - clientSecret: `String`
+    ///   - refreshToken: `String`
     init(
         clientId: Int,
         clientSecret: String,

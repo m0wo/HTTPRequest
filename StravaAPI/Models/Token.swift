@@ -8,7 +8,7 @@
 import Foundation
 
 /// Response when requesting a new (short lived) access token
-struct Token: StravaModel {
+struct Token: Codable {
 
     /// The type of `accessToken`
     var tokenType: String

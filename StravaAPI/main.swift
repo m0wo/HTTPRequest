@@ -17,10 +17,14 @@ do {
     try StravaSession.shared.configure()
 
     // Fetch `Athlete` model based on authorization token
-    let athlete: Athlete =
-        try AF.requestSync(StravaAPI.athlete).modelOrThrow()
+    let athlete: Athlete = try StravaAPI.athlete.requestSync().model()
 
-    debugPrint(athlete)
+    // Map to JSON String
+    let jsonString = try athlete.jsonString()
+
+    // Log success
+    Logger.log(jsonString, type: .info)
 } catch {
-    debugPrint(error)
+    // Log failure
+    Logger.log(error)
 }

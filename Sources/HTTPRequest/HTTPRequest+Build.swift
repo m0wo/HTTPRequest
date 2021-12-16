@@ -72,7 +72,7 @@ public extension HTTPRequest {
     ///   - encoder: `JSONEncoder`
     mutating func settingJsonBody<T>(
         _ encodable: T,
-        encoder: JSONEncoder = .default
+        encoder: JSONEncoder
     ) throws -> Self where T: Encodable {
         let body = try encoder.encode(encodable)
         return settingJsonBody(body)
