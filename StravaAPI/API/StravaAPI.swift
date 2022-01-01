@@ -17,6 +17,9 @@ enum StravaAPI {
 
     /// Fetch athlete based on authorization code (logged in)
     case athlete
+
+    /// Fetch logged in athlete activities
+    case activities(ActivitiesRange)
 }
 
 // MARK: - StravaAPI + HTTPRequestable
@@ -31,7 +34,7 @@ extension StravaAPI: HTTPRequestable {
                 method: .post,
                 urlComponents: .stravaAPI(
                     endpoint: "oauth/token",
-                    queryItems: TokenRequestFile.read().queryItems
+                    queryItems: TokenRequestFile.read().queryItems()
                 ),
                 additionalHeaders: HTTPHeaders(headers: [
                     .acceptJSON
@@ -42,6 +45,19 @@ extension StravaAPI: HTTPRequestable {
             return HTTPRequest(
                 method: .get,
                 urlComponents: .stravaAPI(endpoint: "athlete"),
+                additionalHeaders: HTTPHeaders(headers: [
+                    .acceptJSON,
+                    .authorization
+                ])
+            )
+
+        case let .activities(range):
+            return try HTTPRequest(
+                method: .get,
+                urlComponents: .stravaAPI(
+                    endpoint: "athlete/activities",
+                    queryItems: range.queryItems()
+                ),
                 additionalHeaders: HTTPHeaders(headers: [
                     .acceptJSON,
                     .authorization

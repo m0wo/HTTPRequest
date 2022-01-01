@@ -16,6 +16,9 @@ do {
     // Setup Strava session
     try StravaSession.shared.configure()
 
+    // Log authorization URL
+    try Logger.log(AuthorizeURL.logString(), type: .info)
+
     // Fetch `Athlete` model based on authorization token
     let athlete: Athlete = try StravaAPI.athlete.requestSync().model()
 
@@ -24,6 +27,9 @@ do {
 
     // Log success
     Logger.log(jsonString, type: .info)
+
+    // Get last weeks activities
+    _ = try StravaAPI.activities(ActivitiesRange()).requestSync()
 } catch {
     // Log failure
     Logger.log(error)

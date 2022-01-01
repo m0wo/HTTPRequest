@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		B811407F2780F24000E5B6AA /* ActivitiesRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811407E2780F24000E5B6AA /* ActivitiesRange.swift */; };
+		B81140812780F46C00E5B6AA /* Encodable+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81140802780F46C00E5B6AA /* Encodable+URLQueryItem.swift */; };
+		B8114083278107C100E5B6AA /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8114082278107C100E5B6AA /* Date+Extensions.swift */; };
+		B811408527810BB300E5B6AA /* AuthorizeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811408427810BB300E5B6AA /* AuthorizeURL.swift */; };
 		B81B2DD9257E4AAF008FA95D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DD8257E4AAF008FA95D /* main.swift */; };
 		B81B2E12257E4B3E008FA95D /* HTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; };
 		B81B2E13257E4B3E008FA95D /* HTTPRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -45,8 +49,6 @@
 		B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEDA25A38C800031D619 /* Encodable+JSON.swift */; };
 		B887DD5B25FC24DF0053FDB4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B887DD5A25FC24DF0053FDB4 /* Environment.swift */; };
 		B89245B425E7C77F0026C4D9 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */; };
-		B89245CB25E7CB2B0026C4D9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245CA25E7CB2B0026C4D9 /* String+Extensions.swift */; };
-		B89245D125E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245D025E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift */; };
 		B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */; };
 		B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245FA25E7E24A0026C4D9 /* FileURLError.swift */; };
 		B892460525E7F36C0026C4D9 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892460425E7F36C0026C4D9 /* ModelFile.swift */; };
@@ -136,6 +138,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B811407E2780F24000E5B6AA /* ActivitiesRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesRange.swift; sourceTree = "<group>"; };
+		B81140802780F46C00E5B6AA /* Encodable+URLQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+URLQueryItem.swift"; sourceTree = "<group>"; };
+		B8114082278107C100E5B6AA /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		B811408427810BB300E5B6AA /* AuthorizeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeURL.swift; sourceTree = "<group>"; };
 		B81B2DD6257E4AAF008FA95D /* StravaAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StravaAPI; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81B2DD8257E4AAF008FA95D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
@@ -160,8 +166,6 @@
 		B872BEDA25A38C800031D619 /* Encodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
 		B887DD5A25FC24DF0053FDB4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
-		B89245CA25E7CB2B0026C4D9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		B89245D025E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TokenRequest+URLQueryItem.swift"; sourceTree = "<group>"; };
 		B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ProjectDirectory.swift"; sourceTree = "<group>"; };
 		B89245FA25E7E24A0026C4D9 /* FileURLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileURLError.swift; sourceTree = "<group>"; };
 		B892460425E7F36C0026C4D9 /* ModelFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFile.swift; sourceTree = "<group>"; };
@@ -277,9 +281,11 @@
 		B81B2DE4257E4AB9008FA95D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B811407E2780F24000E5B6AA /* ActivitiesRange.swift */,
 				B81B2DE7257E4AB9008FA95D /* Athlete.swift */,
 				B81B2DE8257E4AB9008FA95D /* Token.swift */,
 				B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */,
+				B811408427810BB300E5B6AA /* AuthorizeURL.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,9 +294,9 @@
 			isa = PBXGroup;
 			children = (
 				B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */,
-				B89245CA25E7CB2B0026C4D9 /* String+Extensions.swift */,
-				B89245D025E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift */,
 				B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */,
+				B81140802780F46C00E5B6AA /* Encodable+URLQueryItem.swift */,
+				B8114082278107C100E5B6AA /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -640,6 +646,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B811407F2780F24000E5B6AA /* ActivitiesRange.swift in Sources */,
+				B81140812780F46C00E5B6AA /* Encodable+URLQueryItem.swift in Sources */,
 				B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */,
 				B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */,
 				B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */,
@@ -648,11 +656,11 @@
 				B8E023812767A19B003FBC9D /* APIResult+Model.swift in Sources */,
 				B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */,
 				B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */,
-				B89245CB25E7CB2B0026C4D9 /* String+Extensions.swift in Sources */,
 				B8E023642767540E003FBC9D /* Logger.swift in Sources */,
+				B8114083278107C100E5B6AA /* Date+Extensions.swift in Sources */,
 				B81B2E62257E4B98008FA95D /* Token.swift in Sources */,
 				B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */,
-				B89245D125E7D7D80026C4D9 /* TokenRequest+URLQueryItem.swift in Sources */,
+				B811408527810BB300E5B6AA /* AuthorizeURL.swift in Sources */,
 				B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */,
 				B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */,
 				B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */,
