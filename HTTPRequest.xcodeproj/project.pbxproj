@@ -32,8 +32,8 @@
 		B81B2E2A257E4B81008FA95D /* StravaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */; };
 		B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */; };
 		B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DEF257E4AB9008FA95D /* TokenFile.swift */; };
-		B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */; };
-		B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */; };
+		B81B2E46257E4B8E008FA95D /* TokenRefreshFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DF0257E4AB9008FA95D /* TokenRefreshFile.swift */; };
+		B81B2E4D257E4B91008FA95D /* TokenRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE5257E4AB9008FA95D /* TokenRefresh.swift */; };
 		B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE7257E4AB9008FA95D /* Athlete.swift */; };
 		B81B2E62257E4B98008FA95D /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DE8257E4AB9008FA95D /* Token.swift */; };
 		B81B2E69257E4B9A008FA95D /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81B2DED257E4AB9008FA95D /* StravaSession.swift */; };
@@ -48,6 +48,9 @@
 		B872BED525A38C640031D619 /* Decodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BED425A38C640031D619 /* Decodable+JSON.swift */; };
 		B872BEDB25A38C800031D619 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B872BEDA25A38C800031D619 /* Encodable+JSON.swift */; };
 		B887DD5B25FC24DF0053FDB4 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B887DD5A25FC24DF0053FDB4 /* Environment.swift */; };
+		B88DD43F278F351300181A5A /* TokenExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DD43E278F351300181A5A /* TokenExchange.swift */; };
+		B88DD441278F35DE00181A5A /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DD440278F35DE00181A5A /* Data+Codable.swift */; };
+		B88DD444278F3FB100181A5A /* TimeInterval+Extensions.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DD443278F3FB100181A5A /* TimeInterval+Extensions.swift.swift */; };
 		B89245B425E7C77F0026C4D9 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */; };
 		B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */; };
 		B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245FA25E7E24A0026C4D9 /* FileURLError.swift */; };
@@ -144,14 +147,14 @@
 		B811408427810BB300E5B6AA /* AuthorizeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeURL.swift; sourceTree = "<group>"; };
 		B81B2DD6257E4AAF008FA95D /* StravaAPI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StravaAPI; sourceTree = BUILT_PRODUCTS_DIR; };
 		B81B2DD8257E4AAF008FA95D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		B81B2DE5257E4AB9008FA95D /* TokenRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefresh.swift; sourceTree = "<group>"; };
 		B81B2DE7257E4AB9008FA95D /* Athlete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
 		B81B2DE8257E4AB9008FA95D /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		B81B2DEB257E4AB9008FA95D /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
 		B81B2DEC257E4AB9008FA95D /* HTTPHeaders+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeaders+Extensions.swift"; sourceTree = "<group>"; };
 		B81B2DED257E4AB9008FA95D /* StravaSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaSession.swift; sourceTree = "<group>"; };
 		B81B2DEF257E4AB9008FA95D /* TokenFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenFile.swift; sourceTree = "<group>"; };
-		B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequestFile.swift; sourceTree = "<group>"; };
+		B81B2DF0257E4AB9008FA95D /* TokenRefreshFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefreshFile.swift; sourceTree = "<group>"; };
 		B81B2DF2257E4AB9008FA95D /* URLComponents+Strava.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Strava.swift"; sourceTree = "<group>"; };
 		B81B2DF3257E4AB9008FA95D /* StravaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaAPI.swift; sourceTree = "<group>"; };
 		B859FB6D25F230E80058EDAC /* NotificationCenter+KeychainToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+KeychainToken.swift"; sourceTree = "<group>"; };
@@ -165,6 +168,9 @@
 		B872BED425A38C640031D619 /* Decodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+JSON.swift"; sourceTree = "<group>"; };
 		B872BEDA25A38C800031D619 /* Encodable+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+JSON.swift"; sourceTree = "<group>"; };
 		B887DD5A25FC24DF0053FDB4 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		B88DD43E278F351300181A5A /* TokenExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenExchange.swift; sourceTree = "<group>"; };
+		B88DD440278F35DE00181A5A /* Data+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Codable.swift"; sourceTree = "<group>"; };
+		B88DD443278F3FB100181A5A /* TimeInterval+Extensions.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift.swift"; sourceTree = "<group>"; };
 		B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ProjectDirectory.swift"; sourceTree = "<group>"; };
 		B89245FA25E7E24A0026C4D9 /* FileURLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileURLError.swift; sourceTree = "<group>"; };
@@ -281,10 +287,9 @@
 		B81B2DE4257E4AB9008FA95D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B88DD442278F3D7500181A5A /* Token */,
 				B811407E2780F24000E5B6AA /* ActivitiesRange.swift */,
 				B81B2DE7257E4AB9008FA95D /* Athlete.swift */,
-				B81B2DE8257E4AB9008FA95D /* Token.swift */,
-				B81B2DE5257E4AB9008FA95D /* TokenRequest.swift */,
 				B811408427810BB300E5B6AA /* AuthorizeURL.swift */,
 			);
 			path = Models;
@@ -297,6 +302,8 @@
 				B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */,
 				B81140802780F46C00E5B6AA /* Encodable+URLQueryItem.swift */,
 				B8114082278107C100E5B6AA /* Date+Extensions.swift */,
+				B88DD440278F35DE00181A5A /* Data+Codable.swift */,
+				B88DD443278F3FB100181A5A /* TimeInterval+Extensions.swift.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -307,7 +314,7 @@
 				B89245FA25E7E24A0026C4D9 /* FileURLError.swift */,
 				B892460425E7F36C0026C4D9 /* ModelFile.swift */,
 				B81B2DEF257E4AB9008FA95D /* TokenFile.swift */,
-				B81B2DF0257E4AB9008FA95D /* TokenRequestFile.swift */,
+				B81B2DF0257E4AB9008FA95D /* TokenRefreshFile.swift */,
 			);
 			path = File;
 			sourceTree = "<group>";
@@ -339,6 +346,16 @@
 				B872BECE25A38C4D0031D619 /* JSONEncoder+Default.swift */,
 			);
 			path = Default;
+			sourceTree = "<group>";
+		};
+		B88DD442278F3D7500181A5A /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				B81B2DE8257E4AB9008FA95D /* Token.swift */,
+				B81B2DE5257E4AB9008FA95D /* TokenRefresh.swift */,
+				B88DD43E278F351300181A5A /* TokenExchange.swift */,
+			);
+			path = Token;
 			sourceTree = "<group>";
 		};
 		B89245B225E7C77F0026C4D9 /* Frameworks */ = {
@@ -647,7 +664,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B811407F2780F24000E5B6AA /* ActivitiesRange.swift in Sources */,
+				B88DD441278F35DE00181A5A /* Data+Codable.swift in Sources */,
 				B81140812780F46C00E5B6AA /* Encodable+URLQueryItem.swift in Sources */,
+				B88DD43F278F351300181A5A /* TokenExchange.swift in Sources */,
 				B81B2E5B257E4B96008FA95D /* Athlete.swift in Sources */,
 				B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */,
 				B81B2E38257E4B89008FA95D /* HTTPHeaders+Extensions.swift in Sources */,
@@ -661,8 +680,9 @@
 				B81B2E62257E4B98008FA95D /* Token.swift in Sources */,
 				B81B2E3F257E4B8C008FA95D /* TokenFile.swift in Sources */,
 				B811408527810BB300E5B6AA /* AuthorizeURL.swift in Sources */,
-				B81B2E4D257E4B91008FA95D /* TokenRequest.swift in Sources */,
-				B81B2E46257E4B8E008FA95D /* TokenRequestFile.swift in Sources */,
+				B81B2E4D257E4B91008FA95D /* TokenRefresh.swift in Sources */,
+				B88DD444278F3FB100181A5A /* TimeInterval+Extensions.swift.swift in Sources */,
+				B81B2E46257E4B8E008FA95D /* TokenRefreshFile.swift in Sources */,
 				B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */,
 				B81B2E23257E4B7E008FA95D /* URLComponents+Strava.swift in Sources */,
 			);

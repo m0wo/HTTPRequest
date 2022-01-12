@@ -12,23 +12,26 @@ import HTTPRequest
 // Turn on logging
 HTTPRequest.Configuration.shared.logging = true
 
+// When true, print the URL of the OAuth page to get an authentication token.
+// Navigation to that URL from a browser.
+// On successful redirect, copy the returned code into `configure(code:)`
+// From then on, the session can be initialized with `configure(code: nil)` as
+// it has a refresh token.
+let isFirstAuthentication = false
+
 do {
+    guard !isFirstAuthentication else {
+        try Logger.log(AuthorizeURL.logString(), type: .info)
+        exit(EXIT_SUCCESS)
+    }
+
     // Setup Strava session
     try StravaSession.shared.configure()
 
-    // Log authorization URL
-    try Logger.log(AuthorizeURL.logString(), type: .info)
+    // Fetch athlete
+    _ = try StravaAPI.athlete.requestSync()
 
-    // Fetch `Athlete` model based on authorization token
-    let athlete: Athlete = try StravaAPI.athlete.requestSync().model()
-
-    // Map to JSON String
-    let jsonString = try athlete.jsonString()
-
-    // Log success
-    Logger.log(jsonString, type: .info)
-
-    // Get last weeks activities
+    // Fetch activities
     _ = try StravaAPI.activities(ActivitiesRange()).requestSync()
 } catch {
     // Log failure

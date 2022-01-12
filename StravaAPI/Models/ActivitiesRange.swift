@@ -64,7 +64,7 @@ private extension Int {
 
     /// Default from days value
     static var fromDays: Int {
-        return 7
+        return -7
     }
 
     /// Default page value

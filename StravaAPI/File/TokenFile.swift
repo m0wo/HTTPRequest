@@ -15,7 +15,7 @@ struct TokenFile: ModelFile {
     private static let directoryName = "StravaToken"
 
     /// Name of the `Token` file
-    private static let fileName = "StravaToken.json"
+    private static let fileName = "\(Token.self).json"
 
     /// Setup token directory
     @discardableResult

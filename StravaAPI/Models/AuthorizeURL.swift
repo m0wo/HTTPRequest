@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 import HTTPRequest
 
+/// Strava uses OAuth2 for authentication to the V3 API.
 /// Wrapper of the authorize API URL
 ///
 /// # Docs:
@@ -19,9 +20,9 @@ struct AuthorizeURL {
     ///
     /// - Returns: `String`
     static func logString() throws -> String {
-        let tokenRequest = try TokenRequestFile.read()
+        let tokenRefresh = try TokenRefreshFile.read()
         let url = try AuthorizeURL(
-            clientId: tokenRequest.clientId,
+            clientId: tokenRefresh.clientId,
             redirectURLString: "http://localhost"
         ).toURL()
         return "Your authorize URL is: \(url)"
