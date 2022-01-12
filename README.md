@@ -87,7 +87,7 @@ Simply run `./install.sh` to run the project locally.
 ## Example
 
 `StravaAPI` is an example project which hits the Strava API using `HTTPRequest`.
-As this API is authenticated, the only setup required is to provide a `TokenRefresh.json` file with the properties needed to fetch an authentication token. 
+As this API is authenticated, the setup requires providing a `TokenRefresh.json` file with the properties needed to fetch an authentication token. 
 You can find these details by:
 - Logging in to Strava
 - Go to "Settings"
