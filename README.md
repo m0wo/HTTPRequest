@@ -106,4 +106,6 @@ Note the `grant_type` is a fixed value here, the other properties will need upda
 Add this JSON  into a directory named `StravaToken` in the `PROJECT_DIR` (where the `.xcodeproj` file is located). 
 The JSON file path should be: `${PROJECT_DIR}/StravaToken/TokenRefresh.json`.
 Note, this directory is ignored by `git`.
+
+As the Strava API authenticates using an OAuth flow, the first launch will require granting permission in a browser and and initializing with the code returned on success.
 Then you are ready to go!

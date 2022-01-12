@@ -9,7 +9,7 @@ import Foundation
 import HTTPRequest
 import Alamofire
 
-/// Token session for the Strava API
+/// Wrap an (access) `Token` for the Strava API
 struct StravaSession {
 
     /// Shared singleton `StravaSession` instance
@@ -35,7 +35,7 @@ struct StravaSession {
     /// Specially access token for the user is expired or will expire in one hour
     /// (3,600 seconds) or less
     static func shouldRefreshToken(_ token: Token) -> Bool {
-        return token.expiresAt.epochDate < Date().addingTimeInterval(60)
+        return token.expiresAt.epochDate < Date().addingTimeInterval(3600)
     }
 
     /// Write or delete `TokenFile` based on the `token` property
