@@ -14,11 +14,11 @@ public extension Notification.Name {
 
     /// `Name` of `Notification` posted when a `DataResponse` is received for a `DataRequest`
     static let dataResponse = Notification.Name(
-        rawValue: "com.3sidedcube.\(HTTPRequest.self).\(DataResponse.self)"
+        rawValue: "com.\(HTTPRequest.self).\(DataResponse.self)"
     )
 }
 
-// MARK: - String + UserInfo
+// MARK: - String
 
 private extension String {
 

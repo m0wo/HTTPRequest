@@ -8,14 +8,44 @@
 
 import Foundation
 
-// MARK: - NSNotification.Name
+// MARK: - Notification.Name
 
-public extension NSNotification.Name {
+public extension Notification.Name {
 
     /// `Notification` fired when the `KeychainToken` updates
-    static let token = Notification.Name(
-        "com.\(HTTPRequest.self).\(KeychainToken.self)".lowercased()
+    static let keychainToken = Notification.Name(
+        "com.\(HTTPRequest.self).\(KeychainToken.self)"
     )
+}
+
+// MARK: - String
+
+private extension String {
+
+    /// Key in the `userInfo` of the `Notification` to find the `KeychainToken`
+    static var keychainTokenUserInfoKey: String {
+        return Notification.Name.keychainToken.rawValue + ".key"
+    }
+
+    /// Key in the `userInfo` of the `Notification` to find the `String` token
+    static var tokenUserInfoKey: String {
+        return Notification.Name.keychainToken.rawValue + ".token.key"
+    }
+}
+
+// MARK: - Notification
+
+private extension Notification {
+
+    /// `KeychainToken` from `userInfo`
+    var keychainToken: KeychainToken? {
+        return userInfo?[String.keychainTokenUserInfoKey] as? KeychainToken
+    }
+
+    /// `String` token from `userInfo`
+    var token: String? {
+        return userInfo?[String.tokenUserInfoKey] as? String
+    }
 }
 
 // MARK: - NotificationCenter
@@ -29,31 +59,34 @@ public extension NotificationCenter {
     ///   - keychainToken: `KeychainToken`
     ///   - token: `String` token
     ///   - object: `Any`
-    func post(
-        keychainToken: KeychainToken,
-        token: String?,
-        object: Any
-    ) {
-        post(
-            name: .token,
-            object: object,
-            userInfo: [
-                String.keychainTokenUserInfoKey: keychainToken,
-                String.tokenUserInfoKey: token ?? NSNull()
-            ]
-        )
+    func post(keychainToken: KeychainToken, token: String?, object: Any) {
+        post(name: .keychainToken, object: object, userInfo: [
+            String.keychainTokenUserInfoKey: keychainToken,
+            String.tokenUserInfoKey: token ?? NSNull()
+        ])
     }
-}
 
-// MARK: - String
-
-public extension String {
-
-    /// Key in the `userInfo` of the `Notification` to find the `KeychainToken`
-    static let keychainTokenUserInfoKey =
-        Notification.Name.token.rawValue + ".key"
-
-    /// Key in the `userInfo` of the `Notification` to find the `String` token
-    static let tokenUserInfoKey =
-        Notification.Name.token.rawValue + ".token.key"
+    /// Add an observer closure for `KeychainToken`
+    ///
+    /// - Parameters:
+    ///   - object: `Any?`
+    ///   - queue: `OperationQueue?`
+    ///   - closure: Closure invoked
+    ///
+    /// - Returns: `NSObjectProtocol`
+    @discardableResult
+    func addObserverForKeychainToken(
+        object: Any? = nil,
+        queue: OperationQueue? = .main,
+        closure: @escaping (KeychainToken, String?) -> Void
+    ) -> NSObjectProtocol {
+        return addObserverClosure(
+            forName: .keychainToken,
+            object: object,
+            queue: queue
+        ) { sender in
+            guard let keychainToken = sender.keychainToken else { return }
+            closure(keychainToken, sender.token)
+        }
+    }
 }

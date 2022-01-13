@@ -64,7 +64,10 @@ extension HTTPRequest: URLRequestConvertible {
     public func asURLRequest() throws -> URLRequest {
         // urlComponents
         var urlComponents = self.urlComponents
-        if urlComponents.scheme?.nilIfEmpty == nil {
+
+        // Set nil or empty scheme if required
+        let scheme = urlComponents.scheme ?? ""
+        if scheme.isEmpty {
             urlComponents.scheme = "https" // As this project is HTTPRequest
         }
 
