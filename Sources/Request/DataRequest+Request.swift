@@ -33,6 +33,13 @@ public extension DataRequest {
 
             // Complete passing the response
             completion(response)
+
+            // Post DataResponse on NotificationCenter
+            NotificationCenter.default.post(
+                dataRequest: self,
+                dataResponse: response,
+                object: self
+            )
         }
     }
 }
