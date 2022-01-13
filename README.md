@@ -72,12 +72,14 @@ extension URLComponents {
 
 ## Installation
 
-### CocoaPods
+### Swift Package Manager
 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. To integrate into your Xcode project using CocoaPods, specify it in your `Podfile`:
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. To integrate into your project using Swift Package Manager, specify it in the `dependencies` of your `Package.swift`:
 
-```ruby
-pod 'HTTPRequest', :git => 'https://github.com/3sidedcube/HTTPRequest.git', :tag ~> '1.0.0'
+```swift
+dependencies: [
+    .package(url: "https://github.com/3sidedcube/HTTPRequest.git", .upToNextMajor(from: "1.0.0"))
+]
 ```
 
 ### Carthage
@@ -88,14 +90,12 @@ pod 'HTTPRequest', :git => 'https://github.com/3sidedcube/HTTPRequest.git', :tag
 github "3sidedcube/HTTPRequest" ~> 1.0.0
 ```
 
-### Swift Package Manager
+### CocoaPods
 
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. To integrate into your project using Swift Package Manager, specify it in the `dependencies` of your `Package.swift`:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. To integrate into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
-```swift
-dependencies: [
-    .package(url: "https://github.com/3sidedcube/HTTPRequest.git", .upToNextMajor(from: "1.0.0"))
-]
+```ruby
+pod 'HTTPRequest', :git => 'https://github.com/3sidedcube/HTTPRequest.git', :tag ~> '1.0.0'
 ```
 
 ### Notes
