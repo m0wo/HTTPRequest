@@ -13,10 +13,10 @@ import HTTPRequest
 HTTPRequest.Configuration.shared.logging = true
 
 // When true, print the URL of the OAuth page to get an authentication token.
-// Navigation to that URL from a browser.
-// On successful redirect, copy the returned code into `configure(code:)`
+// Navigate to that URL from a browser, on successful redirect, copy the returned
+// code into `configure(code:)`.
 // From then on, the session can be initialized with `configure(code: nil)` as
-// it has a refresh token.
+// it has a refresh token with the required scope.
 let isFirstAuthentication = false
 
 do {
