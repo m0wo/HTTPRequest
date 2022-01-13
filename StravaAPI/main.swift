@@ -29,10 +29,10 @@ do {
     try StravaSession.shared.configure()
 
     // Fetch athlete
-    _ = try StravaAPI.athlete.requestSync()
+    _ = try StravaAPI.athlete.requestSync().successOrThrow()
 
     // Fetch activities
-    _ = try StravaAPI.activities(ActivitiesRange()).requestSync()
+    _ = try StravaAPI.activities(ActivitiesRange()).requestSync().successOrThrow()
 } catch {
     // Log failure
     Logger.log(error)
