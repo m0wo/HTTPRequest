@@ -110,7 +110,7 @@ The framework is meant to be lightweight, it's essentially a higher layer of abs
 ## Contributing
 
 The (dependent) frameworks for `HTTPRequest` are installed via [Carthage](https://github.com/Carthage/Carthage) as `xcframework`s.
-Simply run `./install.sh` to run the project locally.
+Simply run `./scripts/install.sh` to run the project locally.
 
 ## Example
 
