@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		B80253882790A9B600B46B14 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */; };
 		B811407F2780F24000E5B6AA /* ActivitiesRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811407E2780F24000E5B6AA /* ActivitiesRange.swift */; };
 		B81140812780F46C00E5B6AA /* Encodable+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81140802780F46C00E5B6AA /* Encodable+URLQueryItem.swift */; };
 		B8114083278107C100E5B6AA /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8114082278107C100E5B6AA /* Date+Extensions.swift */; };
@@ -51,7 +52,6 @@
 		B88DD43F278F351300181A5A /* TokenExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DD43E278F351300181A5A /* TokenExchange.swift */; };
 		B88DD441278F35DE00181A5A /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DD440278F35DE00181A5A /* Data+Codable.swift */; };
 		B88DD444278F3FB100181A5A /* TimeInterval+Extensions.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88DD443278F3FB100181A5A /* TimeInterval+Extensions.swift.swift */; };
-		B89245B425E7C77F0026C4D9 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */; };
 		B89245E925E7DC8D0026C4D9 /* URL+ProjectDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245E825E7DC8D0026C4D9 /* URL+ProjectDirectory.swift */; };
 		B89245FB25E7E24A0026C4D9 /* FileURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89245FA25E7E24A0026C4D9 /* FileURLError.swift */; };
 		B892460525E7F36C0026C4D9 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B892460425E7F36C0026C4D9 /* ModelFile.swift */; };
@@ -257,7 +257,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				B89245B425E7C77F0026C4D9 /* Alamofire.xcframework in Frameworks */,
+				B80253882790A9B600B46B14 /* Alamofire.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
