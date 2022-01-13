@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Data + Decode
+// MARK: - Data + Decodable
 
 public extension Data {
 

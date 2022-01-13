@@ -9,7 +9,7 @@ import Foundation
 import HTTPRequest
 import Alamofire
 
-/// Token session for the Strava API
+/// Wrap an (access) `Token` for the Strava API
 struct StravaSession {
 
     /// Shared singleton `StravaSession` instance
@@ -19,7 +19,7 @@ struct StravaSession {
     private(set) var token: Token? {
         didSet {
             try? updateTokenFile()
-            try? updateTokenRequestFile()
+            try? updateTokenRefreshFile()
         }
     }
 
@@ -35,7 +35,7 @@ struct StravaSession {
     /// Specially access token for the user is expired or will expire in one hour
     /// (3,600 seconds) or less
     static func shouldRefreshToken(_ token: Token) -> Bool {
-        return token.expiryDate < Date().addingTimeInterval(3600)
+        return token.expiresAt.epochDate < Date().addingTimeInterval(3600)
     }
 
     /// Write or delete `TokenFile` based on the `token` property
@@ -47,16 +47,17 @@ struct StravaSession {
         }
     }
 
-    /// Write the `TokenRequestFile` based on the `token` property
-    private func updateTokenRequestFile() throws {
+    /// Write the `TokenRefreshFile` based on the `token` property
+    private func updateTokenRefreshFile() throws {
         guard let token = token else { return /* do nothing */ }
-        var tokenRequest = try TokenRequestFile.read()
-        tokenRequest.refreshToken = token.refreshToken
-        try TokenRequestFile.write(tokenRequest)
+        var tokenRefresh = try TokenRefreshFile.read()
+        tokenRefresh.refreshToken = token.refreshToken
+        try TokenRefreshFile.write(tokenRefresh)
     }
 
     // MARK: - Init
 
+    /// Initializer
     init() {
         token = try? TokenFile.read()
     }
@@ -64,15 +65,24 @@ struct StravaSession {
     // MARK: - Sync
 
     /// Configure an active `StravaSession`
-    mutating func configure() throws {
+    ///
+    /// - Parameter code: `String` code obtained in the redirect in OAuth flow
+    mutating func configure(code: String? = nil) throws {
         // Expire old token
         checkTokenExpiry()
 
         // Return here if we already have a valid token
         guard token == nil else { return }
 
-        // Refresh the token with the server
-        let result: Result<Token, Error> = try StravaAPI.refreshToken.requestSync().modelResult()
+        // Fetch token from server
+        let result: Result<Token, Error>
+        if let code = code {
+            // Fetch authorization token with the server
+            result = try StravaAPI.authorizationToken(code: code).requestSync().modelResult()
+        } else {
+            // Refresh the token with the server
+            result = try StravaAPI.refreshToken.requestSync().modelResult()
+        }
 
         // Check the token was refreshed
         switch result {
@@ -82,16 +92,5 @@ struct StravaSession {
             self.token = nil
             throw error
         }
-    }
-}
-
-// MARK: - Token + Expiry
-
-extension Token {
-
-    /// `Date` the `Token` expires
-    var expiryDate: Date {
-        let timeInterval = TimeInterval(expiresAt)
-        return Date(timeIntervalSince1970: timeInterval)
     }
 }

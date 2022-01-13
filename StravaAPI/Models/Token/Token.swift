@@ -7,10 +7,10 @@
 
 import Foundation
 
-/// Response when requesting a new (short lived) access token
+/// Model with a (short lived) access token
 struct Token: Codable {
 
-    /// The type of `accessToken`
+    /// The type of access token
     var tokenType: String
 
     /// The short-lived access token
