@@ -1,13 +1,13 @@
 //
 //  String+Extensions.swift
-//  HTTPRequest
+//  StravaAPI
 //
 //  Created by Ben Shutt on 27/09/2020.
 //
 
 import Foundation
 
-public extension String {
+extension String {
 
     /// Trim the `.whitespacesAndNewlines` `CharacterSet`
     var trimmed: String {

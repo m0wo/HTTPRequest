@@ -1,10 +1,8 @@
 #!/bin/bash
 #
-# generate.sh
+# swagger.sh
 # Use Swagger Codegen to generate Swift models from a Swagger spec.
-
-# Name of the script
-SCRIPT_NAME=$(basename -- "$0")
+#
 
 # Repository name of the Swagger Codegen project
 SWAGGER_CODEGEN_REPO_NAME="Swagger Codegen"
@@ -24,7 +22,7 @@ fi
 
 # Check a Swagger spec url is provided as argument
 if [[ $# -eq 0 ]]; then
-    echo "Usage: ./${SCRIPT_NAME} <SwaggerSpecURL>"
+    echo "Usage: $0 <SwaggerSpecURL>"
     exit 1
 fi
 

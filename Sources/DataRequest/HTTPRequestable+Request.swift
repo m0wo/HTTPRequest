@@ -60,7 +60,7 @@ public extension HTTPRequestable {
         group.enter()
 
         // Execute request asynchronously
-        request(queue: .new) { newResult in
+        request(queue: DispatchQueue(label: UUID().uuidString)) { newResult in
             // Set request result
             result = newResult
 
