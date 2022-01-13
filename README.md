@@ -70,6 +70,34 @@ extension URLComponents {
 }
 ```
 
+## Installation
+
+### CocoaPods
+
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. To integrate into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'HTTPRequest', :git => 'https://github.com/3sidedcube/HTTPRequest.git', :tag ~> '1.0.0'
+```
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "3sidedcube/HTTPRequest" ~> 1.0.0
+```
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler. To integrate into your project using Swift Package Manager, specify it in the `dependencies` of your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/3sidedcube/HTTPRequest.git", .upToNextMajor(from: "1.0.0"))
+]
+```
+
 ### Notes
 
 Converting from a `HTTPRequest` to a `URLRequest` may `throw` an `Error`. One example might be: the `URL` path component is invalid.
@@ -79,7 +107,7 @@ The Strava API is just an example here, you can define your API endpoints howeve
 
 The framework is meant to be lightweight, it's essentially a higher layer of abstraction on top of Alamofire.
 
-## Install
+## Contributing
 
 The (dependent) frameworks for `HTTPRequest` are installed via [Carthage](https://github.com/Carthage/Carthage) as `xcframework`s.
 Simply run `./install.sh` to run the project locally.
