@@ -1,5 +1,5 @@
 //
-//  APIResult+Model.swift
+//  DataRequestResult+Model.swift
 //  HTTPRequest
 //
 //  Created by Ben Shutt on 13/12/2021.
@@ -7,9 +7,7 @@
 
 import Foundation
 
-// MARK: - APIResult + Codable
-
-public extension APIResult {
+public extension DataRequestResult {
 
     /// Decode success into `T` or throw
     ///

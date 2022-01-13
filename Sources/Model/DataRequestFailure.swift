@@ -1,5 +1,5 @@
 //
-//  APIFailure.swift
+//  DataRequestFailure.swift
 //  HTTPRequest
 //
 //  Created by Ben Shutt on 13/12/2021.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-/// Wrapper of a `DataResponse` when an API fails
-public struct APIFailure: Error {
+/// Wrapper of a `DataResponse` when a data request fails
+public struct DataRequestFailure: Error {
 
     /// `DataResponse` (if a request was made)
     ///
@@ -34,10 +34,10 @@ public struct APIFailure: Error {
 
     // MARK: - Wrap
 
-    /// Wrap `error` into a`APIFailure` if it is not already
+    /// Wrap `error` into a`DataRequestFailure` if it is not already
     ///
     /// - Parameter error: `Error`
-    public static func wrap(_ error: Error) -> APIFailure {
-        return (error as? APIFailure) ?? APIFailure(response: nil, error: error)
+    public static func wrap(_ error: Error) -> DataRequestFailure {
+        return (error as? DataRequestFailure) ?? DataRequestFailure(response: nil, error: error)
     }
 }

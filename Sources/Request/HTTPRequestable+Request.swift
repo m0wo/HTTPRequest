@@ -15,13 +15,13 @@ public extension HTTPRequestable {
     ///
     /// - Parameters:
     ///   - queue: `DispatchQueue`
-    ///   - completion: `APICompletion`
+    ///   - completion: `DataRequestCompletion`
     ///
     /// - Returns: `DataRequest`
     @discardableResult
     func request(
         queue: DispatchQueue = .main,
-        completion: @escaping APICompletion
+        completion: @escaping DataRequestCompletion
     ) -> DataRequest? {
         do {
             // Try construct a URLRequest
@@ -32,7 +32,7 @@ public extension HTTPRequestable {
 
             // Execute the request and complete with the response
             request.execute(queue: queue) { response in
-                completion(APIResult(response: response))
+                completion(DataRequestResult(response: response))
             }
 
             // Return request that was made
@@ -50,17 +50,18 @@ public extension HTTPRequestable {
     }
 
     /// Execute `request(queue:completion:)` synchronously
-    func requestSync() throws -> APIResult {
-        // Result from the API
-        var result: APIResult!
+    /// - Returns: `DataRequestResult`
+    func requestSync() throws -> DataRequestResult {
+        // Result from the request
+        var result: DataRequestResult!
 
         // Enter a group to wait on
         let group = DispatchGroup()
         group.enter()
 
-        // Execute API asynchronously
+        // Execute request asynchronously
         request(queue: .new) { newResult in
-            // Set API result
+            // Set request result
             result = newResult
 
             // Leave group
