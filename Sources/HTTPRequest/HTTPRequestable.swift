@@ -23,3 +23,13 @@ public extension HTTPRequestable {
         return try httpRequest().asURLRequest()
     }
 }
+
+// MARK: - HTTPRequest + HTTPRequestable
+
+extension HTTPRequest: HTTPRequestable {
+
+    /// - Returns: This `HTTPRequest` instance
+    public func httpRequest() throws -> HTTPRequest {
+        return self
+    }
+}
