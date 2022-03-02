@@ -10,7 +10,7 @@ import Foundation
 // MARK: - StringError
 
 /// An `Error` converting from `String` to `Data` or vice versa
-enum StringDataError: Error {
+public enum StringDataError: Error {
 
     /// Failed to create a `String` from the given `Data` and `String.Encoding`
     case data(Data, encoding: String.Encoding)
@@ -21,7 +21,7 @@ enum StringDataError: Error {
 
 // MARK: - String + Data
 
-extension String {
+public extension String {
 
     /// `String` instance to `Data` or `throw`
     /// - Parameter encoding: `String.Encoding`
@@ -35,7 +35,7 @@ extension String {
 
 // MARK: - Data + String
 
-extension Data {
+public extension Data {
 
     /// `Data` instance to `String` or `throw`
     /// - Parameter encoding: `String.Encoding`
