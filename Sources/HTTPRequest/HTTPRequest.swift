@@ -68,7 +68,7 @@ extension HTTPRequest: URLRequestConvertible {
         // Set nil or empty scheme if required
         let scheme = urlComponents.scheme ?? ""
         if scheme.isEmpty {
-            urlComponents.scheme = "https" // As this project is HTTPRequest
+            HTTPRequest.log(type: .debug, message: "nil scheme when mapping to \(URLRequest.self)")
         }
 
         // Remove `queryItems` from the `urlComponents` and add to the
