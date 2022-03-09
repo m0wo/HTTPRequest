@@ -28,6 +28,7 @@ extension Loggable {
     ///   - type: `OSLogType`
     ///   - message: `String`
     func log(type: OSLogType, message: String) {
+        guard #available(iOS 12, OSX 10.14, *) else { return }
         os_log(type, log: logger, "%@", message)
     }
 
