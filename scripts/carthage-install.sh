@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# install.sh
+# carthage-install.sh
 # Install xcframeworks using Carthage
 #
 
