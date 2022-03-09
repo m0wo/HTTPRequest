@@ -8,8 +8,6 @@
 import Foundation
 import Alamofire
 
-// MARK: - HTTPHeaders + Extensions
-
 extension HTTPHeaders {
 
     /// Create with non-`nil` elements of `headers`

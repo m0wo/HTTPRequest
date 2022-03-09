@@ -8,7 +8,7 @@
 import Foundation
 import os
 
-/// Structure conforming to `Loggable`
+/// Basic structure conforming to `Loggable`
 public struct Logger: Loggable {
 
     /// `OSLog` instance
@@ -19,6 +19,14 @@ public struct Logger: Loggable {
     /// - Parameters:
     ///   - tag: `String`
     public init(tag: String) {
-        logger = OSLog(tag: tag)
+        self.init(logger: OSLog(tag: tag))
+    }
+
+    /// Memberwise initializer
+    ///
+    /// - Parameters:
+    ///   - logger: `OSLog`
+    public init(logger: OSLog) {
+        self.logger = logger
     }
 }

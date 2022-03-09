@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
 		"HTTPRequest::HTTPRequestPackageTests::ProductTarget" /* HTTPRequestPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_235 /* Build configuration list for PBXAggregateTarget "HTTPRequestPackageTests" */;
+			buildConfigurationList = OBJ_236 /* Build configuration list for PBXAggregateTarget "HTTPRequestPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_238 /* PBXTargetDependency */,
+				OBJ_239 /* PBXTargetDependency */,
 			);
 			name = HTTPRequestPackageTests;
 			productName = HTTPRequestPackageTests;
@@ -21,147 +21,86 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_146 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* AFError.swift */; };
-		OBJ_147 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* Alamofire.swift */; };
-		OBJ_148 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* AlamofireExtended.swift */; };
-		OBJ_149 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* AuthenticationInterceptor.swift */; };
-		OBJ_150 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* CachedResponseHandler.swift */; };
-		OBJ_151 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* Combine.swift */; };
-		OBJ_152 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* Concurrency.swift */; };
-		OBJ_153 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* DispatchQueue+Alamofire.swift */; };
-		OBJ_154 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* EventMonitor.swift */; };
-		OBJ_155 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* HTTPHeaders.swift */; };
-		OBJ_156 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* HTTPMethod.swift */; };
-		OBJ_157 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* MultipartFormData.swift */; };
-		OBJ_158 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* MultipartUpload.swift */; };
-		OBJ_159 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_104 /* NetworkReachabilityManager.swift */; };
-		OBJ_160 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* Notifications.swift */; };
-		OBJ_161 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* OperationQueue+Alamofire.swift */; };
-		OBJ_162 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* ParameterEncoder.swift */; };
-		OBJ_163 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* ParameterEncoding.swift */; };
-		OBJ_164 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* Protected.swift */; };
-		OBJ_165 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* RedirectHandler.swift */; };
-		OBJ_166 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* Request.swift */; };
-		OBJ_167 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* RequestInterceptor.swift */; };
-		OBJ_168 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* RequestTaskMap.swift */; };
-		OBJ_169 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Response.swift */; };
-		OBJ_170 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* ResponseSerialization.swift */; };
-		OBJ_171 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* Result+Alamofire.swift */; };
-		OBJ_172 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* RetryPolicy.swift */; };
-		OBJ_173 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* ServerTrustEvaluation.swift */; };
-		OBJ_174 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* Session.swift */; };
-		OBJ_175 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* SessionDelegate.swift */; };
-		OBJ_176 /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* StringEncoding+Alamofire.swift */; };
-		OBJ_177 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* URLConvertible+URLRequestConvertible.swift */; };
-		OBJ_178 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* URLEncodedFormEncoder.swift */; };
-		OBJ_179 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* URLRequest+Alamofire.swift */; };
-		OBJ_180 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* URLSessionConfiguration+Alamofire.swift */; };
-		OBJ_181 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* Validation.swift */; };
-		OBJ_188 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* Package.swift */; };
-		OBJ_194 /* DataRequest+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DataRequest+Request.swift */; };
-		OBJ_195 /* DataRequestResult+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DataRequestResult+Model.swift */; };
-		OBJ_196 /* HTTPRequestable+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HTTPRequestable+Request.swift */; };
-		OBJ_197 /* NotificationCenter+DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* NotificationCenter+DataRequest.swift */; };
-		OBJ_198 /* Array+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Array+URLQueryItem.swift */; };
-		OBJ_199 /* HTTPHeader+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* HTTPHeader+Headers.swift */; };
-		OBJ_200 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Data+Codable.swift */; };
-		OBJ_201 /* Decodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Decodable+JSON.swift */; };
-		OBJ_202 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Encodable+JSON.swift */; };
-		OBJ_203 /* JSONDecoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* JSONDecoder+Default.swift */; };
-		OBJ_204 /* JSONEncoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* JSONEncoder+Default.swift */; };
-		OBJ_205 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* DateFormatter+ISO8601.swift */; };
-		OBJ_206 /* HierarchicalDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* HierarchicalDateFormatter.swift */; };
-		OBJ_207 /* NotificationCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* NotificationCenter+Extensions.swift */; };
-		OBJ_208 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Result+Extensions.swift */; };
-		OBJ_209 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* String+Data.swift */; };
-		OBJ_210 /* HTTPRequest+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* HTTPRequest+Build.swift */; };
-		OBJ_211 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* HTTPRequest.swift */; };
-		OBJ_212 /* HTTPRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* HTTPRequestable.swift */; };
-		OBJ_213 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* KeychainError.swift */; };
-		OBJ_214 /* KeychainToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* KeychainToken.swift */; };
-		OBJ_215 /* NotificationCenter+KeychainToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* NotificationCenter+KeychainToken.swift */; };
-		OBJ_216 /* DataRequestFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* DataRequestFailure.swift */; };
-		OBJ_217 /* DataRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* DataRequestResult.swift */; };
-		OBJ_218 /* DataRequestSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* DataRequestSuccess.swift */; };
-		OBJ_219 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Environment.swift */; };
-		OBJ_220 /* AtomicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* AtomicValue.swift */; };
-		OBJ_221 /* HTTPRequestLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* HTTPRequestLogger.swift */; };
-		OBJ_222 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Loggable.swift */; };
-		OBJ_223 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Logger.swift */; };
-		OBJ_224 /* OSLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* OSLog+Extensions.swift */; };
-		OBJ_226 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_233 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_244 /* HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* HTTPRequestTests.swift */; };
-		OBJ_245 /* KeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* KeychainTests.swift */; };
-		OBJ_246 /* StringDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* StringDataTests.swift */; };
-		OBJ_247 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* XCTestManifests.swift */; };
-		OBJ_249 /* HTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; };
-		OBJ_250 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_258 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Data+Codable.swift */; };
-		OBJ_259 /* DataRequestResult+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* DataRequestResult+Model.swift */; };
-		OBJ_260 /* StravaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* StravaAPI.swift */; };
-		OBJ_261 /* URLComponents+Strava.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* URLComponents+Strava.swift */; };
-		OBJ_262 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Date+Extensions.swift */; };
-		OBJ_263 /* Encodable+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Encodable+URLQueryItem.swift */; };
-		OBJ_264 /* HTTPHeaders+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* HTTPHeaders+Extensions.swift */; };
-		OBJ_265 /* Logger+StravaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Logger+StravaAPI.swift */; };
-		OBJ_266 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* String+Extensions.swift */; };
-		OBJ_267 /* TimeInterval+Extensions.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* TimeInterval+Extensions.swift.swift */; };
-		OBJ_268 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* FileManager+Extensions.swift */; };
-		OBJ_269 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* URL+Extensions.swift */; };
-		OBJ_270 /* FileURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* FileURLError.swift */; };
-		OBJ_271 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* ModelFile.swift */; };
-		OBJ_272 /* TokenFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* TokenFile.swift */; };
-		OBJ_273 /* TokenRefreshFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* TokenRefreshFile.swift */; };
-		OBJ_274 /* ActivitiesRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* ActivitiesRange.swift */; };
-		OBJ_275 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Athlete.swift */; };
-		OBJ_276 /* AuthorizeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* AuthorizeURL.swift */; };
-		OBJ_277 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* Token.swift */; };
-		OBJ_278 /* TokenExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* TokenExchange.swift */; };
-		OBJ_279 /* TokenRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* TokenRefresh.swift */; };
-		OBJ_280 /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* StravaSession.swift */; };
-		OBJ_281 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* main.swift */; };
-		OBJ_283 /* HTTPRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */; };
-		OBJ_284 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		B819A64627D95F220063AE84 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B819A64527D95F220063AE84 /* Alamofire.xcframework */; };
+		OBJ_195 /* DataRequest+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DataRequest+Request.swift */; };
+		OBJ_196 /* DataRequestResult+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DataRequestResult+Model.swift */; };
+		OBJ_197 /* HTTPRequestable+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HTTPRequestable+Request.swift */; };
+		OBJ_198 /* NotificationCenter+DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* NotificationCenter+DataRequest.swift */; };
+		OBJ_199 /* Array+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Array+URLQueryItem.swift */; };
+		OBJ_200 /* HTTPHeader+Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* HTTPHeader+Headers.swift */; };
+		OBJ_201 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Data+Codable.swift */; };
+		OBJ_202 /* Decodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Decodable+JSON.swift */; };
+		OBJ_203 /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Encodable+JSON.swift */; };
+		OBJ_204 /* JSONDecoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* JSONDecoder+Default.swift */; };
+		OBJ_205 /* JSONEncoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* JSONEncoder+Default.swift */; };
+		OBJ_206 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* DateFormatter+ISO8601.swift */; };
+		OBJ_207 /* HierarchicalDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* HierarchicalDateFormatter.swift */; };
+		OBJ_208 /* NotificationCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* NotificationCenter+Extensions.swift */; };
+		OBJ_209 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Result+Extensions.swift */; };
+		OBJ_210 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* String+Data.swift */; };
+		OBJ_211 /* HTTPRequest+Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* HTTPRequest+Build.swift */; };
+		OBJ_212 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* HTTPRequest.swift */; };
+		OBJ_213 /* HTTPRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* HTTPRequestable.swift */; };
+		OBJ_214 /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* KeychainError.swift */; };
+		OBJ_215 /* KeychainToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* KeychainToken.swift */; };
+		OBJ_216 /* NotificationCenter+KeychainToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* NotificationCenter+KeychainToken.swift */; };
+		OBJ_217 /* DataRequestFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* DataRequestFailure.swift */; };
+		OBJ_218 /* DataRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* DataRequestResult.swift */; };
+		OBJ_219 /* DataRequestSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* DataRequestSuccess.swift */; };
+		OBJ_220 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Environment.swift */; };
+		OBJ_221 /* AtomicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* AtomicValue.swift */; };
+		OBJ_222 /* HTTPRequestLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* HTTPRequestLogger.swift */; };
+		OBJ_223 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Loggable.swift */; };
+		OBJ_224 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Logger.swift */; };
+		OBJ_225 /* OSLog+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* OSLog+Extensions.swift */; };
+		OBJ_234 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_245 /* HTTPRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* HTTPRequestTests.swift */; };
+		OBJ_246 /* KeychainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* KeychainTests.swift */; };
+		OBJ_247 /* LoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* LoggingTests.swift */; };
+		OBJ_248 /* StringDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* StringDataTests.swift */; };
+		OBJ_249 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* XCTestManifests.swift */; };
+		OBJ_260 /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Data+Codable.swift */; };
+		OBJ_261 /* DataRequestResult+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* DataRequestResult+Model.swift */; };
+		OBJ_262 /* StravaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* StravaAPI.swift */; };
+		OBJ_263 /* URLComponents+Strava.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* URLComponents+Strava.swift */; };
+		OBJ_264 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Date+Extensions.swift */; };
+		OBJ_265 /* Encodable+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Encodable+URLQueryItem.swift */; };
+		OBJ_266 /* HTTPHeaders+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* HTTPHeaders+Extensions.swift */; };
+		OBJ_267 /* Logger+StravaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Logger+StravaAPI.swift */; };
+		OBJ_268 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* String+Extensions.swift */; };
+		OBJ_269 /* TimeInterval+Extensions.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* TimeInterval+Extensions.swift.swift */; };
+		OBJ_270 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* FileManager+Extensions.swift */; };
+		OBJ_271 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* URL+Extensions.swift */; };
+		OBJ_272 /* FileURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* FileURLError.swift */; };
+		OBJ_273 /* ModelFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* ModelFile.swift */; };
+		OBJ_274 /* TokenFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* TokenFile.swift */; };
+		OBJ_275 /* TokenRefreshFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* TokenRefreshFile.swift */; };
+		OBJ_276 /* ActivitiesRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* ActivitiesRange.swift */; };
+		OBJ_277 /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Athlete.swift */; };
+		OBJ_278 /* AuthorizeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* AuthorizeURL.swift */; };
+		OBJ_279 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* Token.swift */; };
+		OBJ_280 /* TokenExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* TokenExchange.swift */; };
+		OBJ_281 /* TokenRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* TokenRefresh.swift */; };
+		OBJ_282 /* StravaSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* StravaSession.swift */; };
+		OBJ_283 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B819A63627D930E50063AE84 /* PBXContainerItemProxy */ = {
+		B819A63D27D95D370063AE84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "HTTPRequest::HTTPRequest";
 			remoteInfo = HTTPRequest;
 		};
-		B819A63727D930E50063AE84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Alamofire::Alamofire";
-			remoteInfo = Alamofire;
-		};
-		B819A63827D930E50063AE84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Alamofire::Alamofire";
-			remoteInfo = Alamofire;
-		};
-		B819A63927D930E50063AE84 /* PBXContainerItemProxy */ = {
+		B819A64027D95D370063AE84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "HTTPRequest::HTTPRequest";
 			remoteInfo = HTTPRequest;
 		};
-		B819A63A27D930E50063AE84 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Alamofire::Alamofire";
-			remoteInfo = Alamofire;
-		};
-		B819A63B27D930E60063AE84 /* PBXContainerItemProxy */ = {
+		B819A64227D95D380063AE84 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -171,50 +110,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HTTPRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = HTTPRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"HTTPRequest::StravaAPI::Product" /* StravaAPI */ = {isa = PBXFileReference; lastKnownFileType = text; path = StravaAPI; sourceTree = BUILT_PRODUCTS_DIR; };
+		B819A64527D95F220063AE84 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
+		B819A64927D961B30063AE84 /* HTTPRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HTTPRequest.framework; path = /Users/benshutt/Desktop/iOS/HTTPRequest/build/Debug/HTTPRequest.framework; sourceTree = "<absolute>"; };
+		"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = HTTPRequestTests.xctest; path = /Users/benshutt/Desktop/iOS/HTTPRequest/build/Debug/HTTPRequestTests.xctest; sourceTree = "<absolute>"; };
+		"HTTPRequest::StravaAPI::Product" /* StravaAPI */ = {isa = PBXFileReference; lastKnownFileType = text; name = StravaAPI; path = /Users/benshutt/Desktop/iOS/HTTPRequest/build/Debug/StravaAPI; sourceTree = "<absolute>"; };
 		OBJ_10 /* DataRequest+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Request.swift"; sourceTree = "<group>"; };
-		OBJ_100 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
-		OBJ_101 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		OBJ_102 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		OBJ_103 /* MultipartUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
-		OBJ_104 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		OBJ_105 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		OBJ_106 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_107 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
-		OBJ_108 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		OBJ_109 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		OBJ_100 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		OBJ_101 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		OBJ_102 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		OBJ_103 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		OBJ_104 /* MultipartUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
+		OBJ_105 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		OBJ_106 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		OBJ_107 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_108 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		OBJ_109 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		OBJ_11 /* DataRequestResult+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequestResult+Model.swift"; sourceTree = "<group>"; };
-		OBJ_110 /* RedirectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
-		OBJ_111 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		OBJ_112 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
-		OBJ_113 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
-		OBJ_114 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		OBJ_115 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		OBJ_116 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_117 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
-		OBJ_118 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		OBJ_119 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		OBJ_110 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		OBJ_111 /* RedirectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
+		OBJ_112 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_113 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		OBJ_114 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
+		OBJ_115 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_116 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		OBJ_117 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_118 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
+		OBJ_119 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 		OBJ_12 /* HTTPRequestable+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPRequestable+Request.swift"; sourceTree = "<group>"; };
-		OBJ_120 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
-		OBJ_121 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_122 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		OBJ_123 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		OBJ_124 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_125 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_126 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		OBJ_120 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		OBJ_121 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_122 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_123 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		OBJ_124 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		OBJ_125 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_126 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_127 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		OBJ_13 /* NotificationCenter+DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+DataRequest.swift"; sourceTree = "<group>"; };
-		OBJ_132 /* StravaToken */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StravaToken; sourceTree = SOURCE_ROOT; };
-		OBJ_133 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = SOURCE_ROOT; };
-		OBJ_134 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = SOURCE_ROOT; };
-		OBJ_135 /* StravaAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StravaAPI; sourceTree = SOURCE_ROOT; };
-		OBJ_136 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
-		OBJ_137 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		OBJ_138 /* HTTPRequest.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HTTPRequest.podspec; sourceTree = "<group>"; };
-		OBJ_139 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		OBJ_140 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_133 /* StravaToken */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StravaToken; sourceTree = SOURCE_ROOT; };
+		OBJ_134 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = SOURCE_ROOT; };
+		OBJ_135 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = SOURCE_ROOT; };
+		OBJ_136 /* StravaAPI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StravaAPI; sourceTree = SOURCE_ROOT; };
+		OBJ_137 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		OBJ_138 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_139 /* HTTPRequest.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = HTTPRequest.podspec; sourceTree = "<group>"; };
+		OBJ_140 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		OBJ_141 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_16 /* Array+URLQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+URLQueryItem.swift"; sourceTree = "<group>"; };
 		OBJ_17 /* HTTPHeader+Headers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPHeader+Headers.swift"; sourceTree = "<group>"; };
 		OBJ_19 /* Data+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Codable.swift"; sourceTree = "<group>"; };
@@ -269,67 +209,53 @@
 		OBJ_81 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_84 /* HTTPRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTests.swift; sourceTree = "<group>"; };
 		OBJ_85 /* KeychainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainTests.swift; sourceTree = "<group>"; };
-		OBJ_86 /* StringDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDataTests.swift; sourceTree = "<group>"; };
-		OBJ_87 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_90 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/benshutt/Desktop/iOS/HTTPRequest/.build/checkouts/Alamofire/Package.swift; sourceTree = "<group>"; };
-		OBJ_91 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
-		OBJ_92 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		OBJ_93 /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
-		OBJ_94 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
-		OBJ_95 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandler.swift; sourceTree = "<group>"; };
-		OBJ_96 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
-		OBJ_97 /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
-		OBJ_98 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_99 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		OBJ_86 /* LoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingTests.swift; sourceTree = "<group>"; };
+		OBJ_87 /* StringDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDataTests.swift; sourceTree = "<group>"; };
+		OBJ_88 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		OBJ_91 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/benshutt/Desktop/iOS/HTTPRequest/.build/checkouts/Alamofire/Package.swift; sourceTree = "<group>"; };
+		OBJ_92 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		OBJ_93 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		OBJ_94 /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
+		OBJ_95 /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		OBJ_96 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandler.swift; sourceTree = "<group>"; };
+		OBJ_97 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
+		OBJ_98 /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
+		OBJ_99 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_182 /* Frameworks */ = {
+		OBJ_226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				B819A64627D95F220063AE84 /* Alamofire.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_250 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_225 /* Frameworks */ = {
+		OBJ_284 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_226 /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_248 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_249 /* HTTPRequest.framework in Frameworks */,
-				OBJ_250 /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_282 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_283 /* HTTPRequest.framework in Frameworks */,
-				OBJ_284 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_127 /* Products */ = {
+		B819A64427D95F210063AE84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
-				"HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */,
-				"HTTPRequest::HTTPRequestTests::Product" /* HTTPRequestTests.xctest */,
-				"HTTPRequest::StravaAPI::Product" /* StravaAPI */,
+				B819A64527D95F220063AE84 /* Alamofire.xcframework */,
 			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
+			name = Frameworks;
+			sourceTree = "<group>";
 		};
 		OBJ_14 /* Extensions */ = {
 			isa = PBXGroup;
@@ -425,24 +351,25 @@
 			path = Logging;
 			sourceTree = "<group>";
 		};
-		OBJ_5 = {
+		OBJ_5 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_82 /* Tests */,
-				OBJ_88 /* Dependencies */,
-				OBJ_127 /* Products */,
-				OBJ_132 /* StravaToken */,
-				OBJ_133 /* Carthage */,
-				OBJ_134 /* scripts */,
-				OBJ_135 /* StravaAPI */,
-				OBJ_136 /* Cartfile.resolved */,
-				OBJ_137 /* LICENSE */,
-				OBJ_138 /* HTTPRequest.podspec */,
-				OBJ_139 /* Cartfile */,
-				OBJ_140 /* README.md */,
+				OBJ_89 /* Dependencies */,
+				OBJ_133 /* StravaToken */,
+				OBJ_134 /* Carthage */,
+				OBJ_135 /* scripts */,
+				OBJ_136 /* StravaAPI */,
+				OBJ_137 /* Cartfile.resolved */,
+				OBJ_138 /* LICENSE */,
+				OBJ_139 /* HTTPRequest.podspec */,
+				OBJ_140 /* Cartfile */,
+				OBJ_141 /* README.md */,
+				B819A64427D95F210063AE84 /* Frameworks */,
 			);
+			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* StravaAPI */ = {
@@ -568,65 +495,21 @@
 			children = (
 				OBJ_84 /* HTTPRequestTests.swift */,
 				OBJ_85 /* KeychainTests.swift */,
-				OBJ_86 /* StringDataTests.swift */,
-				OBJ_87 /* XCTestManifests.swift */,
+				OBJ_86 /* LoggingTests.swift */,
+				OBJ_87 /* StringDataTests.swift */,
+				OBJ_88 /* XCTestManifests.swift */,
 			);
 			name = HTTPRequestTests;
 			path = Tests/HTTPRequestTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_88 /* Dependencies */ = {
+		OBJ_89 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_89 /* Alamofire 5.5.0 */,
+				OBJ_90 /* Alamofire 5.5.0 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
-		};
-		OBJ_89 /* Alamofire 5.5.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_90 /* Package.swift */,
-				OBJ_91 /* AFError.swift */,
-				OBJ_92 /* Alamofire.swift */,
-				OBJ_93 /* AlamofireExtended.swift */,
-				OBJ_94 /* AuthenticationInterceptor.swift */,
-				OBJ_95 /* CachedResponseHandler.swift */,
-				OBJ_96 /* Combine.swift */,
-				OBJ_97 /* Concurrency.swift */,
-				OBJ_98 /* DispatchQueue+Alamofire.swift */,
-				OBJ_99 /* EventMonitor.swift */,
-				OBJ_100 /* HTTPHeaders.swift */,
-				OBJ_101 /* HTTPMethod.swift */,
-				OBJ_102 /* MultipartFormData.swift */,
-				OBJ_103 /* MultipartUpload.swift */,
-				OBJ_104 /* NetworkReachabilityManager.swift */,
-				OBJ_105 /* Notifications.swift */,
-				OBJ_106 /* OperationQueue+Alamofire.swift */,
-				OBJ_107 /* ParameterEncoder.swift */,
-				OBJ_108 /* ParameterEncoding.swift */,
-				OBJ_109 /* Protected.swift */,
-				OBJ_110 /* RedirectHandler.swift */,
-				OBJ_111 /* Request.swift */,
-				OBJ_112 /* RequestInterceptor.swift */,
-				OBJ_113 /* RequestTaskMap.swift */,
-				OBJ_114 /* Response.swift */,
-				OBJ_115 /* ResponseSerialization.swift */,
-				OBJ_116 /* Result+Alamofire.swift */,
-				OBJ_117 /* RetryPolicy.swift */,
-				OBJ_118 /* ServerTrustEvaluation.swift */,
-				OBJ_119 /* Session.swift */,
-				OBJ_120 /* SessionDelegate.swift */,
-				OBJ_121 /* StringEncoding+Alamofire.swift */,
-				OBJ_122 /* URLConvertible+URLRequestConvertible.swift */,
-				OBJ_123 /* URLEncodedFormEncoder.swift */,
-				OBJ_124 /* URLRequest+Alamofire.swift */,
-				OBJ_125 /* URLSessionConfiguration+Alamofire.swift */,
-				OBJ_126 /* Validation.swift */,
-			);
-			name = "Alamofire 5.5.0";
-			path = .build/checkouts/Alamofire/Source;
-			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_9 /* DataRequest */ = {
 			isa = PBXGroup;
@@ -639,69 +522,82 @@
 			path = DataRequest;
 			sourceTree = "<group>";
 		};
+		OBJ_90 /* Alamofire 5.5.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_91 /* Package.swift */,
+				OBJ_92 /* AFError.swift */,
+				OBJ_93 /* Alamofire.swift */,
+				OBJ_94 /* AlamofireExtended.swift */,
+				OBJ_95 /* AuthenticationInterceptor.swift */,
+				OBJ_96 /* CachedResponseHandler.swift */,
+				OBJ_97 /* Combine.swift */,
+				OBJ_98 /* Concurrency.swift */,
+				OBJ_99 /* DispatchQueue+Alamofire.swift */,
+				OBJ_100 /* EventMonitor.swift */,
+				OBJ_101 /* HTTPHeaders.swift */,
+				OBJ_102 /* HTTPMethod.swift */,
+				OBJ_103 /* MultipartFormData.swift */,
+				OBJ_104 /* MultipartUpload.swift */,
+				OBJ_105 /* NetworkReachabilityManager.swift */,
+				OBJ_106 /* Notifications.swift */,
+				OBJ_107 /* OperationQueue+Alamofire.swift */,
+				OBJ_108 /* ParameterEncoder.swift */,
+				OBJ_109 /* ParameterEncoding.swift */,
+				OBJ_110 /* Protected.swift */,
+				OBJ_111 /* RedirectHandler.swift */,
+				OBJ_112 /* Request.swift */,
+				OBJ_113 /* RequestInterceptor.swift */,
+				OBJ_114 /* RequestTaskMap.swift */,
+				OBJ_115 /* Response.swift */,
+				OBJ_116 /* ResponseSerialization.swift */,
+				OBJ_117 /* Result+Alamofire.swift */,
+				OBJ_118 /* RetryPolicy.swift */,
+				OBJ_119 /* ServerTrustEvaluation.swift */,
+				OBJ_120 /* Session.swift */,
+				OBJ_121 /* SessionDelegate.swift */,
+				OBJ_122 /* StringEncoding+Alamofire.swift */,
+				OBJ_123 /* URLConvertible+URLRequestConvertible.swift */,
+				OBJ_124 /* URLEncodedFormEncoder.swift */,
+				OBJ_125 /* URLRequest+Alamofire.swift */,
+				OBJ_126 /* URLSessionConfiguration+Alamofire.swift */,
+				OBJ_127 /* Validation.swift */,
+			);
+			name = "Alamofire 5.5.0";
+			path = .build/checkouts/Alamofire/Source;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"Alamofire::Alamofire" /* Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_142 /* Build configuration list for PBXNativeTarget "Alamofire" */;
-			buildPhases = (
-				OBJ_145 /* Sources */,
-				OBJ_182 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Alamofire;
-			productName = Alamofire;
-			productReference = "Alamofire::Alamofire::Product" /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_184 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
-			buildPhases = (
-				OBJ_187 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlamofirePackageDescription;
-			productName = AlamofirePackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
 		"HTTPRequest::HTTPRequest" /* HTTPRequest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_190 /* Build configuration list for PBXNativeTarget "HTTPRequest" */;
+			buildConfigurationList = OBJ_191 /* Build configuration list for PBXNativeTarget "HTTPRequest" */;
 			buildPhases = (
-				B819A63C27D931410063AE84 /* SwiftLint */,
-				OBJ_193 /* Sources */,
-				OBJ_225 /* Frameworks */,
+				B819A64327D95D8E0063AE84 /* SwiftLint */,
+				OBJ_194 /* Sources */,
+				OBJ_226 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_227 /* PBXTargetDependency */,
 			);
 			name = HTTPRequest;
 			productName = HTTPRequest;
-			productReference = "HTTPRequest::HTTPRequest::Product" /* HTTPRequest.framework */;
+			productReference = B819A64927D961B30063AE84 /* HTTPRequest.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"HTTPRequest::HTTPRequestTests" /* HTTPRequestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_240 /* Build configuration list for PBXNativeTarget "HTTPRequestTests" */;
+			buildConfigurationList = OBJ_241 /* Build configuration list for PBXNativeTarget "HTTPRequestTests" */;
 			buildPhases = (
-				OBJ_243 /* Sources */,
-				OBJ_248 /* Frameworks */,
+				OBJ_244 /* Sources */,
+				OBJ_250 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_251 /* PBXTargetDependency */,
-				OBJ_252 /* PBXTargetDependency */,
+				OBJ_253 /* PBXTargetDependency */,
 			);
 			name = HTTPRequestTests;
 			productName = HTTPRequestTests;
@@ -710,16 +606,15 @@
 		};
 		"HTTPRequest::StravaAPI" /* StravaAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_254 /* Build configuration list for PBXNativeTarget "StravaAPI" */;
+			buildConfigurationList = OBJ_256 /* Build configuration list for PBXNativeTarget "StravaAPI" */;
 			buildPhases = (
-				OBJ_257 /* Sources */,
-				OBJ_282 /* Frameworks */,
+				OBJ_259 /* Sources */,
+				OBJ_284 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_285 /* PBXTargetDependency */,
-				OBJ_286 /* PBXTargetDependency */,
+				OBJ_287 /* PBXTargetDependency */,
 			);
 			name = StravaAPI;
 			productName = StravaAPI;
@@ -728,9 +623,9 @@
 		};
 		"HTTPRequest::SwiftPMPackageDescription" /* HTTPRequestPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_229 /* Build configuration list for PBXNativeTarget "HTTPRequestPackageDescription" */;
+			buildConfigurationList = OBJ_230 /* Build configuration list for PBXNativeTarget "HTTPRequestPackageDescription" */;
 			buildPhases = (
-				OBJ_232 /* Sources */,
+				OBJ_233 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -756,13 +651,11 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_127 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_5 /*  */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"Alamofire::Alamofire" /* Alamofire */,
-				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
 				"HTTPRequest::HTTPRequest" /* HTTPRequest */,
 				"HTTPRequest::SwiftPMPackageDescription" /* HTTPRequestPackageDescription */,
 				"HTTPRequest::HTTPRequestPackageTests::ProductTarget" /* HTTPRequestPackageTests */,
@@ -773,7 +666,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B819A63C27D931410063AE84 /* SwiftLint */ = {
+		B819A64327D95D8E0063AE84 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -794,182 +687,117 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_145 /* Sources */ = {
+		OBJ_194 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_146 /* AFError.swift in Sources */,
-				OBJ_147 /* Alamofire.swift in Sources */,
-				OBJ_148 /* AlamofireExtended.swift in Sources */,
-				OBJ_149 /* AuthenticationInterceptor.swift in Sources */,
-				OBJ_150 /* CachedResponseHandler.swift in Sources */,
-				OBJ_151 /* Combine.swift in Sources */,
-				OBJ_152 /* Concurrency.swift in Sources */,
-				OBJ_153 /* DispatchQueue+Alamofire.swift in Sources */,
-				OBJ_154 /* EventMonitor.swift in Sources */,
-				OBJ_155 /* HTTPHeaders.swift in Sources */,
-				OBJ_156 /* HTTPMethod.swift in Sources */,
-				OBJ_157 /* MultipartFormData.swift in Sources */,
-				OBJ_158 /* MultipartUpload.swift in Sources */,
-				OBJ_159 /* NetworkReachabilityManager.swift in Sources */,
-				OBJ_160 /* Notifications.swift in Sources */,
-				OBJ_161 /* OperationQueue+Alamofire.swift in Sources */,
-				OBJ_162 /* ParameterEncoder.swift in Sources */,
-				OBJ_163 /* ParameterEncoding.swift in Sources */,
-				OBJ_164 /* Protected.swift in Sources */,
-				OBJ_165 /* RedirectHandler.swift in Sources */,
-				OBJ_166 /* Request.swift in Sources */,
-				OBJ_167 /* RequestInterceptor.swift in Sources */,
-				OBJ_168 /* RequestTaskMap.swift in Sources */,
-				OBJ_169 /* Response.swift in Sources */,
-				OBJ_170 /* ResponseSerialization.swift in Sources */,
-				OBJ_171 /* Result+Alamofire.swift in Sources */,
-				OBJ_172 /* RetryPolicy.swift in Sources */,
-				OBJ_173 /* ServerTrustEvaluation.swift in Sources */,
-				OBJ_174 /* Session.swift in Sources */,
-				OBJ_175 /* SessionDelegate.swift in Sources */,
-				OBJ_176 /* StringEncoding+Alamofire.swift in Sources */,
-				OBJ_177 /* URLConvertible+URLRequestConvertible.swift in Sources */,
-				OBJ_178 /* URLEncodedFormEncoder.swift in Sources */,
-				OBJ_179 /* URLRequest+Alamofire.swift in Sources */,
-				OBJ_180 /* URLSessionConfiguration+Alamofire.swift in Sources */,
-				OBJ_181 /* Validation.swift in Sources */,
+				OBJ_195 /* DataRequest+Request.swift in Sources */,
+				OBJ_196 /* DataRequestResult+Model.swift in Sources */,
+				OBJ_197 /* HTTPRequestable+Request.swift in Sources */,
+				OBJ_198 /* NotificationCenter+DataRequest.swift in Sources */,
+				OBJ_199 /* Array+URLQueryItem.swift in Sources */,
+				OBJ_200 /* HTTPHeader+Headers.swift in Sources */,
+				OBJ_201 /* Data+Codable.swift in Sources */,
+				OBJ_202 /* Decodable+JSON.swift in Sources */,
+				OBJ_203 /* Encodable+JSON.swift in Sources */,
+				OBJ_204 /* JSONDecoder+Default.swift in Sources */,
+				OBJ_205 /* JSONEncoder+Default.swift in Sources */,
+				OBJ_206 /* DateFormatter+ISO8601.swift in Sources */,
+				OBJ_207 /* HierarchicalDateFormatter.swift in Sources */,
+				OBJ_208 /* NotificationCenter+Extensions.swift in Sources */,
+				OBJ_209 /* Result+Extensions.swift in Sources */,
+				OBJ_210 /* String+Data.swift in Sources */,
+				OBJ_211 /* HTTPRequest+Build.swift in Sources */,
+				OBJ_212 /* HTTPRequest.swift in Sources */,
+				OBJ_213 /* HTTPRequestable.swift in Sources */,
+				OBJ_214 /* KeychainError.swift in Sources */,
+				OBJ_215 /* KeychainToken.swift in Sources */,
+				OBJ_216 /* NotificationCenter+KeychainToken.swift in Sources */,
+				OBJ_217 /* DataRequestFailure.swift in Sources */,
+				OBJ_218 /* DataRequestResult.swift in Sources */,
+				OBJ_219 /* DataRequestSuccess.swift in Sources */,
+				OBJ_220 /* Environment.swift in Sources */,
+				OBJ_221 /* AtomicValue.swift in Sources */,
+				OBJ_222 /* HTTPRequestLogger.swift in Sources */,
+				OBJ_223 /* Loggable.swift in Sources */,
+				OBJ_224 /* Logger.swift in Sources */,
+				OBJ_225 /* OSLog+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_187 /* Sources */ = {
+		OBJ_233 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_188 /* Package.swift in Sources */,
+				OBJ_234 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_193 /* Sources */ = {
+		OBJ_244 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_194 /* DataRequest+Request.swift in Sources */,
-				OBJ_195 /* DataRequestResult+Model.swift in Sources */,
-				OBJ_196 /* HTTPRequestable+Request.swift in Sources */,
-				OBJ_197 /* NotificationCenter+DataRequest.swift in Sources */,
-				OBJ_198 /* Array+URLQueryItem.swift in Sources */,
-				OBJ_199 /* HTTPHeader+Headers.swift in Sources */,
-				OBJ_200 /* Data+Codable.swift in Sources */,
-				OBJ_201 /* Decodable+JSON.swift in Sources */,
-				OBJ_202 /* Encodable+JSON.swift in Sources */,
-				OBJ_203 /* JSONDecoder+Default.swift in Sources */,
-				OBJ_204 /* JSONEncoder+Default.swift in Sources */,
-				OBJ_205 /* DateFormatter+ISO8601.swift in Sources */,
-				OBJ_206 /* HierarchicalDateFormatter.swift in Sources */,
-				OBJ_207 /* NotificationCenter+Extensions.swift in Sources */,
-				OBJ_208 /* Result+Extensions.swift in Sources */,
-				OBJ_209 /* String+Data.swift in Sources */,
-				OBJ_210 /* HTTPRequest+Build.swift in Sources */,
-				OBJ_211 /* HTTPRequest.swift in Sources */,
-				OBJ_212 /* HTTPRequestable.swift in Sources */,
-				OBJ_213 /* KeychainError.swift in Sources */,
-				OBJ_214 /* KeychainToken.swift in Sources */,
-				OBJ_215 /* NotificationCenter+KeychainToken.swift in Sources */,
-				OBJ_216 /* DataRequestFailure.swift in Sources */,
-				OBJ_217 /* DataRequestResult.swift in Sources */,
-				OBJ_218 /* DataRequestSuccess.swift in Sources */,
-				OBJ_219 /* Environment.swift in Sources */,
-				OBJ_220 /* AtomicValue.swift in Sources */,
-				OBJ_221 /* HTTPRequestLogger.swift in Sources */,
-				OBJ_222 /* Loggable.swift in Sources */,
-				OBJ_223 /* Logger.swift in Sources */,
-				OBJ_224 /* OSLog+Extensions.swift in Sources */,
+				OBJ_245 /* HTTPRequestTests.swift in Sources */,
+				OBJ_246 /* KeychainTests.swift in Sources */,
+				OBJ_247 /* LoggingTests.swift in Sources */,
+				OBJ_248 /* StringDataTests.swift in Sources */,
+				OBJ_249 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_232 /* Sources */ = {
+		OBJ_259 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_233 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_243 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_244 /* HTTPRequestTests.swift in Sources */,
-				OBJ_245 /* KeychainTests.swift in Sources */,
-				OBJ_246 /* StringDataTests.swift in Sources */,
-				OBJ_247 /* XCTestManifests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_257 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_258 /* Data+Codable.swift in Sources */,
-				OBJ_259 /* DataRequestResult+Model.swift in Sources */,
-				OBJ_260 /* StravaAPI.swift in Sources */,
-				OBJ_261 /* URLComponents+Strava.swift in Sources */,
-				OBJ_262 /* Date+Extensions.swift in Sources */,
-				OBJ_263 /* Encodable+URLQueryItem.swift in Sources */,
-				OBJ_264 /* HTTPHeaders+Extensions.swift in Sources */,
-				OBJ_265 /* Logger+StravaAPI.swift in Sources */,
-				OBJ_266 /* String+Extensions.swift in Sources */,
-				OBJ_267 /* TimeInterval+Extensions.swift.swift in Sources */,
-				OBJ_268 /* FileManager+Extensions.swift in Sources */,
-				OBJ_269 /* URL+Extensions.swift in Sources */,
-				OBJ_270 /* FileURLError.swift in Sources */,
-				OBJ_271 /* ModelFile.swift in Sources */,
-				OBJ_272 /* TokenFile.swift in Sources */,
-				OBJ_273 /* TokenRefreshFile.swift in Sources */,
-				OBJ_274 /* ActivitiesRange.swift in Sources */,
-				OBJ_275 /* Athlete.swift in Sources */,
-				OBJ_276 /* AuthorizeURL.swift in Sources */,
-				OBJ_277 /* Token.swift in Sources */,
-				OBJ_278 /* TokenExchange.swift in Sources */,
-				OBJ_279 /* TokenRefresh.swift in Sources */,
-				OBJ_280 /* StravaSession.swift in Sources */,
-				OBJ_281 /* main.swift in Sources */,
+				OBJ_260 /* Data+Codable.swift in Sources */,
+				OBJ_261 /* DataRequestResult+Model.swift in Sources */,
+				OBJ_262 /* StravaAPI.swift in Sources */,
+				OBJ_263 /* URLComponents+Strava.swift in Sources */,
+				OBJ_264 /* Date+Extensions.swift in Sources */,
+				OBJ_265 /* Encodable+URLQueryItem.swift in Sources */,
+				OBJ_266 /* HTTPHeaders+Extensions.swift in Sources */,
+				OBJ_267 /* Logger+StravaAPI.swift in Sources */,
+				OBJ_268 /* String+Extensions.swift in Sources */,
+				OBJ_269 /* TimeInterval+Extensions.swift.swift in Sources */,
+				OBJ_270 /* FileManager+Extensions.swift in Sources */,
+				OBJ_271 /* URL+Extensions.swift in Sources */,
+				OBJ_272 /* FileURLError.swift in Sources */,
+				OBJ_273 /* ModelFile.swift in Sources */,
+				OBJ_274 /* TokenFile.swift in Sources */,
+				OBJ_275 /* TokenRefreshFile.swift in Sources */,
+				OBJ_276 /* ActivitiesRange.swift in Sources */,
+				OBJ_277 /* Athlete.swift in Sources */,
+				OBJ_278 /* AuthorizeURL.swift in Sources */,
+				OBJ_279 /* Token.swift in Sources */,
+				OBJ_280 /* TokenExchange.swift in Sources */,
+				OBJ_281 /* TokenRefresh.swift in Sources */,
+				OBJ_282 /* StravaSession.swift in Sources */,
+				OBJ_283 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_227 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = B819A63727D930E50063AE84 /* PBXContainerItemProxy */;
-		};
-		OBJ_238 /* PBXTargetDependency */ = {
+		OBJ_239 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequestTests" /* HTTPRequestTests */;
-			targetProxy = B819A63B27D930E60063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B819A64227D95D380063AE84 /* PBXContainerItemProxy */;
 		};
-		OBJ_251 /* PBXTargetDependency */ = {
+		OBJ_253 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequest" /* HTTPRequest */;
-			targetProxy = B819A63927D930E50063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B819A64027D95D370063AE84 /* PBXContainerItemProxy */;
 		};
-		OBJ_252 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = B819A63A27D930E50063AE84 /* PBXContainerItemProxy */;
-		};
-		OBJ_285 /* PBXTargetDependency */ = {
+		OBJ_287 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequest" /* HTTPRequest */;
-			targetProxy = B819A63627D930E50063AE84 /* PBXContainerItemProxy */;
-		};
-		OBJ_286 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = B819A63827D930E50063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B819A63D27D95D370063AE84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_143 /* Debug */ = {
+		OBJ_192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
@@ -977,104 +805,21 @@
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = HTTPRequest.xcodeproj/Alamofire_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					CFNetwork,
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Alamofire;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_144 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = HTTPRequest.xcodeproj/Alamofire_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					CFNetwork,
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Alamofire;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_185 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -package-description-version 5.5.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_186 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -package-description-version 5.5.0";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_191 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 1;
-				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"${PROJECT_DIR}/Carthage/Build",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequest_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = HTTPRequest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.3sidedcube.HTTPRequest;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1086,7 +831,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_192 /* Release */ = {
+		OBJ_193 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
@@ -1094,18 +839,21 @@
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"${PROJECT_DIR}/Carthage/Build",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequest_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MARKETING_VERSION = 1.0.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = HTTPRequest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.3sidedcube.HTTPRequest;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1117,7 +865,7 @@
 			};
 			name = Release;
 		};
-		OBJ_230 /* Debug */ = {
+		OBJ_231 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1126,7 +874,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_231 /* Release */ = {
+		OBJ_232 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1135,19 +883,19 @@
 			};
 			name = Release;
 		};
-		OBJ_236 /* Debug */ = {
+		OBJ_237 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_237 /* Release */ = {
+		OBJ_238 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_241 /* Debug */ = {
+		OBJ_242 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1161,7 +909,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequestTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1174,7 +926,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_242 /* Release */ = {
+		OBJ_243 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -1188,7 +940,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/HTTPRequestTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1201,7 +957,7 @@
 			};
 			name = Release;
 		};
-		OBJ_255 /* Debug */ = {
+		OBJ_257 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
@@ -1213,7 +969,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/StravaAPI_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+					"@executable_path",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1228,7 +988,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_256 /* Release */ = {
+		OBJ_258 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
@@ -1240,7 +1000,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HTTPRequest.xcodeproj/StravaAPI_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+					"@executable_path",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1303,7 +1067,8 @@
 				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -1311,29 +1076,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_142 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		OBJ_191 /* Build configuration list for PBXNativeTarget "HTTPRequest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_143 /* Debug */,
-				OBJ_144 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_184 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_185 /* Debug */,
-				OBJ_186 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_190 /* Build configuration list for PBXNativeTarget "HTTPRequest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_191 /* Debug */,
-				OBJ_192 /* Release */,
+				OBJ_192 /* Debug */,
+				OBJ_193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1347,38 +1094,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_229 /* Build configuration list for PBXNativeTarget "HTTPRequestPackageDescription" */ = {
+		OBJ_230 /* Build configuration list for PBXNativeTarget "HTTPRequestPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_230 /* Debug */,
-				OBJ_231 /* Release */,
+				OBJ_231 /* Debug */,
+				OBJ_232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_235 /* Build configuration list for PBXAggregateTarget "HTTPRequestPackageTests" */ = {
+		OBJ_236 /* Build configuration list for PBXAggregateTarget "HTTPRequestPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_236 /* Debug */,
-				OBJ_237 /* Release */,
+				OBJ_237 /* Debug */,
+				OBJ_238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_240 /* Build configuration list for PBXNativeTarget "HTTPRequestTests" */ = {
+		OBJ_241 /* Build configuration list for PBXNativeTarget "HTTPRequestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_241 /* Debug */,
-				OBJ_242 /* Release */,
+				OBJ_242 /* Debug */,
+				OBJ_243 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_254 /* Build configuration list for PBXNativeTarget "StravaAPI" */ = {
+		OBJ_256 /* Build configuration list for PBXNativeTarget "StravaAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_255 /* Debug */,
-				OBJ_256 /* Release */,
+				OBJ_257 /* Debug */,
+				OBJ_258 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

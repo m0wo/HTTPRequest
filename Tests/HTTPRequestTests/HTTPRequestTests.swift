@@ -1,3 +1,10 @@
+//
+//  HTTPRequestTests.swift
+//  HTTPRequestTests
+//
+//  Created by Ben Shutt on 04/01/2021.
+//
+
 import XCTest
 @testable import HTTPRequest
 

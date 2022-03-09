@@ -1,6 +1,6 @@
 //
 //  StringDataTests.swift
-//  HTTPRequest
+//  HTTPRequestTests
 //
 //  Created by Ben Shutt on 18/10/2020.
 //
