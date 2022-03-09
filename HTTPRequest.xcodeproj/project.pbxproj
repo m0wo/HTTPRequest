@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		B80253882790A9B600B46B14 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89245B325E7C77F0026C4D9 /* Alamofire.xcframework */; };
+		B80A1F5D27D60F690015E806 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80A1F5C27D60F690015E806 /* Logger.swift */; };
 		B811407F2780F24000E5B6AA /* ActivitiesRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811407E2780F24000E5B6AA /* ActivitiesRange.swift */; };
 		B81140812780F46C00E5B6AA /* Encodable+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81140802780F46C00E5B6AA /* Encodable+URLQueryItem.swift */; };
 		B8114083278107C100E5B6AA /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8114082278107C100E5B6AA /* Date+Extensions.swift */; };
@@ -72,7 +73,6 @@
 		OBJ_133 /* OSLog+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* OSLog+Logger.swift */; };
 		OBJ_134 /* String+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* String+Data.swift */; };
 		OBJ_137 /* Array+URLQueryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Array+URLQueryItem.swift */; };
-		OBJ_138 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Configuration.swift */; };
 		OBJ_139 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* HTTPRequest.swift */; };
 		OBJ_140 /* HTTPRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* HTTPRequestable.swift */; };
 		OBJ_142 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DateFormatter+ISO8601.swift */; };
@@ -142,6 +142,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B80A1F5C27D60F690015E806 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		B811407E2780F24000E5B6AA /* ActivitiesRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesRange.swift; sourceTree = "<group>"; };
 		B81140802780F46C00E5B6AA /* Encodable+URLQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+URLQueryItem.swift"; sourceTree = "<group>"; };
 		B8114082278107C100E5B6AA /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
@@ -194,7 +195,6 @@
 		OBJ_11 /* String+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Data.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		OBJ_14 /* Array+URLQueryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+URLQueryItem.swift"; sourceTree = "<group>"; };
-		OBJ_16 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		OBJ_17 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		OBJ_18 /* HTTPRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestable.swift; sourceTree = "<group>"; };
 		OBJ_21 /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
@@ -272,6 +272,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B80A1F5B27D60F560015E806 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B80A1F5C27D60F690015E806 /* Logger.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B81B2DD7257E4AAF008FA95D /* StravaAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,7 +429,6 @@
 		OBJ_15 /* HTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* Configuration.swift */,
 				OBJ_17 /* HTTPRequest.swift */,
 				B866911A25BDA287003A10DB /* HTTPRequest+Build.swift */,
 				OBJ_18 /* HTTPRequestable.swift */,
@@ -531,6 +538,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B80A1F5B27D60F560015E806 /* Utilities */,
 				B8C38DB927903769008D8E66 /* DataRequest */,
 				OBJ_8 /* Extensions */,
 				OBJ_15 /* HTTPRequest */,
@@ -733,7 +741,7 @@
 				OBJ_134 /* String+Data.swift in Sources */,
 				B8C38DB227902EFB008D8E66 /* NotificationCenter+DataRequest.swift in Sources */,
 				OBJ_137 /* Array+URLQueryItem.swift in Sources */,
-				OBJ_138 /* Configuration.swift in Sources */,
+				B80A1F5D27D60F690015E806 /* Logger.swift in Sources */,
 				OBJ_139 /* HTTPRequest.swift in Sources */,
 				OBJ_140 /* HTTPRequestable.swift in Sources */,
 				OBJ_142 /* DateFormatter+ISO8601.swift in Sources */,
