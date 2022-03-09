@@ -12,7 +12,12 @@ let package = Package(
     products: [
         .library(
             name: "HTTPRequest",
-            targets: ["HTTPRequest"])
+            targets: ["HTTPRequest"]
+        ),
+        .executable(
+            name: "StravaAPI",
+            targets: ["StravaAPI"]
+        )
     ],
     dependencies: [
         .package(
@@ -25,6 +30,11 @@ let package = Package(
             name: "HTTPRequest",
             dependencies: ["Alamofire"],
             path: "Sources"
+        ),
+        .executableTarget(
+            name: "StravaAPI",
+            dependencies: ["HTTPRequest"],
+            path: "StravaAPI"
         ),
         .testTarget(
             name: "HTTPRequestTests",

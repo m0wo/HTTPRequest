@@ -10,7 +10,7 @@ import Alamofire
 import HTTPRequest
 
 // Turn on logging
-HTTPRequest.Configuration.shared.logging = true
+HTTPRequestLogger.logAll()
 
 // When true, print the URL of the OAuth page to get an authentication token.
 // Navigate to that URL from a browser, on successful redirect, copy the returned
@@ -21,7 +21,7 @@ let isFirstAuthentication = false
 
 do {
     guard !isFirstAuthentication else {
-        try Logger.log(AuthorizeURL.logString(), type: .info)
+        try Logger.stravaAPI.log(type: .info, message: AuthorizeURL.logString())
         exit(EXIT_SUCCESS)
     }
 
@@ -35,5 +35,5 @@ do {
     _ = try StravaAPI.activities(ActivitiesRange()).requestSync().successOrThrow()
 } catch {
     // Log failure
-    Logger.log(error)
+    Logger.stravaAPI.log(error: error)
 }

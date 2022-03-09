@@ -16,3 +16,20 @@ enum FileURLError: Error {
     /// Failed to find a file at the given `URL`
     case fileNotFoundAtURL(URL)
 }
+
+// MARK: - LocalizedError
+
+extension FileURLError: LocalizedError {
+
+    /// Return error description for each case
+    ///
+    /// - TODO: Localize
+    public var errorDescription: String? {
+        switch self {
+        case .fileNotFound:
+            return "fileNotFound: Failed to find file"
+        case let .fileNotFoundAtURL(url):
+            return "fileNotFoundAtURL: Failed to find file at URL: '\(url)'"
+        }
+    }
+}

@@ -18,8 +18,8 @@ public extension Data {
         do {
             return try jsonDecoder.decode(T.self, from: self)
         } catch {
-            if Logger.shouldLog(.decode) {
-                Logger.shared.log(error: error)
+            if HTTPRequestLogger.shouldLog(.decode) {
+                HTTPRequestLogger.log(error: error)
             }
             throw error
         }
@@ -37,8 +37,8 @@ public extension Encodable {
         do {
             return try jsonEncoder.encode(self)
         } catch {
-            if Logger.shouldLog(.encode) {
-                Logger.shared.log(error: error)
+            if HTTPRequestLogger.shouldLog(.encode) {
+                HTTPRequestLogger.log(error: error)
             }
             throw error
         }

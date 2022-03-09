@@ -20,7 +20,7 @@ struct TokenFile: ModelFile {
     /// Setup token directory
     @discardableResult
     static func setupDirectory() throws -> URL {
-        let projectDirectory: URL = try .projectDirectory()
+        let projectDirectory: URL = try .findRootDirectory()
         let dir = projectDirectory.appendingPathComponent(directoryName)
         try FileManager.default.createDirectoryIfNotExists(dir)
         return dir

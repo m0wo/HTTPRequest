@@ -29,8 +29,8 @@ public extension DataRequest {
         // Then fetch the `Data`
         return validate().responseData(queue: queue) { response in
             // Log the response if the configuration flag is enabled
-            if Logger.shouldLog(.response) {
-                Logger.shared.log(type: .info, message: response.debugDescription)
+            if HTTPRequestLogger.shouldLog(.response) {
+                HTTPRequestLogger.log(type: .info, message: response.debugDescription)
             }
 
             // Complete passing the response

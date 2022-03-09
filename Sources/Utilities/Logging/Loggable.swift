@@ -8,16 +8,16 @@
 import Foundation
 import os
 
-/// An entity with an `OSLog`
-protocol Loggable {
+/// Wrapper of an `OSLog` instance
+public protocol Loggable {
 
-    /// `OSLog` instance
+    /// `OSLog`
     var logger: OSLog { get }
 }
 
-// MARK: - Loggable + Extensions
+// MARK: - Extensions
 
-extension Loggable {
+public extension Loggable {
 
     /// Log `message` of `type`
     ///

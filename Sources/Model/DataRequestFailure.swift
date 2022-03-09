@@ -41,3 +41,14 @@ public struct DataRequestFailure: Error {
         return (error as? DataRequestFailure) ?? DataRequestFailure(response: nil, error: error)
     }
 }
+
+// MARK: - LocalizedError
+
+extension DataRequestFailure: LocalizedError {
+
+    /// Return localized error description of `error`
+    public var errorDescription: String? {
+        guard let localizedError = error as? LocalizedError else { return nil }
+        return localizedError.errorDescription
+    }
+}

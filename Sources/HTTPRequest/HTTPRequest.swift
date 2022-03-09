@@ -67,8 +67,8 @@ extension HTTPRequest: URLRequestConvertible {
 
         // Set nil or empty scheme if required
         let scheme = urlComponents.scheme ?? ""
-        if scheme.isEmpty, Logger.shouldLog(.warnings) {
-            Logger.shared.log(
+        if scheme.isEmpty, HTTPRequestLogger.shouldLog(.warnings) {
+            HTTPRequestLogger.log(
                 type: .debug,
                 message: "Warning: nil scheme when mapping to \(URLRequest.self)"
             )

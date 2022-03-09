@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1230"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "HTTPRequest::HTTPRequest"
                BuildableName = "HTTPRequest.framework"
                BlueprintName = "HTTPRequest"
+               ReferencedContainer = "container:HTTPRequest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "HTTPRequest::StravaAPI"
+               BuildableName = "StravaAPI"
+               BlueprintName = "StravaAPI"
                ReferencedContainer = "container:HTTPRequest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
