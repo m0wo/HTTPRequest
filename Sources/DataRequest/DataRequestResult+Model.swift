@@ -14,7 +14,7 @@ public extension DataRequestResult {
     /// - Parameters:
     ///   - decoder: `JSONDecoder`
     func model<T: Codable>(decoder: JSONDecoder) throws -> T {
-        return try successOrThrow().data.decode(with: decoder)
+        return try get().data.decode(with: decoder)
     }
 
     /// Map into model result of success type `T`

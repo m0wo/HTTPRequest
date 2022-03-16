@@ -127,42 +127,42 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B819A64B27D96CCE0063AE84 /* PBXContainerItemProxy */ = {
+		B8CD1DB427DB99D700060116 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "HTTPRequest::HTTPRequest";
 			remoteInfo = HTTPRequest;
 		};
-		B819A64C27D96CCE0063AE84 /* PBXContainerItemProxy */ = {
+		B8CD1DB527DB99D700060116 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		B819A64D27D96CCE0063AE84 /* PBXContainerItemProxy */ = {
+		B8CD1DB627DB99D700060116 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		B819A64E27D96CCF0063AE84 /* PBXContainerItemProxy */ = {
+		B8CD1DB727DB99D700060116 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "HTTPRequest::HTTPRequest";
 			remoteInfo = HTTPRequest;
 		};
-		B819A64F27D96CCF0063AE84 /* PBXContainerItemProxy */ = {
+		B8CD1DB827DB99D700060116 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		B819A65027D96CCF0063AE84 /* PBXContainerItemProxy */ = {
+		B8CD1DB927DB99D700060116 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -922,32 +922,32 @@
 		OBJ_228 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = B819A64C27D96CCE0063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B8CD1DB527DB99D700060116 /* PBXContainerItemProxy */;
 		};
 		OBJ_239 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequestTests" /* HTTPRequestTests */;
-			targetProxy = B819A65027D96CCF0063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B8CD1DB927DB99D700060116 /* PBXContainerItemProxy */;
 		};
 		OBJ_253 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequest" /* HTTPRequest */;
-			targetProxy = B819A64E27D96CCF0063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B8CD1DB727DB99D700060116 /* PBXContainerItemProxy */;
 		};
 		OBJ_254 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = B819A64F27D96CCF0063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B8CD1DB827DB99D700060116 /* PBXContainerItemProxy */;
 		};
 		OBJ_287 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "HTTPRequest::HTTPRequest" /* HTTPRequest */;
-			targetProxy = B819A64B27D96CCE0063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B8CD1DB427DB99D700060116 /* PBXContainerItemProxy */;
 		};
 		OBJ_288 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = B819A64D27D96CCE0063AE84 /* PBXContainerItemProxy */;
+			targetProxy = B8CD1DB627DB99D700060116 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

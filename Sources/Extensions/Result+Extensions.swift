@@ -7,8 +7,6 @@
 
 import Foundation
 
-// MARK: - Result + Extensions
-
 public extension Result {
 
     /// Returns the associated value if the result is a success, `nil` otherwise.
@@ -21,14 +19,5 @@ public extension Result {
     var failure: Failure? {
         guard case let .failure(error) = self else { return nil }
         return error
-    }
-
-    /// Returns the associated value if the result is a success, `throws`  associated
-    /// value of failure otherwise.
-    func successOrThrow() throws -> Success {
-        switch self {
-        case .success(let success): return success
-        case .failure(let error): throw error
-        }
     }
 }
