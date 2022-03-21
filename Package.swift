@@ -7,7 +7,7 @@ let package = Package(
     name: "HTTPRequest",
     platforms: [
         .macOS(.v10_12),
-        .iOS(.v12)
+        .iOS(.v13)
     ],
     products: [
         .library(
