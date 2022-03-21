@@ -81,7 +81,7 @@ public struct HTTPRequestLogger: Loggable {
     /// The `Set` of `Log`s which are enabled
     ///
     /// By default, none are enabled
-    private var logs = AtomicValue<Set<Log>>([])
+    private let logs = AtomicValue<Set<Log>>([])
 
     /// Initializer - lock override
     private init() {}
