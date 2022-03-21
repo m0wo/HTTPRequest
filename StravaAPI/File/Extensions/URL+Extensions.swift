@@ -22,7 +22,7 @@ extension URL {
             }
         }
 
-        throw FileURLError.fileNotFound
+        throw FileError.fileNotFound
     }
 
     /// Does this directory contain a file with the given `fileName`

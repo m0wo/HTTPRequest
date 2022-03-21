@@ -8,7 +8,7 @@
 import Foundation
 
 /// `Error` with a file `URL`
-enum FileURLError: Error {
+enum FileError: Error {
 
     /// Failed to find a file
     case fileNotFound
@@ -19,7 +19,7 @@ enum FileURLError: Error {
 
 // MARK: - LocalizedError
 
-extension FileURLError: LocalizedError {
+extension FileError: LocalizedError {
 
     /// Return error description for each case
     ///
