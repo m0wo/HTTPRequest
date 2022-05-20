@@ -46,8 +46,8 @@ extension FileManager {
     /// - Parameter path: `String`
     func isDirectory(_ path: String) -> Bool {
         var bool: ObjCBool = false
-        FileManager.default.fileExists(atPath: path, isDirectory: &bool)
-        return bool.boolValue
+        let exists = FileManager.default.fileExists(atPath: path, isDirectory: &bool)
+        return exists && bool.boolValue
     }
 
     /// File at `url` exists and is a directory

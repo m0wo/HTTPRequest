@@ -7,6 +7,10 @@
 
 import Foundation
 
+// TODO: Replace with
+// - Data(string.utf8))
+// - String(decoding: data, as: UTF8.self)
+
 // MARK: - StringError
 
 /// An `Error` converting from `String` to `Data` or vice versa
