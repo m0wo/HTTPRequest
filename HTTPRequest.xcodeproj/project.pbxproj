@@ -885,7 +885,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
 				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -911,6 +910,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = HTTPRequest;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VALID_ARCHS = "arm64, arm64e, x86_64";
 				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Debug;
@@ -921,7 +921,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
 				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -947,6 +946,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = HTTPRequest;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
+				VALID_ARCHS = "arm64, arm64e, x86_64";
 				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
